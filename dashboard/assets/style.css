@@ -1,10 +1,10 @@
 /* ────────────────────────────────────────────────────────────────
-   LUMINA — Design System CSS (Aligned with React LuminaDashboard)
+   LUMINA — Design System CSS (Fully Responsive Multi-Device System)
    Palette: INK (#1B2430) / PAPER (#F5F6F3) / TEAL (#3F6B62) / SAGE (#6B8F71) / AMBER (#C08A2E) / RUST (#B4573E)
    Fonts: Fraunces · Inter · IBM Plex Mono
    ──────────────────────────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
     --ink:        #1B2430;
@@ -26,10 +26,17 @@
     --page:       #F5F6F3;
 }
 
-html { scroll-behavior: smooth; }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
 
 html, body, [class*="css"] {
     font-family: 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
 }
 
 /* ── Streamlit shell ───────────────────────────────────────────── */
@@ -37,11 +44,12 @@ html, body, [class*="css"] {
 .stApp {
     background: var(--paper);
     color: var(--ink);
+    min-height: 100vh;
 }
 
 [data-testid="stHeader"] {
     background: transparent !important;
-    z-index: 100000 !important;
+    z-index: 99999 !important;
 }
 
 [data-testid="stToolbar"],
@@ -57,8 +65,9 @@ html, body, [class*="css"] {
     border: 1px solid var(--line) !important;
     border-radius: 8px !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.06) !important;
-    margin-top: 4px;
-    margin-left: 4px;
+    margin-top: 6px;
+    margin-left: 6px;
+    z-index: 100001 !important;
 }
 
 [data-testid="stSidebarCollapseButton"]:hover {
@@ -67,7 +76,9 @@ html, body, [class*="css"] {
 }
 
 .block-container {
-    max-width: none;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     padding: 1.2rem 1.8rem 2.5rem;
 }
 
@@ -76,8 +87,6 @@ html, body, [class*="css"] {
 section[data-testid="stSidebar"] {
     background: var(--ink);
     border-right: 1px solid rgba(255,255,255,0.08);
-    min-width: 260px;
-    max-width: 260px;
 }
 
 section[data-testid="stSidebar"] > div {
@@ -85,7 +94,7 @@ section[data-testid="stSidebar"] > div {
 }
 
 section[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
-    padding: 0 0.7rem 1rem;
+    padding: 0 0.75rem 1.5rem;
 }
 
 section[data-testid="stSidebar"] label,
@@ -145,7 +154,7 @@ section[data-testid="stSidebar"] .stCaption p {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 2px;
     width: 100%;
 }
 
@@ -156,12 +165,12 @@ section[data-testid="stSidebar"] .stCaption p {
     min-height: 40px;
     box-sizing: border-box;
     padding: 9px 14px;
-    color: rgba(255,255,255,0.5) !important;
+    color: rgba(255,255,255,0.6) !important;
     background: transparent;
     border: 0;
     border-radius: 8px;
     text-decoration: none !important;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 400;
     line-height: 1.25;
     transition: background 0.15s, color 0.15s;
@@ -170,14 +179,14 @@ section[data-testid="stSidebar"] .stCaption p {
 
 .nav-anchor:hover {
     color: #ffffff !important;
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.08);
     text-decoration: none !important;
 }
 
 .nav-anchor.active {
     color: #ffffff !important;
     font-weight: 600;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.12);
 }
 
 /* ── Profile Header Bar ────────────────────────────────────────── */
@@ -191,11 +200,13 @@ section[data-testid="stSidebar"] .stCaption p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .profile-header-title {
     font-family: 'Fraunces', serif;
-    font-size: 26px;
+    font-size: clamp(20px, 2.5vw, 26px);
     font-weight: 500;
     color: var(--ink);
     line-height: 1.2;
@@ -211,6 +222,7 @@ section[data-testid="stSidebar"] .stCaption p {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 /* ── Metric Row & Table Styling ────────────────────────────────── */
@@ -221,6 +233,7 @@ section[data-testid="stSidebar"] .stCaption p {
     justify-content: space-between;
     padding: 11px 0;
     border-bottom: 1px solid var(--line);
+    gap: 10px;
 }
 
 .metric-row:last-child {
@@ -271,20 +284,37 @@ section[data-testid="stSidebar"] .stCaption p {
     border: 1px solid var(--line);
     border-radius: 14px;
     padding: 16px 18px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.overview-stat-card:hover {
+    box-shadow: 0 4px 12px rgba(27, 36, 48, 0.05);
 }
 
 .overview-stat-val {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 22px;
+    font-size: clamp(18px, 1.8vw, 24px);
     font-weight: 600;
     color: var(--ink);
     margin-top: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .overview-stat-sub {
     color: var(--muted);
-    font-size: 12px;
-    margin-top: 2px;
+    font-size: clamp(11px, 1.1vw, 12.5px);
+    margin-top: 3px;
+    line-height: 1.35;
 }
 
 /* ── Streamlit Tabs Styling ───────────────────────────────────── */
@@ -294,6 +324,9 @@ div[data-testid="stTabs"] [data-baseweb="tab-list"] {
     border-bottom: 1px solid var(--line);
     gap: 24px;
     margin-bottom: 20px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 div[data-testid="stTabs"] [data-baseweb="tab"] {
@@ -304,6 +337,8 @@ div[data-testid="stTabs"] [data-baseweb="tab"] {
     border-radius: 0;
     border-bottom: 2px solid transparent;
     text-transform: capitalize;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 div[data-testid="stTabs"] [aria-selected="true"] {
@@ -324,20 +359,23 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     border: 1px solid var(--line) !important;
     border-radius: 16px !important;
     box-shadow: 0 1px 3px rgba(27,36,48,0.04);
-    padding: 6px 8px 10px;
+    padding: 8px 12px 14px;
+    min-width: 0;
 }
 
 .card-heading {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px 7px 4px;
+    padding: 10px 6px 6px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .card-title {
     font-family: 'Fraunces', serif;
     color: var(--ink);
-    font-size: 16px;
+    font-size: clamp(15px, 1.4vw, 17px);
     font-weight: 500;
 }
 
@@ -355,6 +393,7 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     padding: 4px 10px;
     font-size: 11px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .tag-green, .tag-teal { color: var(--teal); background: var(--teal-soft); }
@@ -362,14 +401,15 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
 .tag-red, .tag-rust { color: var(--rust); background: var(--rust-soft); }
 
 /* Progress bars */
-.progress-list { padding: 8px; }
-.progress-row { margin: 13px 0 17px; }
+.progress-list { padding: 4px; }
+.progress-row { margin: 12px 0 16px; }
 
 .progress-meta {
     display: flex;
     justify-content: space-between;
     margin-bottom: 7px;
     font-size: 12px;
+    gap: 8px;
 }
 
 .progress-name { color: var(--ink); opacity: 0.75; font-weight: 500; }
@@ -409,11 +449,20 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
 }
 
 /* Analysis table */
+.responsive-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
 .analysis-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 7px;
-    font-size: 12px;
+    margin-top: 4px;
+    font-size: 12.5px;
+    min-width: 520px;
 }
 
 .analysis-table th {
@@ -425,6 +474,7 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     letter-spacing: 0.07em;
     text-transform: uppercase;
     border-bottom: 1px solid var(--line);
+    white-space: nowrap;
 }
 
 .analysis-table td {
@@ -442,6 +492,7 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     padding: 4px 9px;
     font-size: 11px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .risk-high { color: var(--rust); background: var(--rust-soft); }
@@ -463,6 +514,7 @@ div[data-testid="stButton"] > button[kind="primary"] {
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     transition: opacity 0.2s;
+    min-height: 40px;
 }
 
 div[data-testid="stButton"] > button[kind="primary"]:hover {
@@ -475,6 +527,7 @@ div[data-testid="stButton"] > button[kind="secondary"] {
     border: 1px solid var(--line);
     border-radius: 10px;
     font-weight: 500;
+    min-height: 40px;
 }
 
 div[data-testid="stTextInput"] input {
@@ -486,112 +539,109 @@ div[data-testid="stTextInput"] input {
     -webkit-text-fill-color: var(--ink) !important;
 }
 
-/* ── Responsive & Mobile Layout Utilities ─────────────────────── */
+/* ── Comprehensive Fluid Multi-Device Media Queries ───────────── */
 
-.responsive-table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 8px;
+/* Laptops and Desktops under 1200px */
+@media (max-width: 1200px) {
+    div[data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+    }
+
+    /* 4-card metric blocks become 2x2 grid */
+    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
+        flex: 1 1 calc(50% - 12px) !important;
+        min-width: 160px !important;
+    }
 }
 
-.responsive-table-wrapper table {
-    min-width: 580px;
-}
-
-@media (max-width: 900px) {
+/* Tablets and Split Screen (under 992px) */
+@media (max-width: 992px) {
     .block-container {
-        padding: 0.8rem 1rem 1.8rem !important;
+        padding: 1rem 1.2rem 2rem !important;
     }
 
     .profile-header-card {
         flex-direction: column;
         align-items: stretch;
-        gap: 16px;
+        gap: 14px;
         padding: 16px 18px;
-    }
-
-    .profile-header-title {
-        font-size: 22px;
     }
 
     .profile-header-actions {
         width: 100%;
-        flex-direction: column;
+        justify-content: flex-start;
     }
-}
 
-@media (max-width: 768px) {
-    /* Touch-friendly tab bar with horizontal swipe */
     div[data-testid="stTabs"] [data-baseweb="tab-list"] {
-        gap: 12px !important;
-        overflow-x: auto !important;
-        flex-wrap: nowrap !important;
-        -webkit-overflow-scrolling: touch !important;
-        padding-bottom: 6px !important;
+        gap: 14px !important;
+        padding-bottom: 4px !important;
     }
 
     div[data-testid="stTabs"] [data-baseweb="tab"] {
         font-size: 13px !important;
-        padding: 8px 4px 10px 4px !important;
-        white-space: nowrap !important;
-        flex-shrink: 0 !important;
+        padding: 8px 4px 10px !important;
+    }
+}
+
+/* Mobile Devices (under 768px) */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 0.8rem 0.8rem 1.8rem !important;
     }
 
-    /* Stack card heading title & tags */
+    /* Stack all multi-column layouts on mobile for clean vertical flow */
+    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+        margin-bottom: 8px;
+    }
+
     .card-heading {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 6px;
     }
 
     .overview-stat-card {
-        padding: 12px 14px;
-        margin-bottom: 8px;
+        padding: 14px 16px;
+        margin-bottom: 4px;
+    }
+
+    .brand-name {
+        font-size: 19px;
+    }
+
+    .profile-header-title {
+        font-size: 20px;
+    }
+
+    .profile-header-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-header-actions > * {
+        width: 100%;
+    }
+
+    div[data-testid="stButton"] button {
+        width: 100% !important;
+    }
+}
+
+/* Small Phones (under 480px) */
+@media (max-width: 480px) {
+    .block-container {
+        padding: 0.6rem 0.6rem 1.5rem !important;
     }
 
     .overview-stat-val {
         font-size: 18px;
     }
 
-    /* Column layout adjustments on mobile: stack standard columns */
-    div[data-testid="stHorizontalBlock"]:not(:has(> div[data-testid="column"]:nth-child(5))) > div[data-testid="column"] {
-        min-width: 100% !important;
-        flex: 1 1 100% !important;
-        margin-bottom: 8px;
-    }
-
-    /* Multi-column tables (5+ columns): horizontal touch scroll */
-    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(5)) {
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        padding-bottom: 8px !important;
-    }
-
-    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(5)) > div[data-testid="column"] {
-        min-width: 110px !important;
-        flex-shrink: 0 !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand-name {
-        font-size: 18px;
-    }
-
-    .brand-sub {
-        font-size: 10px;
-    }
-
     .info-alert-box, .teal-info-box {
         padding: 10px 12px;
-        font-size: 11px;
-    }
-
-    div[data-testid="stButton"] button {
-        min-height: 44px;
+        font-size: 11.5px;
     }
 }
-
-
