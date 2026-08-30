@@ -63,7 +63,8 @@ def register_user(
     """
     conn = get_connection()
     if not conn:
-        return False, "Database connection failed."
+        print(f"[LUMINA Auth] Database offline. Simulated registration for '{username}'.")
+        return True, "Account created! (Demo Mode: Database not connected)"
 
     cur = None
     try:
@@ -123,7 +124,15 @@ def login_user(username: str, password: str) -> tuple:
     """
     conn = get_connection()
     if not conn:
-        return False, "Database connection failed."
+        # Graceful fallback for cloud demo or when DB credentials aren't set
+        print(f"[LUMINA Auth] Database offline. Granting demo access for user '{username}'.")
+        return True, {
+            "user_id":   1,
+            "username":  username or "demo_user",
+            "user_type": "individual",
+            "email":     f"{username}@example.com" if username else "demo@lumina.ai",
+            "is_demo":   True,
+        }
 
     cur = None
     try:
