@@ -20,58 +20,81 @@ _LAST_ERROR = None
 
 
 def _get_config_val(key: str, default=None):
-    """Retrieve config value from Streamlit secrets, environment variables, or default."""
+    """Retrieve config value safely from Streamlit secrets, environment variables, or default."""
     try:
         import streamlit as st
+        # Check Streamlit secrets if available
         if hasattr(st, "secrets"):
-            if key in st.secrets:
-                return str(st.secrets[key])
-            # Check nested sections like [postgres] or [database]
+            try:
+                # 1. Direct top-level key lookup
+                if key in st.secrets:
+                    val = st.secrets[key]
+                    if val is not None and not isinstance(val, (dict, list)):
+                        return str(val).strip()
+            except Exception:
+                pass
+
+            # 2. Check nested sections like [postgres] or [database] only if they are dicts
             for section in ["postgres", "database", "postgresql"]:
-                if section in st.secrets and key in st.secrets[section]:
-                    return str(st.secrets[section][key])
+                try:
+                    if section in st.secrets:
+                        sec_obj = st.secrets[section]
+                        if isinstance(sec_obj, dict) and key in sec_obj:
+                            val = sec_obj[key]
+                            if val is not None and not isinstance(val, (dict, list)):
+                                return str(val).strip()
+                except Exception:
+                    pass
     except Exception:
         pass
-    return os.getenv(key, default)
+
+    # 3. Environment variables fallback
+    try:
+        val = os.getenv(key)
+        if val is not None and str(val).strip():
+            return str(val).strip()
+    except Exception:
+        pass
+
+    return default
 
 
 def _init_pool():
     global _DB_POOL, _INIT_ATTEMPTED, _LAST_ERROR
     _INIT_ATTEMPTED = True
 
-    # 1. Try DATABASE_URL / POSTGRES_URL first (common for cloud DBs)
-    db_url = _get_config_val("DATABASE_URL") or _get_config_val("POSTGRES_URL")
-    if db_url:
-        if db_url.startswith("postgres://"):
-            db_url = db_url.replace("postgres://", "postgresql://", 1)
-        try:
-            _DB_POOL = pool.ThreadedConnectionPool(
-                minconn=1,
-                maxconn=10,
-                dsn=db_url
-            )
-            _LAST_ERROR = None
-            print("[LUMINA DB] Connection pool created via DATABASE_URL.")
-            return
-        except Exception as e:
-            _LAST_ERROR = str(e)
-            print(f"[LUMINA DB] Failed to create pool from DATABASE_URL: {e}")
-
-    # 2. Try individual parameters
-    host = _get_config_val("DB_HOST", "localhost")
-    port = _get_config_val("DB_PORT", "5432")
-    dbname = _get_config_val("DB_NAME", "lumina_db")
-    user = _get_config_val("DB_USER", "postgres")
-    password = _get_config_val("DB_PASSWORD", None)
-    sslmode = _get_config_val("DB_SSLMODE", None)
-
-    # If no password or localhost on cloud without explicit intent, attempt safely
     try:
+        # 1. Try DATABASE_URL / POSTGRES_URL first (common for cloud DBs)
+        db_url = _get_config_val("DATABASE_URL") or _get_config_val("POSTGRES_URL")
+        if db_url:
+            if db_url.startswith("postgres://"):
+                db_url = db_url.replace("postgres://", "postgresql://", 1)
+            try:
+                _DB_POOL = pool.ThreadedConnectionPool(
+                    minconn=1,
+                    maxconn=10,
+                    dsn=db_url
+                )
+                _LAST_ERROR = None
+                print("[LUMINA DB] Connection pool created via DATABASE_URL.")
+                return
+            except Exception as e:
+                _LAST_ERROR = str(e)
+                print(f"[LUMINA DB] Failed to create pool from DATABASE_URL: {e}")
+
+        # 2. Try individual parameters
+        host = _get_config_val("DB_HOST", "localhost")
+        port = _get_config_val("DB_PORT", "5432")
+        dbname = _get_config_val("DB_NAME", "lumina_db")
+        user = _get_config_val("DB_USER", "postgres")
+        password = _get_config_val("DB_PASSWORD", None)
+        sslmode = _get_config_val("DB_SSLMODE", None)
+
         kwargs = {
             "minconn": 1,
             "maxconn": 10,
             "host": host,
-            "port": int(port),
+            "port": int(port) if str(port).isdigit() else 5432,
             "dbname": dbname,
             "user": user,
             "connect_timeout": 3,
@@ -86,7 +109,7 @@ def _init_pool():
         print(f"[LUMINA DB] Connection pool created for {user}@{host}:{port}/{dbname}.")
     except Exception as e:
         _LAST_ERROR = str(e)
-        print(f"[LUMINA DB] Notice: Database connection unavailable ({e}). Running in offline/demo mode.")
+        print(f"[LUMINA DB] Database connection unavailable ({e}). App running with demo/offline fallback.")
         _DB_POOL = None
 
 
