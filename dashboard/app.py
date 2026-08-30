@@ -1,5 +1,15 @@
+import os
 import sys
 import io
+from pathlib import Path
+
+# Ensure root and dashboard directories are in sys.path for cloud deployment
+_current_dir = Path(__file__).resolve().parent
+_root_dir = _current_dir.parent
+for _p in [str(_current_dir), str(_root_dir)]:
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 
 if sys.platform == "win32":
     try:
