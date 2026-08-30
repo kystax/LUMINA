@@ -483,12 +483,13 @@ def run_full_analysis(
     # Fallback in-memory composite risk calculation if running offline
     if result.get("composite_risk_score") is None:
         nlp_score_val = float(nlp_result.get("risk_score", 0.0) or 0.0)
-        sna_score_val = float(sna_met.get("withdrawal_score", 0.0) or 0.0)
+        sna_score_val = float(sna_metrics.get("withdrawal_score", 0.0) or 0.0)
         env_score_val = float(env_score or 0.0)
         result["composite_risk_score"] = round(
             nlp_score_val * 0.45 + sna_score_val * 0.35 + env_score_val * 0.20,
             4
         )
+
 
 
     _report("Simulating possible outcomes…")
