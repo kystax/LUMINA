@@ -1,29 +1,42 @@
 /* ────────────────────────────────────────────────────────────────
-   LUMINA — Design System CSS (Fully Responsive Multi-Device System)
-   Palette: INK (#1B2430) / PAPER (#F5F6F3) / TEAL (#3F6B62) / SAGE (#6B8F71) / AMBER (#C08A2E) / RUST (#B4573E)
-   Fonts: Fraunces · Inter · IBM Plex Mono
+   LUMINA CALM – PURPLE EDITION
+   Design System & Global Stylesheet
+   Identity: Quiet Intelligence · Dementia Awareness Lavender · Calm Research
    ──────────────────────────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
-    --ink:        #1B2430;
-    --paper:      #F5F6F3;
-    --card:       #FFFFFF;
-    --line:       #DEE1DB;
-    --teal:       #3F6B62;
-    --teal-soft:  #E4EDE9;
-    --sage:       #6B8F71;
-    --amber:      #C08A2E;
-    --amber-soft: #FBF4E7;
-    --rust:       #B4573E;
-    --rust-soft:  #FBEAE5;
-    --muted:      #6B7280;
+    /* ── Lumina Calm Purple Palette ── */
+    --lumina-purple:         #6F5A8E;
+    --lumina-purple-dark:    #55446F;
+    --lumina-lavender:       #E8E1EE;
+    --lumina-lavender-soft:  #F3EFF6;
+    --lumina-lavender-gray:  #C9C0D2;
+    --lumina-background:     #F7F7F4;
+    --lumina-surface:        #FFFFFF;
+    --lumina-text:           #292D2B;
+    --lumina-text-secondary: #6F7470;
+    --lumina-text-muted:     #969A96;
+    --lumina-border:         #DDD9DF;
+    --lumina-soft-neutral:   #EEF0ED;
+    --lumina-success:        #78917C;
+    --lumina-warning:        #B49A68;
+    --lumina-danger:         #A96D67;
 
-    --navy:       #1B2430;
-    --purple:     #3F6B62;
-    --border:     #DEE1DB;
-    --page:       #F5F6F3;
+    /* ── Compatibility Aliases ── */
+    --ink:        #292D2B;
+    --paper:      #F7F7F4;
+    --card:       #FFFFFF;
+    --line:       #DDD9DF;
+    --teal:       #6F5A8E;
+    --teal-soft:  #F3EFF6;
+    --sage:       #78917C;
+    --amber:      #B49A68;
+    --amber-soft: #F8F4EC;
+    --rust:       #A96D67;
+    --rust-soft:  #F8EDEB;
+    --muted:      #6F7470;
 }
 
 *, *::before, *::after {
@@ -35,15 +48,15 @@ html {
 }
 
 html, body, [class*="css"] {
-    font-family: 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--lumina-text);
 }
 
-/* ── Streamlit shell ───────────────────────────────────────────── */
+/* ── Streamlit Shell ───────────────────────────────────────────── */
 
 .stApp {
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--lumina-background) !important;
+    color: var(--lumina-text) !important;
     min-height: 100vh;
 }
 
@@ -58,35 +71,35 @@ html, body, [class*="css"] {
     display: none !important;
 }
 
-/* Sidebar collapse toggle button styling */
+/* Sidebar collapse toggle button */
 [data-testid="stSidebarCollapseButton"] {
-    color: var(--ink) !important;
+    color: var(--lumina-purple-dark) !important;
     background: #FFFFFF !important;
-    border: 1px solid var(--line) !important;
+    border: 1px solid var(--lumina-border) !important;
     border-radius: 8px !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.06) !important;
+    box-shadow: 0 1px 4px rgba(111, 90, 142, 0.08) !important;
     margin-top: 6px;
     margin-left: 6px;
     z-index: 100001 !important;
 }
 
 [data-testid="stSidebarCollapseButton"]:hover {
-    background: var(--teal-soft) !important;
-    color: var(--teal) !important;
+    background: var(--lumina-lavender-soft) !important;
+    color: var(--lumina-purple) !important;
 }
 
 .block-container {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 1.2rem 1.8rem 2.5rem;
+    padding: 1.4rem 2rem 2.8rem;
 }
 
-/* ── Sidebar ───────────────────────────────────────────────────── */
+/* ── Sidebar Redesign (Light Lavender-Gray) ────────────────────── */
 
 section[data-testid="stSidebar"] {
-    background: var(--ink);
-    border-right: 1px solid rgba(255,255,255,0.08);
+    background: var(--lumina-lavender-soft) !important;
+    border-right: 1px solid var(--lumina-border) !important;
 }
 
 section[data-testid="stSidebar"] > div {
@@ -94,7 +107,7 @@ section[data-testid="stSidebar"] > div {
 }
 
 section[data-testid="stSidebar"] [data-testid="stSidebarContent"] {
-    padding: 0 0.75rem 1.5rem;
+    padding: 0 0.85rem 1.6rem;
 }
 
 section[data-testid="stSidebar"] label,
@@ -102,59 +115,63 @@ section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] span,
 section[data-testid="stSidebar"] .stMarkdown,
 section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
-    color: rgba(255, 255, 255, 0.85) !important;
+    color: var(--lumina-text) !important;
 }
 
 section[data-testid="stSidebar"] h2,
 section[data-testid="stSidebar"] h3 {
-    color: #ffffff !important;
+    color: var(--lumina-purple-dark) !important;
+    font-family: 'DM Serif Display', serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.01em;
 }
 
 section[data-testid="stSidebar"] .stCaption,
 section[data-testid="stSidebar"] .stCaption p {
-    color: rgba(255, 255, 255, 0.55) !important;
+    color: var(--lumina-text-muted) !important;
 }
 
 /* Brand block */
 .brand {
     display: flex;
     align-items: center;
-    gap: 0;
     padding: 22px 10px 18px 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid var(--lumina-border);
     user-select: none;
 }
 
 .brand-name {
-    font-family: 'Fraunces', serif;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-family: 'DM Serif Display', Georgia, serif;
+    color: var(--lumina-purple-dark);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
     line-height: 1.1;
 }
 
 .brand-sub {
-    color: rgba(255,255,255,0.45);
+    color: var(--lumina-text-secondary);
     font-size: 11px;
     font-weight: 400;
-    margin-top: 2px;
+    margin-top: 4px;
+    letter-spacing: 0.01em;
 }
 
 .menu-label {
-    color: rgba(255,255,255,0.35);
-    font-size: 10px;
+    color: var(--lumina-text-muted);
+    font-size: 10.5px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 14px 14px 6px;
+    padding: 16px 10px 6px;
     user-select: none;
 }
 
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
     width: 100%;
 }
 
@@ -162,10 +179,10 @@ section[data-testid="stSidebar"] .stCaption p {
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 40px;
+    min-height: 38px;
     box-sizing: border-box;
-    padding: 9px 14px;
-    color: rgba(255,255,255,0.6) !important;
+    padding: 9px 12px;
+    color: var(--lumina-text-secondary) !important;
     background: transparent;
     border: 0;
     border-radius: 8px;
@@ -178,22 +195,56 @@ section[data-testid="stSidebar"] .stCaption p {
 }
 
 .nav-anchor:hover {
-    color: #ffffff !important;
-    background: rgba(255,255,255,0.08);
+    color: var(--lumina-purple-dark) !important;
+    background: var(--lumina-lavender) !important;
     text-decoration: none !important;
 }
 
 .nav-anchor.active {
-    color: #ffffff !important;
+    color: var(--lumina-purple-dark) !important;
     font-weight: 600;
-    background: rgba(255,255,255,0.12);
+    background: var(--lumina-lavender) !important;
+    border-left: 3px solid var(--lumina-purple) !important;
+}
+
+/* User profile box in sidebar */
+.sidebar-user-card {
+    background: var(--lumina-surface);
+    border: 1px solid var(--lumina-border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 6px 0 14px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(111, 90, 142, 0.04);
+}
+
+.sidebar-user-name {
+    font-weight: 600;
+    color: var(--lumina-text);
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+
+.sidebar-user-role {
+    color: var(--lumina-text-secondary);
+    font-size: 11.5px;
+}
+
+.sidebar-user-status {
+    color: var(--lumina-purple-dark);
+    margin-top: 6px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* ── Profile Header Bar ────────────────────────────────────────── */
 
 .profile-header-card {
-    background: var(--card);
-    border: 1px solid var(--line);
+    background: var(--lumina-surface);
+    border: 1px solid var(--lumina-border);
     border-radius: 16px;
     padding: 20px 24px;
     margin-bottom: 20px;
@@ -202,18 +253,19 @@ section[data-testid="stSidebar"] .stCaption p {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
+    box-shadow: 0 2px 6px rgba(111, 90, 142, 0.03);
 }
 
 .profile-header-title {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(20px, 2.5vw, 26px);
-    font-weight: 500;
-    color: var(--ink);
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: clamp(22px, 2.4vw, 28px);
+    font-weight: 400;
+    color: var(--lumina-text);
     line-height: 1.2;
 }
 
 .profile-header-sub {
-    color: var(--muted);
+    color: var(--lumina-text-secondary);
     font-size: 13px;
     margin-top: 4px;
 }
@@ -221,7 +273,7 @@ section[data-testid="stSidebar"] .stCaption p {
 .profile-header-actions {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -232,7 +284,7 @@ section[data-testid="stSidebar"] .stCaption p {
     align-items: center;
     justify-content: space-between;
     padding: 11px 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--lumina-border);
     gap: 10px;
 }
 
@@ -241,9 +293,9 @@ section[data-testid="stSidebar"] .stCaption p {
 }
 
 .metric-label {
-    font-size: 13.5px;
-    color: var(--ink);
-    opacity: 0.75;
+    font-size: 13px;
+    color: var(--lumina-text);
+    opacity: 0.85;
 }
 
 .metric-val-group {
@@ -254,14 +306,14 @@ section[data-testid="stSidebar"] .stCaption p {
 
 .metric-value {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
-    color: var(--ink);
+    color: var(--lumina-text);
 }
 
 .metric-pill-down {
     background: var(--rust-soft);
-    color: var(--rust);
+    color: var(--lumina-danger);
     font-size: 11px;
     font-weight: 600;
     padding: 2px 7px;
@@ -269,8 +321,8 @@ section[data-testid="stSidebar"] .stCaption p {
 }
 
 .metric-pill-up {
-    background: var(--teal-soft);
-    color: var(--teal);
+    background: var(--lumina-lavender-soft);
+    color: var(--lumina-purple);
     font-size: 11px;
     font-weight: 600;
     padding: 2px 7px;
@@ -280,8 +332,8 @@ section[data-testid="stSidebar"] .stCaption p {
 /* ── Overview Stat Grid Cards ──────────────────────────────────── */
 
 .overview-stat-card {
-    background: var(--card);
-    border: 1px solid var(--line);
+    background: var(--lumina-surface);
+    border: 1px solid var(--lumina-border);
     border-radius: 14px;
     padding: 16px 18px;
     min-width: 0;
@@ -293,25 +345,40 @@ section[data-testid="stSidebar"] .stCaption p {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 1px 3px rgba(111, 90, 142, 0.03);
 }
 
 .overview-stat-card:hover {
-    box-shadow: 0 4px 12px rgba(27, 36, 48, 0.05);
+    box-shadow: 0 4px 12px rgba(111, 90, 142, 0.06);
+    border-color: var(--lumina-lavender-gray);
+}
+
+.overview-icon-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--lumina-lavender-soft);
+    color: var(--lumina-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 .overview-stat-val {
     font-family: 'IBM Plex Mono', monospace;
     font-size: clamp(18px, 1.8vw, 24px);
     font-weight: 600;
-    color: var(--ink);
-    margin-top: 6px;
+    color: var(--lumina-text);
+    margin-top: 2px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .overview-stat-sub {
-    color: var(--muted);
+    color: var(--lumina-text-secondary);
     font-size: clamp(11px, 1.1vw, 12.5px);
     margin-top: 3px;
     line-height: 1.35;
@@ -320,46 +387,46 @@ section[data-testid="stSidebar"] .stCaption p {
 /* ── Streamlit Tabs Styling ───────────────────────────────────── */
 
 div[data-testid="stTabs"] [data-baseweb="tab-list"] {
-    background: transparent;
-    border-bottom: 1px solid var(--line);
-    gap: 24px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
+    background: transparent !important;
+    border-bottom: 1px solid var(--lumina-border) !important;
+    gap: 24px !important;
+    margin-bottom: 20px !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 
 div[data-testid="stTabs"] [data-baseweb="tab"] {
-    color: var(--muted);
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 4px 12px 4px;
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    text-transform: capitalize;
-    white-space: nowrap;
-    flex-shrink: 0;
+    color: var(--lumina-text-secondary) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding: 10px 4px 12px 4px !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    text-transform: capitalize !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
 }
 
 div[data-testid="stTabs"] [aria-selected="true"] {
-    color: var(--ink) !important;
+    color: var(--lumina-purple-dark) !important;
     font-weight: 600 !important;
-    border-bottom: 2px solid var(--teal) !important;
+    border-bottom: 2px solid var(--lumina-purple) !important;
     background: transparent !important;
 }
 
 div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
-    background: var(--teal) !important;
+    background: var(--lumina-purple) !important;
 }
 
 /* ── Cards (stVerticalBlockBorderWrapper) ──────────────────────── */
 
 [data-testid="stVerticalBlockBorderWrapper"] {
-    background: var(--card) !important;
-    border: 1px solid var(--line) !important;
+    background: var(--lumina-surface) !important;
+    border: 1px solid var(--lumina-border) !important;
     border-radius: 16px !important;
-    box-shadow: 0 1px 3px rgba(27,36,48,0.04);
-    padding: 8px 12px 14px;
+    box-shadow: 0 1px 4px rgba(111, 90, 142, 0.03) !important;
+    padding: 10px 14px 16px;
     min-width: 0;
 }
 
@@ -367,20 +434,21 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px 6px 6px;
+    padding: 8px 4px 6px;
     flex-wrap: wrap;
     gap: 8px;
 }
 
 .card-title {
-    font-family: 'Fraunces', serif;
-    color: var(--ink);
-    font-size: clamp(15px, 1.4vw, 17px);
-    font-weight: 500;
+    font-family: 'DM Serif Display', Georgia, serif;
+    color: var(--lumina-text);
+    font-size: clamp(16px, 1.4vw, 18px);
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 .card-subtitle {
-    color: var(--muted);
+    color: var(--lumina-text-secondary);
     font-size: 12px;
     margin-top: 3px;
 }
@@ -390,15 +458,16 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    padding: 4px 10px;
+    padding: 3px 10px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
 }
 
-.tag-green, .tag-teal { color: var(--teal); background: var(--teal-soft); }
-.tag-orange, .tag-amber { color: var(--amber); background: var(--amber-soft); }
-.tag-red, .tag-rust { color: var(--rust); background: var(--rust-soft); }
+.tag-lavender { color: var(--lumina-purple-dark); background: var(--lumina-lavender-soft); border: 1px solid var(--lumina-lavender); }
+.tag-green, .tag-teal { color: var(--lumina-success); background: #EBF2EC; border: 1px solid #D6E4D9; }
+.tag-orange, .tag-amber { color: var(--lumina-warning); background: #F8F4EC; border: 1px solid #ECE2CE; }
+.tag-red, .tag-rust { color: var(--lumina-danger); background: #F8EDEB; border: 1px solid #EED7D4; }
 
 /* Progress bars */
 .progress-list { padding: 4px; }
@@ -412,40 +481,43 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     gap: 8px;
 }
 
-.progress-name { color: var(--ink); opacity: 0.75; font-weight: 500; }
-.progress-value { font-weight: 600; font-family: 'IBM Plex Mono', monospace; }
+.progress-name { color: var(--lumina-text); opacity: 0.85; font-weight: 500; }
+.progress-value { font-weight: 600; font-family: 'IBM Plex Mono', monospace; color: var(--lumina-text); }
 
 .progress-track {
     height: 6px;
     border-radius: 99px;
-    background: var(--line);
+    background: var(--lumina-lavender);
     overflow: hidden;
 }
 
 .progress-fill {
     height: 100%;
     border-radius: inherit;
+    background: var(--lumina-purple);
 }
 
 /* Informational alert banner */
 .info-alert-box {
-    background: var(--amber-soft);
-    color: #8A6416;
+    background: var(--lumina-lavender-soft);
+    color: var(--lumina-purple-dark);
+    border: 1px solid var(--lumina-lavender);
     border-radius: 10px;
     padding: 12px 14px;
     font-size: 12px;
     line-height: 1.5;
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .teal-info-box {
-    background: var(--teal-soft);
-    color: var(--teal);
+    background: var(--lumina-lavender-soft);
+    color: var(--lumina-purple-dark);
+    border: 1px solid var(--lumina-lavender);
     border-radius: 10px;
     padding: 14px 16px;
     font-size: 12px;
     line-height: 1.6;
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 /* Analysis table */
@@ -467,21 +539,20 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
 
 .analysis-table th {
     text-align: left;
-    padding: 12px 10px;
-    color: var(--muted);
-    background: var(--paper);
+    padding: 11px 12px;
+    color: var(--lumina-text-secondary);
+    background: var(--lumina-lavender-soft);
     font-size: 10.5px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--lumina-border);
     white-space: nowrap;
 }
 
 .analysis-table td {
-    padding: 13px 10px;
-    color: var(--ink);
-    opacity: 0.85;
-    border-bottom: 1px solid var(--line);
+    padding: 12px 12px;
+    color: var(--lumina-text);
+    border-bottom: 1px solid var(--lumina-border);
 }
 
 .risk-pill, .status-pill {
@@ -489,73 +560,105 @@ div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
     align-items: center;
     gap: 5px;
     border-radius: 11px;
-    padding: 4px 9px;
+    padding: 3px 9px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
 }
 
-.risk-high { color: var(--rust); background: var(--rust-soft); }
-.risk-medium { color: var(--amber); background: var(--amber-soft); }
-.risk-low, .status-completed { color: var(--teal); background: var(--teal-soft); }
-.status-review { color: var(--amber); background: var(--amber-soft); }
+.risk-high { color: var(--lumina-danger); background: var(--rust-soft); }
+.risk-medium { color: var(--lumina-warning); background: var(--amber-soft); }
+.risk-low, .status-completed { color: var(--lumina-success); background: #EBF2EC; }
+.status-review { color: var(--lumina-warning); background: var(--amber-soft); }
 
-.score-high { color: var(--rust); font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
-.score-medium { color: var(--amber); font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
-.score-low { color: var(--teal); font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
-.score-total { color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+.score-high { color: var(--lumina-danger); font-weight: 600; font-family: 'IBM Plex Mono', monospace; }
+.score-medium { color: var(--lumina-warning); font-weight: 600; font-family: 'IBM Plex Mono', monospace; }
+.score-low { color: var(--lumina-purple); font-weight: 600; font-family: 'IBM Plex Mono', monospace; }
+.score-total { color: var(--lumina-text-muted); font-family: 'IBM Plex Mono', monospace; }
 
-/* Streamlit widget overrides */
+/* ── Button System ── */
 div[data-testid="stButton"] > button[kind="primary"] {
-    background: var(--teal);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    transition: opacity 0.2s;
-    min-height: 40px;
+    background: var(--lumina-purple) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: background 0.15s ease, opacity 0.15s ease !important;
+    min-height: 40px !important;
 }
 
 div[data-testid="stButton"] > button[kind="primary"]:hover {
-    opacity: 0.88;
+    background: var(--lumina-purple-dark) !important;
+    opacity: 1.0 !important;
 }
 
 div[data-testid="stButton"] > button[kind="secondary"] {
-    background: var(--teal-soft);
-    color: var(--teal);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    font-weight: 500;
-    min-height: 40px;
+    background: #FFFFFF !important;
+    color: var(--lumina-purple-dark) !important;
+    border: 1px solid var(--lumina-border) !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    min-height: 40px !important;
+    transition: background 0.15s ease !important;
+}
+
+div[data-testid="stButton"] > button[kind="secondary"]:hover {
+    background: var(--lumina-lavender-soft) !important;
+    border-color: var(--lumina-lavender-gray) !important;
+}
+
+/* Download button */
+div[data-testid="stDownloadButton"] > button {
+    background: #FFFFFF !important;
+    color: var(--lumina-purple-dark) !important;
+    border: 1px solid var(--lumina-border) !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    min-height: 40px !important;
+    transition: background 0.15s ease !important;
+}
+
+div[data-testid="stDownloadButton"] > button:hover {
+    background: var(--lumina-lavender-soft) !important;
 }
 
 div[data-testid="stTextInput"] input {
-    border: 1px solid var(--line) !important;
+    border: 1px solid var(--lumina-border) !important;
     border-radius: 8px !important;
     font-size: 13px !important;
     background: #FFFFFF !important;
-    color: var(--ink) !important;
-    -webkit-text-fill-color: var(--ink) !important;
+    color: var(--lumina-text) !important;
+    -webkit-text-fill-color: var(--lumina-text) !important;
 }
 
-/* ── Comprehensive Fluid Multi-Device Media Queries ───────────── */
+div[data-testid="stTextInput"] input:focus {
+    border-color: var(--lumina-purple) !important;
+    box-shadow: 0 0 0 2px rgba(111, 90, 142, 0.15) !important;
+}
 
-/* Laptops and Desktops under 1200px */
+/* Expander styling */
+[data-testid="stExpander"] {
+    background: var(--lumina-surface) !important;
+    border: 1px solid var(--lumina-border) !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+}
+
+/* ── Fluid Multi-Device Media Queries ── */
+
 @media (max-width: 1200px) {
     div[data-testid="stHorizontalBlock"] {
         flex-wrap: wrap !important;
         gap: 12px !important;
     }
 
-    /* 4-card metric blocks become 2x2 grid */
     div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
         flex: 1 1 calc(50% - 12px) !important;
         min-width: 160px !important;
     }
 }
 
-/* Tablets and Split Screen (under 992px) */
 @media (max-width: 992px) {
     .block-container {
         padding: 1rem 1.2rem 2rem !important;
@@ -584,13 +687,11 @@ div[data-testid="stTextInput"] input {
     }
 }
 
-/* Mobile Devices (under 768px) */
 @media (max-width: 768px) {
     .block-container {
         padding: 0.8rem 0.8rem 1.8rem !important;
     }
 
-    /* Stack all multi-column layouts on mobile for clean vertical flow */
     div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
         flex: 1 1 100% !important;
         min-width: 100% !important;
@@ -609,11 +710,11 @@ div[data-testid="stTextInput"] input {
     }
 
     .brand-name {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .profile-header-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .profile-header-actions {
@@ -630,7 +731,6 @@ div[data-testid="stTextInput"] input {
     }
 }
 
-/* Small Phones (under 480px) */
 @media (max-width: 480px) {
     .block-container {
         padding: 0.6rem 0.6rem 1.5rem !important;

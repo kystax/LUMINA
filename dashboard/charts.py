@@ -362,13 +362,23 @@ def make_outcome_trajectory(without_support: list, with_support: list) -> go.Fig
 
 
 def make_gauge(score: int = 67, incomplete: bool = False) -> go.Figure:
-    low_max = GAUGE_THRESHOLDS["low_max"]
-    med_max = GAUGE_THRESHOLDS["med_max"]
-    needle_color = "#D97706" if incomplete else "#183153"
+    """
+    LUMINA CALM — Cognitive Pattern Index Visualization
+    A quiet, elegant purple radial indicator without alarming traffic-light steps.
+    """
+    if score >= 65:
+        variation_label = "Elevated pattern variation"
+    elif score >= 35:
+        variation_label = "Moderate pattern variation"
+    elif score > 0:
+        variation_label = "Lower pattern variation"
+    else:
+        variation_label = "Awaiting analysis data"
+
     annotation_text = (
-        "Incomplete: Showing NLP linguistic sub-score only"
+        "Linguistic sub-score only (partial analysis)"
         if incomplete
-        else f"Score approaching high-risk threshold (≥{med_max})" if score >= med_max else "Behavioral pattern index across integrated modules"
+        else variation_label
     )
 
     figure = go.Figure(
@@ -376,52 +386,44 @@ def make_gauge(score: int = 67, incomplete: bool = False) -> go.Figure:
             mode="gauge+number",
             value=score,
             number={
-                "suffix": "/100",
+                "suffix": " / 100",
                 "font": {
-                    "size": 26,
-                    "color": COLORS["ink"],
+                    "size": 28,
+                    "color": COLORS["text"],
+                    "family": "Inter, -apple-system, sans-serif",
                 },
             },
-            domain={"x": [0, 1], "y": [0.04, 0.94]},
+            domain={"x": [0, 1], "y": [0.06, 0.94]},
             gauge={
                 "shape": "angular",
                 "axis": {
                     "range": [0, 100],
-                    "tickvals": [0, low_max, med_max, 100],
-                    "ticktext": ["LOW", "MED", "HIGH", ""],
+                    "tickvals": [0, 50, 100],
+                    "ticktext": ["0", "50", "100"],
                     "tickfont": {
-                        "size": 9,
-                        "color": "#71829F",
+                        "size": 10,
+                        "color": COLORS["text_secondary"],
                     },
                     "tickwidth": 0,
                 },
                 "bar": {
-                    "color": "rgba(255,255,255,0)",
-                    "thickness": 0.05,
+                    "color": COLORS["purple"],
+                    "thickness": 0.28,
                 },
                 "bgcolor": "rgba(0,0,0,0)",
                 "borderwidth": 0,
                 "steps": [
-                    {"range": [0, low_max], "color": COLORS["green"]},
-                    {"range": [low_max, med_max], "color": COLORS["orange"]},
-                    {"range": [med_max, 100], "color": COLORS["red"]},
+                    {"range": [0, 100], "color": COLORS["lavender"]},
                 ],
-                "threshold": {
-                    "line": {
-                        "color": needle_color,
-                        "width": 4,
-                    },
-                    "thickness": 0.82,
-                    "value": score,
-                },
             },
         )
     )
 
     figure.update_layout(
-        height=220,
-        margin={"l": 22, "r": 22, "t": 10, "b": 15},
+        height=210,
+        margin={"l": 20, "r": 20, "t": 10, "b": 15},
         paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
         annotations=[
             {
                 "x": 0.5,
@@ -431,14 +433,16 @@ def make_gauge(score: int = 67, incomplete: bool = False) -> go.Figure:
                 "text": annotation_text,
                 "showarrow": False,
                 "font": {
-                    "size": 10,
-                    "color": "#D97706" if incomplete else "#647592",
+                    "size": 11,
+                    "color": COLORS["purple_dark"] if score > 0 else COLORS["text_secondary"],
+                    "family": "Inter, sans-serif",
                 },
             }
         ],
     )
 
     return figure
+
 
 
 def make_trend(trend_data: dict | None = None) -> go.Figure:
@@ -591,7 +595,7 @@ def make_follower_timeline(
         filtered = [p for p in points if p["date"] >= cutoff_str]
         if not filtered:
             continue
-        col = series_colors.get(name, COLORS.get("muted", "#6D42F5")) or "#6D42F5"
+        col = series_colors.get(name, COLORS["purple"]) or COLORS["purple"]
         col_str = col
 
         figure.add_trace(go.Scatter(
@@ -604,9 +608,10 @@ def make_follower_timeline(
                     "line": {"width": 1.5, "color": "#FFFFFF"}},
             fill="tozeroy",
             fillcolor=f"rgba({int(col_str[1:3], 16)},{int(col_str[3:5], 16)},{int(col_str[5:7], 16)},0.06)"
-            if col_str.startswith("#") and len(col_str) == 7 else "rgba(109,66,245,0.06)",
+            if col_str.startswith("#") and len(col_str) == 7 else "rgba(111,90,142,0.06)",
             hovertemplate=f"%{{x}}: %{{y:,}}<extra>{name.capitalize()}</extra>",
         ))
+
 
     if not any_data:
         figure.update_layout(
@@ -822,9 +827,8 @@ def make_graph_network(nodes, edges):
 
 def make_composite_trend_chart(trend_data: list[dict] | None = None) -> go.Figure:
     """
-    Composite risk over time Plotly area chart.
-    Shows Composite (Teal fill), Language, and Social trends over windows.
-    If no data, renders an empty state chart.
+    Pattern changes over time Plotly area chart.
+    Shows Cognitive Composite (Purple fill), Language (Lavender Slate), and Social (Warm Sand).
     """
     fig = go.Figure()
 
@@ -837,9 +841,9 @@ def make_composite_trend_chart(trend_data: list[dict] | None = None) -> go.Figur
             xaxis=dict(visible=False),
             yaxis=dict(visible=False),
             annotations=[{
-                "text": "No analysis data yet — upload a ZIP file above",
+                "text": "Awaiting analysis data — upload an export archive above",
                 "showarrow": False,
-                "font": dict(size=12, color=COLORS["muted"]),
+                "font": dict(size=12, color=COLORS["text_secondary"]),
             }],
         )
         return fig
@@ -854,7 +858,7 @@ def make_composite_trend_chart(trend_data: list[dict] | None = None) -> go.Figur
         x=windows, y=nlp_vals,
         mode="lines",
         name="Language",
-        line=dict(color="#9BB8C4", width=1.5, shape="spline"),
+        line=dict(color="#968AA7", width=1.5, shape="spline"),
         hovertemplate="%{x} · Language: %{y:.0f}<extra></extra>"
     ))
 
@@ -863,19 +867,19 @@ def make_composite_trend_chart(trend_data: list[dict] | None = None) -> go.Figur
         x=windows, y=sna_vals,
         mode="lines",
         name="Social",
-        line=dict(color="#C9B48A", width=1.5, shape="spline"),
+        line=dict(color="#B49A68", width=1.5, shape="spline"),
         hovertemplate="%{x} · Social: %{y:.0f}<extra></extra>"
     ))
 
-    # Composite trace with Teal fill gradient
+    # Composite trace with Calm Purple fill
     fig.add_trace(go.Scatter(
         x=windows, y=comp_vals,
         mode="lines",
-        name="Composite",
-        line=dict(color=COLORS["teal"], width=2.5, shape="spline"),
+        name="Composite Pattern",
+        line=dict(color=COLORS["purple"], width=2.5, shape="spline"),
         fill="tozeroy",
-        fillcolor="rgba(63, 107, 98, 0.18)",
-        hovertemplate="%{x} · Composite: %{y:.0f}<extra></extra>"
+        fillcolor="rgba(111, 90, 142, 0.12)",
+        hovertemplate="%{x} · Pattern Index: %{y:.0f}<extra></extra>"
     ))
 
     fig.update_layout(
@@ -888,16 +892,17 @@ def make_composite_trend_chart(trend_data: list[dict] | None = None) -> go.Figur
         xaxis=dict(
             gridcolor=COLORS["line"],
             zeroline=False,
-            tickfont=dict(size=11, color=COLORS["muted"]),
+            tickfont=dict(size=11, color=COLORS["text_secondary"]),
         ),
         yaxis=dict(
             gridcolor=COLORS["line"],
             zeroline=False,
-            tickfont=dict(size=11, color=COLORS["muted"]),
+            tickfont=dict(size=11, color=COLORS["text_secondary"]),
         )
     )
 
     return fig
+
 
 
 def make_engagement_bar_chart(trend_data: list[dict] | None = None) -> go.Figure:

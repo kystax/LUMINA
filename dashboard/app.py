@@ -52,11 +52,12 @@ from utils import load_css
 from auth_ui import require_login
 
 st.set_page_config(
-    page_title="Lumina Cognitive Risk AI",
-    page_icon="🧠",
+    page_title="LUMINA – Cognitive Pattern Monitoring",
+    page_icon="✦",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
 
 load_css("assets/style.css")
 load_css("assets/upload_section.css")

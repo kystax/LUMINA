@@ -66,30 +66,22 @@ def render_sidebar(settings_active: bool = False) -> None:
             """
         )
 
-        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
-        st.subheader("👤 User Profile")
+        st.markdown("<div style='height:10px'></div>", unsafe_allow_html=True)
+        render_html("<div class='menu-label'>User Profile</div>")
 
         has_analysis = st.session_state.get("lumina_session_analysis") is not None
-        status_dot = "🟢" if has_analysis else "🔘"
-        status_text = "Analysis Active" if has_analysis else "No Active Analysis"
+        status_dot = '<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#6F5A8E;margin-right:4px;"></span>' if has_analysis else '<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#C9C0D2;margin-right:4px;"></span>'
+        status_text = "Analysis Active" if has_analysis else "Awaiting Analysis"
 
         render_html(f"""
-            <div style="
-                background: rgba(255, 255, 255, 0.05);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                border-radius: 10px;
-                padding: 12px;
-                margin: 6px 0 14px 0;
-                font-size: 12px;
-                line-height: 1.6;
-            ">
-                <div style="font-weight: 600; color: #ffffff; margin-bottom: 2px;">
+            <div class="sidebar-user-card">
+                <div class="sidebar-user-name">
                     {html.escape(display_name)}
                 </div>
-                <div style="color: rgba(255,255,255,0.6);">
+                <div class="sidebar-user-role">
                     {html.escape(user_type)} account
                 </div>
-                <div style="color: rgba(255,255,255,0.8); margin-top: 6px;">
+                <div class="sidebar-user-status">
                     {status_dot} {status_text}
                 </div>
             </div>
@@ -133,8 +125,8 @@ def render_sidebar(settings_active: bool = False) -> None:
             """
         )
 
-        st.markdown("<div style='height:80px'></div>", unsafe_allow_html=True)
-        if st.button("↪  Sign out", key="sidebar_signout", width="stretch"):
+        st.markdown("<div style='height:60px'></div>", unsafe_allow_html=True)
+        if st.button("Sign out", key="sidebar_signout", width="stretch", type="secondary"):
             logout()
 
 
@@ -156,10 +148,8 @@ def render_topbar(title: str, subtitle: str) -> None:
                 </div>
                 <div class="top-actions">
                     <div class="search-pill">
-                        ⌕&nbsp;&nbsp; Search users or reports
-                        <span>⌘ K</span>
+                        Search patterns or records
                     </div>
-                    <div class="circle-action">♢</div>
                     <div class="avatar">{avatar_letter}</div>
                 </div>
             </div>
@@ -170,27 +160,27 @@ def render_topbar(title: str, subtitle: str) -> None:
 
 def render_profile_header_strip() -> None:
     """
-    Renders the active profile header strip matching the React design:
-    Name, relation, platform, analysis status, and action buttons.
+    Renders the active profile header strip matching the calm purple design:
+    Name, role, analysis status, and action buttons.
     """
     user = st.session_state.get("user") or {}
     display_name = user.get("username") or "Researcher Account"
     has_analysis = st.session_state.get("lumina_session_analysis") is not None
     last_status = "Today" if has_analysis else "Not analyzed yet"
 
-    c1, c2 = st.columns([3, 1.2], gap="small")
+    c1, c2 = st.columns([3, 1.3], gap="small")
     with c1:
         render_html(
             f"""
             <div style="margin-bottom: 8px;">
-                <div style="font-size: 12px; color: #6B7280; display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
-                    👤 Active Analysis Profile
+                <div style="font-size: 11.5px; color: #6F7470; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;">
+                    Active Profile
                 </div>
-                <div style="font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; color: #1B2430; line-height: 1.2;">
+                <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 28px; font-weight: 400; color: #292D2B; line-height: 1.2;">
                     {html.escape(display_name)}
                 </div>
-                <div style="font-size: 13px; color: #6B7280; margin-top: 4px;">
-                    Cognitive pattern monitoring · last analyzed {last_status}
+                <div style="font-size: 13px; color: #6F7470; margin-top: 4px;">
+                    Your cognitive pattern overview · last analyzed {last_status}
                 </div>
             </div>
             """
@@ -199,7 +189,7 @@ def render_profile_header_strip() -> None:
         st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
         btn_col1, btn_col2 = st.columns([1, 1], gap="small")
         with btn_col1:
-            if st.button("⬆ Upload data", key="header_upload_btn", type="primary", width="stretch"):
+            if st.button("Upload data", key="header_upload_btn", type="primary", width="stretch"):
                 st.session_state["show_upload_modal"] = True
                 st.rerun()
         with btn_col2:
@@ -217,13 +207,14 @@ def render_profile_header_strip() -> None:
                 pdf_data_bytes = create_pdf_report()
 
             st.download_button(
-                "📄 Export report",
+                "Export report",
                 data=pdf_data_bytes,
-                file_name=f"{subj_name.lower().replace(' ', '_')}_risk_report.pdf",
+                file_name=f"{subj_name.lower().replace(' ', '_')}_pattern_report.pdf",
                 mime="application/pdf",
                 width="stretch",
                 key="header_export_btn",
             )
+
 
 
 
@@ -278,18 +269,22 @@ def card_heading(
 # ─────────────────────────────────────────────
 
 def risk_badge(level: str) -> str:
-    """Return an HTML risk pill using the new RUST/AMBER/TEAL palette."""
+    """Return an HTML pattern variation pill using the LUMINA CALM palette."""
     risk_key = level.lower()
 
     dot_colors = {
-        "high":   "#B4573E",  # RUST
-        "medium": "#C08A2E",  # AMBER
-        "low":    "#3F6B62",  # TEAL
+        "high":     "#A96D67",  # Soft Clay / Elevated
+        "elevated": "#A96D67",
+        "medium":   "#B49A68",  # Soft Amber / Moderate
+        "moderate": "#B49A68",
+        "low":      "#78917C",  # Soft Sage / Lower
+        "stable":   "#78917C",
     }
-    dot_color = dot_colors.get(risk_key, "#6B7280")
+    dot_color = dot_colors.get(risk_key, "#6F5A8E")
 
     return (
         f'<span class="risk-pill risk-{risk_key}">'
-        f'<span class="dot risk-dot" style="background:{dot_color};"></span>'
+        f'<span class="dot risk-dot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:{dot_color};margin-right:5px;"></span>'
         f"{html.escape(level)}</span>"
     )
+

@@ -149,8 +149,8 @@ def render_user_analysis_tabs() -> None:
 
     # Calculate real score if analysis exists, else 0
     score_is_incomplete = False
-    card_title = "Composite Risk Score"
-    card_subtitle = "Overall cognitive pattern risk"
+    card_title = "Cognitive Pattern Index"
+    card_subtitle = "Integrated multi-module communication pattern synthesis"
 
     if analysis:
         comp_score = analysis.get("composite_risk_score")
@@ -162,18 +162,18 @@ def render_user_analysis_tabs() -> None:
 
         risk_score_pct = round(float(comp_score or 0.0) * 100)
         if score_is_incomplete:
-            card_title = "NLP-only (partial) — composite unavailable"
-            card_subtitle = "Linguistic sub-score only; multi-module composite calculation unavailable"
+            card_title = "Linguistic Sub-Score Only"
+            card_subtitle = "Partial analysis — multi-module synthesis unavailable"
             score_tag, score_tag_class = "Incomplete (Partial)", "tag-amber"
         elif risk_score_pct >= GAUGE_THRESHOLDS["med_max"]:
-            score_tag, score_tag_class = "Elevated pattern change", "tag-rust"
+            score_tag, score_tag_class = "Elevated variation", "tag-rust"
         elif risk_score_pct >= GAUGE_THRESHOLDS["low_max"]:
-            score_tag, score_tag_class = "Moderate pattern change", "tag-amber"
+            score_tag, score_tag_class = "Moderate variation", "tag-amber"
         else:
-            score_tag, score_tag_class = "Stable pattern change", "tag-green"
+            score_tag, score_tag_class = "Lower variation", "tag-lavender"
     else:
         risk_score_pct = 0
-        score_tag, score_tag_class = "NO DATA", "tag-green"
+        score_tag, score_tag_class = "Awaiting analysis", "tag-lavender"
 
     trend_data = _build_trend_data(analysis)
     abm_data = _build_abm_data(analysis)
@@ -200,7 +200,7 @@ def render_user_analysis_tabs() -> None:
 
                 render_html(
                     """
-                    <div style="font-size: 11.5px; color: #6B7280; text-align: center; margin-top: 4px; line-height: 1.5;">
+                    <div style="font-size: 11.5px; color: #6F7470; text-align: center; margin-top: 4px; line-height: 1.5;">
                         Reflects behavioral change over time, not a clinical diagnosis.
                     </div>
                     """
@@ -209,7 +209,7 @@ def render_user_analysis_tabs() -> None:
                     render_html(
                         """
                         <div class="info-alert-box" style="margin-top: 12px; padding: 10px 12px;">
-                            ⚠️ <b>Sinhala content:</b> complexity score reliability reduced due to English reference model calibration.
+                            <b>Sinhala content detected:</b> complexity score reliability calibrated against reference data.
                         </div>
                         """
                     )
@@ -217,8 +217,8 @@ def render_user_analysis_tabs() -> None:
         with c2:
             with st.container(border=True):
                 card_heading(
-                    "Composite risk over time",
-                    "NLP and SNA sub-scores across windows",
+                    "Pattern changes over time",
+                    "NLP linguistic and SNA social sub-scores across windows",
                 )
 
                 st.plotly_chart(
@@ -238,20 +238,20 @@ def render_user_analysis_tabs() -> None:
             contacts_val = str(sna_result.get("dm_contact_count", 0))
             eng_val = f"{sna_result.get('interaction_diversity', 0):.2f}"
         else:
-            pf_val = "-"
+            pf_val = "—"
             contacts_val = "0"
-            eng_val = "-"
+            eng_val = "—"
 
         if analysis and nlp_result:
             ttr_val = f"{nlp_result.get('ttr', 0.0):.2f}"
         else:
-            ttr_val = "-"
+            ttr_val = "—"
 
         with m_col1:
             render_html(
                 f"""
                 <div class="overview-stat-card">
-                    <div style="font-size: 16px;">📈</div>
+                    <div class="overview-icon-badge">∿</div>
                     <div class="overview-stat-val">{pf_val}</div>
                     <div class="overview-stat-sub">Posting frequency</div>
                 </div>
@@ -261,7 +261,7 @@ def render_user_analysis_tabs() -> None:
             render_html(
                 f"""
                 <div class="overview-stat-card">
-                    <div style="font-size: 16px;">💬</div>
+                    <div class="overview-icon-badge">👥</div>
                     <div class="overview-stat-val">{contacts_val}</div>
                     <div class="overview-stat-sub">Unique contacts messaged</div>
                 </div>
@@ -271,7 +271,7 @@ def render_user_analysis_tabs() -> None:
             render_html(
                 f"""
                 <div class="overview-stat-card">
-                    <div style="font-size: 16px;">❤️</div>
+                    <div class="overview-icon-badge">◈</div>
                     <div class="overview-stat-val">{eng_val}</div>
                     <div class="overview-stat-sub">Interaction diversity</div>
                 </div>
@@ -281,12 +281,13 @@ def render_user_analysis_tabs() -> None:
             render_html(
                 f"""
                 <div class="overview-stat-card">
-                    <div style="font-size: 16px;">📉</div>
+                    <div class="overview-icon-badge">Aa</div>
                     <div class="overview-stat-val">{ttr_val}</div>
                     <div class="overview-stat-sub">Lexical diversity (TTR)</div>
                 </div>
                 """
             )
+
 
     # ── TAB 2: LANGUAGE (NLP) ─────────────────────────────────────────
     with tab_language:
@@ -580,8 +581,8 @@ def render_user_analysis_tabs() -> None:
 def render_recent_analyses() -> None:
     with st.container(border=True):
         card_heading(
-            "Recent Analyses",
-            "Your latest 6 records",
+            "Recent Analysis",
+            "Review recently completed records",
         )
 
         from services.risk_service import get_analysis_by_session_id, get_sessions_for_run
@@ -590,26 +591,28 @@ def render_recent_analyses() -> None:
 
         if not recent_results:
             render_html("""
-                <div style="text-align:center; padding: 20px; color: #6B7280; font-size: 12px;">
-                    No previous analysis records found. Upload a ZIP file above to create your first analysis record.
+                <div style="text-align:center; padding: 36px 20px; color: #6F7470; font-size: 13px; line-height: 1.6;">
+                    <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; color: #292D2B; margin-bottom: 6px;">
+                        Nothing analyzed yet
+                    </div>
+                    <div style="color: #6F7470; max-width: 420px; margin: 0 auto 16px;">
+                        Upload your exported data archive above to begin exploring your cognitive and communication patterns.
+                    </div>
                 </div>
             """)
             return
 
         h1, h2, h3, h4, h5, h6 = st.columns([1.5, 1.2, 1.2, 1.2, 1.2, 1.2])
-        with h1: st.markdown("**USER NAME**")
-        with h2: st.markdown("**DATE**")
-        with h3: st.markdown("**RISK LEVEL**")
-        with h4: st.markdown("**SCORE**")
-        with h5: st.markdown("**STATUS**")
-        with h6: st.markdown("**REPORT**")
+        with h1: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Profile</span>", unsafe_allow_html=True)
+        with h2: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Date</span>", unsafe_allow_html=True)
+        with h3: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Variation</span>", unsafe_allow_html=True)
+        with h4: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Index</span>", unsafe_allow_html=True)
+        with h5: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Status</span>", unsafe_allow_html=True)
+        with h6: st.markdown("<span style='font-size:11px;font-weight:600;color:#6F7470;text-transform:uppercase;letter-spacing:0.05em;'>Report</span>", unsafe_allow_html=True)
 
-        st.markdown("<hr style='margin: 4px 0 10px 0; border-color: #DEE1DB;'>", unsafe_allow_html=True)
+        st.markdown("<hr style='margin: 4px 0 10px 0; border-color: #DDD9DF;'>", unsafe_allow_html=True)
 
         for i, result in enumerate(recent_results):
-            # Columns from analysis_runs:
-            # 0=display_name, 1=created_at, 2=combined_class, 3=combined_score,
-            # 4=run_id,       5=platforms,  6=session_count
             display_name  = result[0]
             date_str      = str(result[1])[:10]
             raw_risk      = result[2]
@@ -619,7 +622,7 @@ def render_recent_analyses() -> None:
             session_count = result[6] if len(result) > 6 else 1
 
             raw_risk_str = str(raw_risk or "Low")
-            risk_level = {"HC": "Low", "MCI": "Medium", "AD_Risk": "High"}.get(raw_risk_str, raw_risk_str)
+            risk_level = {"HC": "Lower", "MCI": "Moderate", "AD_Risk": "Elevated"}.get(raw_risk_str, raw_risk_str)
             score_class = f"score-{risk_level.lower()}"
 
             c1, c2, c3, c4, c5, c6 = st.columns([1.5, 1.2, 1.2, 1.2, 1.2, 1.2])
@@ -696,7 +699,7 @@ def render_recent_analyses() -> None:
                     per_platform=per_platform_list if len(per_platform_list) > 1 else None,
                 )
                 st.download_button(
-                    "PDF 📄",
+                    "Download PDF",
                     data=pdf_bytes,
                     file_name=f"{display_name.lower().replace(' ', '_')}_run{run_id}_{date_str}.pdf",
                     mime="application/pdf",
@@ -709,7 +712,7 @@ def render_reports() -> None:
     with st.container(border=True):
         card_heading(
             "Reports",
-            "Ready to download",
+            "Your latest analysis report is ready for export",
         )
 
         user_id = _current_user_id()
@@ -717,30 +720,6 @@ def render_reports() -> None:
         analysis = _session_analysis()
         nlp_res = (analysis.get("nlp") or {}) if analysis else {}
         sna_res = (analysis.get("sna") or {}) if analysis else {}
-
-        pdf_summary = [
-            ("High-risk analyses", str(risk_data.get("AD_Risk", 0))),
-            ("Medium-risk analyses", str(risk_data.get("MCI", 0))),
-            ("Low-risk analyses", str(risk_data.get("HC", 0))),
-            ("Overall risk score", f"{round(get_average_risk_score(user_id) * 100)}/100"),
-            ("Analyses completed", str(get_total_analyses_count(user_id))),
-        ]
-
-        if analysis:
-            pdf_summary.extend([
-                ("-------------------", "-------------------"),
-                ("Latest Risk Class", str(nlp_res.get("risk_class") or "-")),
-                ("Composite Risk Score", f"{round((analysis.get('composite_risk_score') or 0.0)*100)}/100"),
-                ("NLP Risk Indicator", f"{round((nlp_res.get('risk_score') or 0.0)*100)}/100"),
-                ("Lexical Diversity (TTR)", f"{(nlp_res.get('ttr') or 0.0):.4f}"),
-                ("Sentence Complexity", f"{(nlp_res.get('complexity') or 0.0):.4f}"),
-                ("mBERT Coherence", f"{(nlp_res.get('coherence') or 0.0):.4f}"),
-                ("Word Repetition", f"{(nlp_res.get('repetition') or 0.0):.4f}"),
-                ("Posting Frequency", f"{(sna_res.get('posting_frequency') or 0.0):.1f}/mo"),
-                ("Network Size", str(sna_res.get("network_size") or 0)),
-                ("Interaction Diversity", f"{(sna_res.get('interaction_diversity') or 0.0):.2f}"),
-                ("DM Contacts", str(sna_res.get("dm_contact_count") or 0)),
-            ])
 
         recent_results = get_recent_risk_results(limit=100, user_id=user_id)
 
@@ -757,28 +736,32 @@ def render_reports() -> None:
         else:
             pdf_bytes = create_pdf_report()
 
-        st.download_button(
-            "Download PDF Report",
-            data=pdf_bytes,
-            file_name="lumina_cognitive_risk_report.pdf",
-            mime="application/pdf",
-            width="stretch",
-        )
-
-        st.download_button(
-            "Export Analysis CSV",
-            data=generate_csv_report(recent_results, nlp_res, sna_res),
-            file_name="lumina_analysis_export.csv",
-            mime="text/csv",
-            width="stretch",
-        )
+        c_rep1, c_rep2 = st.columns([1, 1], gap="small")
+        with c_rep1:
+            st.download_button(
+                "Download PDF Report",
+                data=pdf_bytes,
+                file_name="lumina_cognitive_pattern_report.pdf",
+                mime="application/pdf",
+                width="stretch",
+                type="primary",
+            )
+        with c_rep2:
+            st.download_button(
+                "Export Analysis CSV",
+                data=generate_csv_report(recent_results, nlp_res, sna_res),
+                file_name="lumina_analysis_export.csv",
+                mime="text/csv",
+                width="stretch",
+                type="secondary",
+            )
 
 
 def render_ai_insights() -> None:
     with st.container(border=True):
         card_heading(
             "AI Insights",
-            "Generated from the latest analysis",
+            "Generated observations from latest pattern data",
         )
 
         analysis = _session_analysis()
@@ -791,9 +774,16 @@ def render_ai_insights() -> None:
 
         if not ai_insights:
             render_html(
-                '<div class="ai-copy">'
-                "No active analysis yet — upload a ZIP above to generate AI insights."
-                "</div>"
+                """
+                <div style="text-align:center; padding: 24px 14px; color: #6F7470; font-size: 13px;">
+                    <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 16px; color: #292D2B; margin-bottom: 4px;">
+                        Awaiting active analysis
+                    </div>
+                    <div style="color: #6F7470;">
+                        Upload your data to generate calm AI observations and pattern insights.
+                    </div>
+                </div>
+                """
             )
             return
 
@@ -803,22 +793,23 @@ def render_ai_insights() -> None:
             status_class = f"status-{insight.get('status', 'ok')}"
             cards += f"""
                 <div class="ai-card {status_class}">
-                    <div class="ai-copy">
+                    <div class="ai-copy" style="font-size: 13px; color: #292D2B; line-height: 1.55;">
                         {html.escape(insight["text"])}
                     </div>
-                    <div class="confidence">
-                        <span>CONFIDENCE</span>
-                        <strong>{insight["confidence"]}%</strong>
+                    <div class="confidence" style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:#6F7470;">
+                        <span style="letter-spacing:0.05em; font-weight:600;">CONFIDENCE</span>
+                        <strong style="color:#6F5A8E;">{insight["confidence"]}%</strong>
                     </div>
-                    <div class="progress-track">
+                    <div class="progress-track" style="margin-top:4px;">
                         <div class="progress-fill confidence-fill"
-                            style="width:{insight["confidence"]}%;">
+                            style="width:{insight["confidence"]}%; background:#6F5A8E;">
                         </div>
                     </div>
                 </div>
             """
 
         render_html(cards)
+
 
 
 def render_follower_timeline() -> None:

@@ -38,8 +38,9 @@ def render_main_page() -> None:
     show_upload = st.session_state.get("show_upload_modal", False)
     
     _anchor("dashboard-section")
-    with st.expander("📦 Upload & Analyze Export Data", expanded=show_upload or False):
+    with st.expander("Upload & Analyze Export Data", expanded=show_upload or False):
         render_zip_upload_section()
+
 
     st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
 

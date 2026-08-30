@@ -57,11 +57,11 @@ def require_login():
 
 _AUTH_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap');
 
 .lumina-auth-root {
     min-height: 100vh;
-    background: #1B2430;
+    background: #F7F7F4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,21 +69,21 @@ _AUTH_CSS = """
 }
 
 /* Override Streamlit page bg on auth screen */
-.stApp { background: #1B2430 !important; }
+.stApp { background: #F7F7F4 !important; }
 [data-testid="stHeader"], [data-testid="stToolbar"] { display: none; }
-.block-container { padding: 0 !important; max-width: 100% !important; }
+.block-container { padding: 3rem 1rem !important; max-width: 100% !important; }
 
 /* Center column */
 .auth-wrap {
     width: 100%;
-    max-width: 420px;
+    max-width: 440px;
     margin: 0 auto;
-    padding: 48px 24px;
+    padding: 32px 24px;
 }
 
 @media (max-width: 768px) {
     .block-container {
-        padding: 1rem 0.75rem !important;
+        padding: 1.5rem 0.75rem !important;
     }
     .stApp [data-testid="column"] {
         width: 100% !important;
@@ -91,65 +91,41 @@ _AUTH_CSS = """
         min-width: 100% !important;
     }
     .auth-wrap {
-        padding: 20px 10px !important;
+        padding: 16px 8px !important;
     }
 }
 
 .auth-brand {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .auth-brand-name {
-    font-family: 'Fraunces', serif;
-    font-size: 32px;
-    font-weight: 600;
-    color: #ffffff;
-    letter-spacing: -0.01em;
-    line-height: 1;
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #55446F;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
 }
 
 .auth-brand-sub {
-    color: rgba(255,255,255,0.4);
+    color: #6F7470;
     font-size: 13px;
     margin-top: 6px;
 }
 
 .auth-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #FFFFFF;
+    border: 1px solid #DDD9DF;
     border-radius: 16px;
     padding: 28px 24px;
-}
-
-/* Tab links */
-.auth-tabs {
-    display: flex;
-    gap: 0;
-    margin-bottom: 22px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.auth-tab {
-    flex: 1;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 13px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    color: rgba(255,255,255,0.4);
-    transition: color 0.15s, border-color 0.15s;
-}
-
-.auth-tab.active {
-    color: #ffffff;
-    border-bottom-color: #3F6B62;
-    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(111, 90, 142, 0.05);
 }
 
 /* Field labels */
 .auth-label {
-    color: #E2E8F0 !important;
+    color: #292D2B !important;
     font-size: 13px !important;
     font-weight: 500 !important;
     margin-bottom: 6px;
@@ -161,12 +137,12 @@ _AUTH_CSS = """
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] > div {
     background-color: #FFFFFF !important;
     background: #FFFFFF !important;
-    border: 1px solid #DEE1DB !important;
-    border-radius: 8px !important;
+    border: 1px solid #DDD9DF !important;
+    border-radius: 10px !important;
     box-shadow: none !important;
 }
 
-/* Inner input element — bold dark ink text on white box */
+/* Inner input element */
 .stApp [data-testid="stTextInput"] div[data-baseweb="base-input"],
 .stApp [data-testid="stTextInput"] input,
 .stApp input[type="text"],
@@ -176,41 +152,41 @@ _AUTH_CSS = """
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
-    color: #1B2430 !important;
-    -webkit-text-fill-color: #1B2430 !important;
+    color: #292D2B !important;
+    -webkit-text-fill-color: #292D2B !important;
     font-size: 14px !important;
-    font-weight: 600 !important;
-    caret-color: #1B2430 !important;
+    font-weight: 500 !important;
+    caret-color: #6F5A8E !important;
 }
 
-/* WebKit autofill override to ensure dark text on light background */
+/* WebKit autofill override */
 .stApp input:-webkit-autofill,
 .stApp input:-webkit-autofill:hover, 
 .stApp input:-webkit-autofill:focus, 
 .stApp input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
-    -webkit-text-fill-color: #1B2430 !important;
-    color: #1B2430 !important;
-    caret-color: #1B2430 !important;
+    -webkit-text-fill-color: #292D2B !important;
+    color: #292D2B !important;
+    caret-color: #6F5A8E !important;
 }
 
 /* Focus state */
 .stApp [data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
-    border-color: #3F6B62 !important;
-    box-shadow: 0 0 0 2px rgba(63, 107, 98, 0.25) !important;
+    border-color: #6F5A8E !important;
+    box-shadow: 0 0 0 2px rgba(111, 90, 142, 0.15) !important;
 }
 
 .stApp [data-testid="stTextInput"] input::placeholder,
 .stApp input::placeholder {
-    color: #9CA3AF !important;
-    -webkit-text-fill-color: #9CA3AF !important;
+    color: #969A96 !important;
+    -webkit-text-fill-color: #969A96 !important;
 }
 
 /* Password eye button icon styling */
 .stApp [data-testid="stTextInput"] button,
 .stApp [data-testid="stTextInput"] svg {
-    color: #1B2430 !important;
-    fill: #1B2430 !important;
+    color: #6F7470 !important;
+    fill: #6F7470 !important;
     background: transparent !important;
 }
 
@@ -218,7 +194,7 @@ _AUTH_CSS = """
 .stApp [data-testid="stSelectbox"] label,
 .stApp label,
 .stApp p {
-    color: #E2E8F0 !important;
+    color: #292D2B !important;
     font-size: 13px !important;
     font-weight: 500 !important;
 }
@@ -226,38 +202,50 @@ _AUTH_CSS = """
 /* Tab & Submit buttons */
 .stApp div[data-testid="stButton"] > button[kind="primary"],
 .stApp div[data-testid="stFormSubmitButton"] > button {
-    background: #3F6B62 !important;
+    background: #6F5A8E !important;
     color: #FFFFFF !important;
-    border: 1px solid #3F6B62 !important;
-    border-radius: 10px !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    padding: 0.6rem 1rem !important;
-}
-
-.stApp div[data-testid="stButton"] > button[kind="secondary"] {
-    background: rgba(255, 255, 255, 0.08) !important;
-    color: #FFFFFF !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border: none !important;
     border-radius: 10px !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    padding: 0.6rem 1rem !important;
+    padding: 0.65rem 1rem !important;
+    transition: background 0.15s ease !important;
+}
+
+.stApp div[data-testid="stButton"] > button[kind="primary"]:hover,
+.stApp div[data-testid="stFormSubmitButton"] > button:hover {
+    background: #55446F !important;
+}
+
+.stApp div[data-testid="stButton"] > button[kind="secondary"] {
+    background: #FFFFFF !important;
+    color: #55446F !important;
+    border: 1px solid #DDD9DF !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 0.65rem 1rem !important;
+}
+
+.stApp div[data-testid="stButton"] > button[kind="secondary"]:hover {
+    background: #F3EFF6 !important;
 }
 
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] * {
-    background-color: #242F3D !important;
-    background: #242F3D !important;
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-    border-radius: 8px !important;
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    color: #292D2B !important;
+    -webkit-text-fill-color: #292D2B !important;
+    border-radius: 10px !important;
 }
 
 .stApp [data-testid="stForm"] {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
+    background: #FFFFFF !important;
+    border: 1px solid #DDD9DF !important;
+    border-radius: 16px !important;
+    padding: 24px 20px !important;
+    box-shadow: 0 4px 16px rgba(111, 90, 142, 0.04) !important;
 }
 
 /* Alert overrides */
@@ -266,29 +254,18 @@ _AUTH_CSS = """
 .auth-footnote {
     text-align: center;
     margin-top: 20px;
-    font-size: 11px;
-    color: rgba(255,255,255,0.45);
+    font-size: 11.5px;
+    color: #969A96;
     line-height: 1.6;
 }
 
 .auth-link {
-    color: #6B8F71;
-    cursor: pointer;
-}
-
-.auth-forgot {
-    text-align: right;
-    margin-top: -4px;
-    margin-bottom: 14px;
-}
-
-.auth-forgot span {
-    color: rgba(255,255,255,0.45);
-    font-size: 11px;
+    color: #6F5A8E;
     cursor: pointer;
 }
 </style>
 """
+
 
 
 def render_auth_page():

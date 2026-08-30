@@ -76,7 +76,7 @@ def render_zip_upload_section() -> None:
             """
         )
 
-        with st.expander("📋 Clinical & Environmental Intake (Lancet Risk Factors)", expanded=False):
+        with st.expander("Clinical & Environmental Intake (Lancet Risk Factors)", expanded=False):
             st.caption(
                 "Optionally record subject clinical background and modifiable dementia risk factors (Lancet Commission) "
                 "to incorporate into the 40% environmental risk score."

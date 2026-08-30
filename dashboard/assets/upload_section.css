@@ -1,93 +1,101 @@
+/* ────────────────────────────────────────────────────────────────
+   LUMINA CALM – PURPLE EDITION
+   Upload & Analyze Workspace Stylesheet
+   ──────────────────────────────────────────────────────────────── */
+
 .upload-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
-    padding: 14px 12px 8px;
+    padding: 14px 8px 8px;
 }
 
 .upload-title {
-    color: #10213D;
-    font-size: 16px;
-    font-weight: 800;
+    font-family: 'DM Serif Display', Georgia, serif;
+    color: var(--lumina-purple-dark, #55446F);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .upload-subtitle {
-    color: #8A9AB6;
-    font-size: 11px;
+    color: var(--lumina-text-secondary, #6F7470);
+    font-size: 12px;
     line-height: 1.5;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 
 .upload-badge {
     flex-shrink: 0;
-    color: #6D42F5;
-    background: #F1EDFF;
+    color: var(--lumina-purple-dark, #55446F);
+    background: var(--lumina-lavender-soft, #F3EFF6);
+    border: 1px solid var(--lumina-lavender, #E8E1EE);
     border-radius: 999px;
-    padding: 5px 10px;
-    font-size: 9px;
-    font-weight: 800;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 [data-testid="stFileUploader"] {
-    padding: 0 8px 6px;
+    padding: 0 4px 6px;
 }
 
 [data-testid="stFileUploaderDropzone"] {
-    background: #F8FAFD !important;
-    border: 1.5px dashed #BFC9DB !important;
-    border-radius: 15px !important;
-    padding: 22px !important;
+    background: var(--lumina-lavender-soft, #F3EFF6) !important;
+    border: 1.5px dashed var(--lumina-lavender-gray, #C9C0D2) !important;
+    border-radius: 14px !important;
+    padding: 20px !important;
+    transition: border-color 0.15s ease, background 0.15s ease !important;
 }
 
 [data-testid="stFileUploaderDropzone"]:hover {
-    border-color: #6D42F5 !important;
-    background: #F7F4FF !important;
+    border-color: var(--lumina-purple, #6F5A8E) !important;
+    background: var(--lumina-lavender, #E8E1EE) !important;
 }
 
 [data-testid="stFileUploaderDropzone"] button {
-    border-radius: 10px !important;
-    border: 1px solid #D7CFFF !important;
-    background: #F2EDFF !important;
-    color: #5D2DD6 !important;
-    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--lumina-border, #DDD9DF) !important;
+    background: #FFFFFF !important;
+    color: var(--lumina-purple-dark, #55446F) !important;
+    font-weight: 500 !important;
 }
 
 .selected-files-title {
-    margin: 14px 10px 8px;
-    color: #40516E;
-    font-size: 11px;
-    font-weight: 800;
+    margin: 14px 6px 8px;
+    color: var(--lumina-text, #292D2B);
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .uploaded-files-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 0 8px 14px;
+    margin: 0 4px 14px;
 }
 
 .uploaded-file-row {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 11px 12px;
-    background: #FAFBFD;
-    border: 1px solid #E3E8F1;
-    border-radius: 12px;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1px solid var(--lumina-border, #DDD9DF);
+    border-radius: 10px;
 }
 
 .uploaded-file-icon {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     display: grid;
     place-items: center;
-    background: #F1EDFF;
-    color: #6D42F5;
-    font-size: 9px;
-    font-weight: 900;
+    background: var(--lumina-lavender-soft, #F3EFF6);
+    color: var(--lumina-purple, #6F5A8E);
+    font-size: 10px;
+    font-weight: 700;
 }
 
 .uploaded-file-info {
@@ -99,71 +107,76 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #233754;
-    font-size: 11px;
-    font-weight: 750;
+    color: var(--lumina-text, #292D2B);
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .uploaded-file-size {
     margin-top: 2px;
-    color: #92A0B8;
-    font-size: 9px;
+    color: var(--lumina-text-muted, #969A96);
+    font-size: 10px;
 }
 
 .uploaded-file-status {
     flex-shrink: 0;
-    color: #009D72;
-    background: #EAFBF5;
+    color: var(--lumina-success, #78917C);
+    background: #EBF2EC;
     border-radius: 999px;
-    padding: 4px 8px;
-    font-size: 9px;
-    font-weight: 800;
+    padding: 3px 8px;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 div[data-testid="stButton"] {
-    padding: 0 8px 10px;
+    padding: 0 4px 6px;
 }
 
 div[data-testid="stButton"] button[kind="primary"] {
-    min-height: 44px;
-    border-radius: 12px;
-    border: 0;
-    background: linear-gradient(90deg, #6D42F5, #4F63EF);
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 800;
+    min-height: 42px !important;
+    border-radius: 10px !important;
+    border: 0 !important;
+    background: var(--lumina-purple, #6F5A8E) !important;
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 1px 3px rgba(111, 90, 142, 0.15) !important;
+    transition: background 0.15s ease !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"]:hover {
+    background: var(--lumina-purple-dark, #55446F) !important;
 }
 
 div[data-testid="stButton"] button[kind="primary"]:disabled {
-    background: #D8DDEA;
-    color: #8795AD;
+    background: var(--lumina-lavender-gray, #C9C0D2) !important;
+    color: #FFFFFF !important;
 }
 
 @media (max-width: 900px) {
     .upload-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 8px;
     }
 }
 
 @media (max-width: 600px) {
     [data-testid="stFileUploaderDropzone"] {
-        padding: 14px !important;
+        padding: 12px !important;
     }
 
     .uploaded-file-row {
         flex-wrap: wrap;
         gap: 8px;
-        padding: 9px 10px;
+        padding: 8px 10px;
     }
 
     .uploaded-file-name {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .uploaded-file-status {
         margin-left: auto;
     }
 }
-
