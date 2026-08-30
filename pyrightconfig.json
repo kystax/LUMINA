@@ -1,0 +1,9 @@
+{
+  "venvPath": ".",
+  "venv": "lumina_env",
+  "extraPaths": [
+    ".",
+    "dashboard"
+  ]
+}
+

@@ -1,0 +1,44 @@
+# Environments
+lumina_env/
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.coverage
+htmlcov/
+
+# Environment variables & secrets
+.env
+.env.local
+*.secret
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large files & raw data uploads (prevent exceeding GitHub 100MB limit & leaking private data)
+data/raw/
+data/uploads/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.db
+*.sqlite
+*.sqlite3
+
+# Scratch & temporary files
+scratch/
+*.log

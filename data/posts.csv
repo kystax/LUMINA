@@ -1,0 +1,1471 @@
+subject_id,text,interaction_type,date,language
+S001,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,caption,2024-03-12,en
+S001,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-12-12,en
+S001,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,caption,2024-02-14,en
+S001,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,comment,2024-01-17,en
+S001,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,comment,2024-04-21,en
+S001,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,comment,2024-11-04,en
+S001,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,caption,2024-04-11,en
+S001,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,caption,2024-12-25,en
+S001,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,message,2024-04-22,en
+S001,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,comment,2024-05-22,en
+S001,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-12-23,en
+S001,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,comment,2024-05-22,en
+S001,,view,2024-04-20,en
+S001,,like,2024-02-22,en
+S001,,like,2024-07-13,en
+S001,,view,2024-07-02,en
+S002,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-02-10,romanized_sinhala
+S002,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-11-17,romanized_sinhala
+S002,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,comment,2024-10-22,romanized_sinhala
+S002,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-01-24,romanized_sinhala
+S002,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",comment,2024-05-28,romanized_sinhala
+S002,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-02-21,romanized_sinhala
+S002,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-08-20,romanized_sinhala
+S002,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-03-24,romanized_sinhala
+S002,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,caption,2024-04-17,romanized_sinhala
+S002,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-12-25,romanized_sinhala
+S002,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-11-07,romanized_sinhala
+S002,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",caption,2024-09-30,romanized_sinhala
+S002,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-03-24,romanized_sinhala
+S002,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-05-18,romanized_sinhala
+S002,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-12-16,romanized_sinhala
+S002,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,comment,2024-04-27,romanized_sinhala
+S002,,view,2024-06-10,romanized_sinhala
+S002,,like,2024-05-17,romanized_sinhala
+S003,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-03-14,ta
+S003,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-05-06,ta
+S003,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-10-02,ta
+S003,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-08-07,ta
+S003,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-07-04,ta
+S003,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-09-17,ta
+S003,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-01-25,ta
+S003,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-11-17,ta
+S003,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-11-01,ta
+S003,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-07-14,ta
+S003,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-09-27,ta
+S003,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-01-06,ta
+S003,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-12-15,ta
+S003,,react,2024-05-16,ta
+S003,,like,2024-06-23,ta
+S003,,view,2024-05-30,ta
+S003,,view,2024-03-21,ta
+S004,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-11-16,ta
+S004,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-11-07,ta
+S004,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-07-10,ta
+S004,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-09-28,ta
+S004,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-06-14,ta
+S004,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-02-27,ta
+S004,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,comment,2024-05-02,ta
+S004,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-10-17,ta
+S004,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-09-05,ta
+S004,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-03-05,ta
+S004,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-10-08,ta
+S004,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-09-27,ta
+S004,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-04-18,ta
+S004,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-12-31,ta
+S004,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-12-09,ta
+S004,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-08-12,ta
+S004,,like,2024-08-19,ta
+S004,,like,2024-05-06,ta
+S005,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-04-27,si
+S005,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-06-18,si
+S005,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-05-01,si
+S005,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-04-19,si
+S005,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-10-19,si
+S005,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-05-04,si
+S005,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-04-07,si
+S005,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-12-03,si
+S005,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-08-04,si
+S005,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-01-28,si
+S005,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-02-01,si
+S005,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-02-25,si
+S005,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-04-07,si
+S005,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-03-12,si
+S005,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-05-22,si
+S005,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-02-08,si
+S005,,like,2024-10-08,si
+S005,,react,2024-01-26,si
+S006,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-07-24,si
+S006,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-07-13,si
+S006,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-05-15,si
+S006,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-08-04,si
+S006,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-12-04,si
+S006,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-03-20,si
+S006,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-04-21,si
+S006,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-10-04,si
+S006,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-01-30,si
+S006,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-09-01,si
+S006,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-03-21,si
+S006,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-02-11,si
+S006,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-10-31,si
+S006,,like,2024-12-11,si
+S006,,like,2024-07-25,si
+S006,,like,2024-10-18,si
+S007,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,comment,2024-05-13,romanized_sinhala
+S007,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-05-02,romanized_sinhala
+S007,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-03-08,romanized_sinhala
+S007,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,message,2024-08-22,romanized_sinhala
+S007,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",message,2024-01-05,romanized_sinhala
+S007,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-02-07,romanized_sinhala
+S007,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-09-16,romanized_sinhala
+S007,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-06-27,romanized_sinhala
+S007,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-07-08,romanized_sinhala
+S007,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",caption,2024-08-12,romanized_sinhala
+S007,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-11-09,romanized_sinhala
+S007,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,caption,2024-12-07,romanized_sinhala
+S007,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,comment,2024-12-05,romanized_sinhala
+S007,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-05-15,romanized_sinhala
+S007,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",comment,2024-10-10,romanized_sinhala
+S007,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-05-24,romanized_sinhala
+S007,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",comment,2024-06-24,romanized_sinhala
+S007,,react,2024-12-17,romanized_sinhala
+S007,,react,2024-05-15,romanized_sinhala
+S007,,view,2024-09-07,romanized_sinhala
+S007,,like,2024-01-27,romanized_sinhala
+S008,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,caption,2024-03-23,en
+S008,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,caption,2024-10-09,en
+S008,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,comment,2024-10-14,en
+S008,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-02-08,en
+S008,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-10-06,en
+S008,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,caption,2024-10-25,en
+S008,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-08-08,en
+S008,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,message,2024-06-06,en
+S008,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-07-02,en
+S008,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,caption,2024-05-07,en
+S008,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-06-30,en
+S008,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,caption,2024-11-13,en
+S008,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-05-01,en
+S008,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-07-30,en
+S008,,react,2024-04-01,en
+S008,,view,2024-06-19,en
+S009,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-07-14,si
+S009,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-04-23,si
+S009,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-06-28,si
+S009,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-04-24,si
+S009,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-07-23,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-02-05,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-11-24,si
+S009,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-12-13,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-01-15,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-04-01,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-01-20,si
+S009,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-08-10,si
+S009,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-08-11,si
+S009,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-02-29,si
+S009,,like,2024-10-22,si
+S009,,like,2024-05-10,si
+S010,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-11-15,si
+S010,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-06-02,si
+S010,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-12-07,si
+S010,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-07-25,si
+S010,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-10-10,si
+S010,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-08-03,si
+S010,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-12-12,si
+S010,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-11-11,si
+S010,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-07-26,si
+S010,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-06-04,si
+S010,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-08-08,si
+S010,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-12-01,si
+S010,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-08-14,si
+S010,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-09-18,si
+S010,,react,2024-03-27,si
+S010,,view,2024-02-13,si
+S010,,react,2024-09-20,si
+S011,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-03-16,si
+S011,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-05-05,si
+S011,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-02-07,si
+S011,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-11-18,si
+S011,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-12-22,si
+S011,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-07-23,si
+S011,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-12-01,si
+S011,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-02-24,si
+S011,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-03-31,si
+S011,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-08-25,si
+S011,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-05-07,si
+S011,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-03-09,si
+S011,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-10-13,si
+S011,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-08-14,si
+S011,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-08-06,si
+S011,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-03-22,si
+S011,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-08-18,si
+S011,,react,2024-05-06,si
+S011,,react,2024-05-21,si
+S011,,react,2024-09-05,si
+S012,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-02-11,ta
+S012,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-04-28,ta
+S012,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-12-27,ta
+S012,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-07-31,ta
+S012,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-10-04,ta
+S012,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-02-01,ta
+S012,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-07-18,ta
+S012,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-10-21,ta
+S012,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-01-04,ta
+S012,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-07-18,ta
+S012,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-10-06,ta
+S012,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-09-06,ta
+S012,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-08-11,ta
+S012,,view,2024-01-15,ta
+S012,,react,2024-06-21,ta
+S012,,view,2024-12-13,ta
+S013,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,caption,2024-02-12,en
+S013,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,message,2024-03-10,en
+S013,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-01-26,en
+S013,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,comment,2024-06-16,en
+S013,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,message,2024-06-16,en
+S013,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,message,2024-05-22,en
+S013,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,message,2024-02-11,en
+S013,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-10-03,en
+S013,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,caption,2024-04-24,en
+S013,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,comment,2024-11-29,en
+S013,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-05-06,en
+S013,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-11-14,en
+S013,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,message,2024-03-05,en
+S013,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,caption,2024-02-28,en
+S013,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,caption,2024-08-26,en
+S013,,view,2024-05-11,en
+S013,,react,2024-03-26,en
+S013,,react,2024-11-06,en
+S013,,like,2024-02-28,en
+S014,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",caption,2024-02-22,romanized_sinhala
+S014,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-12-16,romanized_sinhala
+S014,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",comment,2024-10-16,romanized_sinhala
+S014,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-09-29,romanized_sinhala
+S014,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,caption,2024-02-05,romanized_sinhala
+S014,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-01-07,romanized_sinhala
+S014,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,message,2024-02-24,romanized_sinhala
+S014,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-11-21,romanized_sinhala
+S014,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-08-10,romanized_sinhala
+S014,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-11-11,romanized_sinhala
+S014,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,message,2024-08-26,romanized_sinhala
+S014,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,comment,2024-06-14,romanized_sinhala
+S014,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",message,2024-05-22,romanized_sinhala
+S014,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",caption,2024-08-25,romanized_sinhala
+S014,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,comment,2024-06-21,romanized_sinhala
+S014,,view,2024-09-10,romanized_sinhala
+S014,,view,2024-04-03,romanized_sinhala
+S014,,view,2024-04-18,romanized_sinhala
+S014,,view,2024-05-12,romanized_sinhala
+S015,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-02-13,ta
+S015,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-09-07,ta
+S015,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-12-19,ta
+S015,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-08-17,ta
+S015,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-05-30,ta
+S015,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-12-20,ta
+S015,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-12-05,ta
+S015,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-08-30,ta
+S015,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-06-25,ta
+S015,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-06-18,ta
+S015,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-05-18,ta
+S015,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,comment,2024-04-28,ta
+S015,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-06-10,ta
+S015,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-12-19,ta
+S015,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-04-20,ta
+S015,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-05-21,ta
+S015,,react,2024-10-28,ta
+S015,,view,2024-11-01,ta
+S016,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-03-05,ta
+S016,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-01-28,ta
+S016,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,comment,2024-12-23,ta
+S016,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-02-22,ta
+S016,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-05-25,ta
+S016,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-08-13,ta
+S016,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-01-27,ta
+S016,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-02-28,ta
+S016,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-09-08,ta
+S016,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-11-18,ta
+S016,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-03-18,ta
+S016,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-06-04,ta
+S016,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-03-01,ta
+S016,,react,2024-08-01,ta
+S016,,react,2024-11-01,ta
+S016,,react,2024-04-25,ta
+S017,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-10-18,ta
+S017,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-11-08,ta
+S017,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-04-16,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-05-15,ta
+S017,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-03-21,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-10-09,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-01-02,ta
+S017,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-12-18,ta
+S017,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-05-29,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-05-27,ta
+S017,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-12-25,ta
+S017,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-12-17,ta
+S017,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-11-16,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-08-05,ta
+S017,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-04-25,ta
+S017,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-05-16,ta
+S017,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-01-31,ta
+S017,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-10-31,ta
+S017,,view,2024-10-18,ta
+S017,,like,2024-08-12,ta
+S017,,react,2024-08-27,ta
+S017,,react,2024-06-04,ta
+S018,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-06-14,romanized_sinhala
+S018,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,comment,2024-01-14,romanized_sinhala
+S018,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",caption,2024-12-11,romanized_sinhala
+S018,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,message,2024-12-10,romanized_sinhala
+S018,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,message,2024-03-30,romanized_sinhala
+S018,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,comment,2024-05-22,romanized_sinhala
+S018,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-11-21,romanized_sinhala
+S018,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",message,2024-08-28,romanized_sinhala
+S018,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-06-19,romanized_sinhala
+S018,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",message,2024-03-23,romanized_sinhala
+S018,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-12-21,romanized_sinhala
+S018,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,message,2024-12-05,romanized_sinhala
+S018,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,comment,2024-08-20,romanized_sinhala
+S018,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-05-09,romanized_sinhala
+S018,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-07-25,romanized_sinhala
+S018,,react,2024-01-01,romanized_sinhala
+S018,,view,2024-10-04,romanized_sinhala
+S019,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-04-14,ta
+S019,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-03-08,ta
+S019,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-12-23,ta
+S019,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-01-15,ta
+S019,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-05-02,ta
+S019,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-06-08,ta
+S019,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-10-09,ta
+S019,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-04-25,ta
+S019,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-03-01,ta
+S019,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-09-12,ta
+S019,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-09-17,ta
+S019,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-07-31,ta
+S019,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-05-04,ta
+S019,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-03-15,ta
+S019,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-11-02,ta
+S019,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-02-05,ta
+S019,,view,2024-07-31,ta
+S019,,view,2024-09-16,ta
+S019,,view,2024-01-02,ta
+S020,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,message,2024-06-25,romanized_sinhala
+S020,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-08-21,romanized_sinhala
+S020,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",comment,2024-12-23,romanized_sinhala
+S020,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-04-29,romanized_sinhala
+S020,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,caption,2024-06-11,romanized_sinhala
+S020,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,message,2024-12-27,romanized_sinhala
+S020,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-12-05,romanized_sinhala
+S020,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-09-10,romanized_sinhala
+S020,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",caption,2024-09-14,romanized_sinhala
+S020,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-02-21,romanized_sinhala
+S020,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",message,2024-09-26,romanized_sinhala
+S020,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,message,2024-03-14,romanized_sinhala
+S020,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",message,2024-02-08,romanized_sinhala
+S020,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-06-22,romanized_sinhala
+S020,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,comment,2024-11-28,romanized_sinhala
+S020,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,caption,2024-12-11,romanized_sinhala
+S020,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-06-11,romanized_sinhala
+S020,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,comment,2024-10-04,romanized_sinhala
+S020,,like,2024-11-12,romanized_sinhala
+S020,,react,2024-04-30,romanized_sinhala
+S021,Visited the art exhibition at the city gallery with my sister. There were some remarkable pieces and we spent a good two hours there.,message,2024-02-21,en
+S021,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-12-21,en
+S021,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,message,2024-01-24,en
+S021,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,message,2024-05-30,en
+S021,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,comment,2024-08-08,en
+S021,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,message,2024-09-28,en
+S021,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,comment,2024-12-15,en
+S021,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-03-30,en
+S021,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,caption,2024-07-14,en
+S021,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,message,2024-05-03,en
+S021,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,comment,2024-03-14,en
+S021,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,message,2024-11-22,en
+S021,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,caption,2024-05-10,en
+S021,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,message,2024-08-26,en
+S021,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,comment,2024-10-06,en
+S021,,view,2024-02-07,en
+S021,,react,2024-06-25,en
+S022,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-09-04,ta
+S022,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-07-14,ta
+S022,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-10-21,ta
+S022,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-01-12,ta
+S022,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-05-20,ta
+S022,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-12-17,ta
+S022,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,caption,2024-11-06,ta
+S022,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-05-26,ta
+S022,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,comment,2024-06-29,ta
+S022,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-11-13,ta
+S022,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-11-17,ta
+S022,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-06-07,ta
+S022,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-10-23,ta
+S022,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,message,2024-02-16,ta
+S022,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,comment,2024-07-31,ta
+S022,,like,2024-04-12,ta
+S022,,view,2024-10-03,ta
+S022,,react,2024-09-28,ta
+S023,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,comment,2024-02-08,ta
+S023,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,caption,2024-12-12,ta
+S023,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,message,2024-10-12,ta
+S023,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-07-21,ta
+S023,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,comment,2024-10-01,ta
+S023,காலையில் உடற்பயிற்சி செய்தேன். உடல் புத்துணர்ச்சியாக உணர்கிறது. தினமும் செய்வதை தொடர்வேன்.,caption,2024-07-07,ta
+S023,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-10-26,ta
+S023,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,caption,2024-02-25,ta
+S023,புதிய புத்தகம் படிக்க ஆரம்பித்தேன். மிகவும் சுவாரஸ்யமாக இருக்கிறது. ஒவ்வொரு அத்தியாயமும் புதிய தகவல்களை தருகிறது.,comment,2024-08-29,ta
+S023,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-10-14,ta
+S023,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,caption,2024-04-23,ta
+S023,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-11-21,ta
+S023,நண்பர்களுடன் சாப்பிட சென்றோம். நல்ல நேரம் கழித்தோம். நிறைய விஷயங்கள் பேசினோம்.,message,2024-11-28,ta
+S023,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-03-12,ta
+S023,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,message,2024-06-04,ta
+S023,இன்று குடும்பத்துடன் நேரம் செலவிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது. குழந்தைகள் விளையாடி மகிழ்ந்தனர்.,comment,2024-02-19,ta
+S023,இன்று வேலை நன்றாக முடிந்தது. மிகவும் திருப்தியாக இருக்கிறேன். நாளை இன்னும் சிறப்பாக செய்வேன்.,message,2024-03-10,ta
+S023,,view,2024-08-20,ta
+S023,,react,2024-12-09,ta
+S023,,react,2024-12-22,ta
+S024,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-11-11,si
+S024,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-01-17,si
+S024,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-04-21,si
+S024,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-04-30,si
+S024,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-12-17,si
+S024,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-11-26,si
+S024,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-07-22,si
+S024,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-03-03,si
+S024,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-12-05,si
+S024,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-01-11,si
+S024,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-05-04,si
+S024,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-04-15,si
+S024,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-04-16,si
+S024,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-04-29,si
+S024,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-11-01,si
+S024,,like,2024-05-21,si
+S024,,react,2024-03-07,si
+S024,,like,2024-05-08,si
+S024,,react,2024-02-26,si
+S025,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-01-27,si
+S025,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-09-26,si
+S025,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-08-31,si
+S025,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-09-19,si
+S025,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-08-19,si
+S025,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-11-10,si
+S025,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-06-03,si
+S025,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-02-01,si
+S025,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-08-06,si
+S025,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-09-08,si
+S025,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-02-07,si
+S025,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-11-07,si
+S025,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-03-05,si
+S025,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-11-20,si
+S025,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-12-30,si
+S025,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-11-01,si
+S025,,view,2024-05-30,si
+S025,,react,2024-09-15,si
+S025,,like,2024-08-08,si
+S026,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-06-22,si
+S026,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-07-31,si
+S026,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-06-09,si
+S026,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-12-06,si
+S026,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-03-19,si
+S026,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-02-04,si
+S026,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-02-17,si
+S026,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-07-09,si
+S026,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-01-31,si
+S026,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-10-14,si
+S026,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-07-29,si
+S026,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-01-27,si
+S026,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-06-08,si
+S026,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-10-22,si
+S026,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-03-20,si
+S026,,like,2024-09-03,si
+S026,,view,2024-02-25,si
+S026,,view,2024-10-11,si
+S027,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-11-10,si
+S027,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-01-14,si
+S027,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-01-15,si
+S027,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-12-25,si
+S027,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-06-28,si
+S027,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-03-14,si
+S027,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-02-05,si
+S027,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-02-16,si
+S027,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-04-20,si
+S027,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-08-20,si
+S027,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-07-08,si
+S027,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-10-17,si
+S027,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-01-27,si
+S027,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-11-12,si
+S027,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-05-19,si
+S027,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-09-05,si
+S027,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-07-31,si
+S027,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-09-19,si
+S027,,view,2024-06-25,si
+S027,,view,2024-02-26,si
+S027,,react,2024-12-13,si
+S028,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-01-04,en
+S028,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,comment,2024-04-18,en
+S028,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,message,2024-05-28,en
+S028,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,message,2024-01-04,en
+S028,Visited the art exhibition at the city gallery with my sister. There were some remarkable pieces and we spent a good two hours there.,comment,2024-08-08,en
+S028,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,caption,2024-07-13,en
+S028,Visited the art exhibition at the city gallery with my sister. There were some remarkable pieces and we spent a good two hours there.,caption,2024-04-27,en
+S028,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,message,2024-12-08,en
+S028,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-07-22,en
+S028,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,comment,2024-08-11,en
+S028,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,message,2024-02-09,en
+S028,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,caption,2024-08-07,en
+S028,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,caption,2024-12-29,en
+S028,,view,2024-08-01,en
+S028,,view,2024-02-28,en
+S028,,view,2024-01-11,en
+S029,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",comment,2024-08-11,romanized_sinhala
+S029,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",caption,2024-08-11,romanized_sinhala
+S029,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,comment,2024-09-25,romanized_sinhala
+S029,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-06-07,romanized_sinhala
+S029,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-04-23,romanized_sinhala
+S029,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",caption,2024-02-09,romanized_sinhala
+S029,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-09-28,romanized_sinhala
+S029,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-06-27,romanized_sinhala
+S029,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-04-30,romanized_sinhala
+S029,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-05-11,romanized_sinhala
+S029,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-11-04,romanized_sinhala
+S029,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-03-31,romanized_sinhala
+S029,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,caption,2024-08-25,romanized_sinhala
+S029,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,caption,2024-12-14,romanized_sinhala
+S029,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-11-17,romanized_sinhala
+S029,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",comment,2024-08-13,romanized_sinhala
+S029,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,caption,2024-08-14,romanized_sinhala
+S029,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-05-20,romanized_sinhala
+S029,,view,2024-01-29,romanized_sinhala
+S029,,like,2024-09-16,romanized_sinhala
+S029,,view,2024-06-07,romanized_sinhala
+S029,,like,2024-08-19,romanized_sinhala
+S030,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,message,2024-07-15,en
+S030,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,caption,2024-10-10,en
+S030,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,caption,2024-08-18,en
+S030,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,message,2024-04-06,en
+S030,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,caption,2024-08-31,en
+S030,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-02-01,en
+S030,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-06-24,en
+S030,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-09-15,en
+S030,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-01-21,en
+S030,Visited the art exhibition at the city gallery with my sister. There were some remarkable pieces and we spent a good two hours there.,message,2024-08-12,en
+S030,Tried a new yoga class today and absolutely loved the instructor's teaching style. Will definitely be going back next week.,caption,2024-09-24,en
+S030,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-07-05,en
+S030,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,message,2024-07-17,en
+S030,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,caption,2024-12-13,en
+S030,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,caption,2024-11-19,en
+S030,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,message,2024-02-03,en
+S030,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,caption,2024-10-12,en
+S030,,view,2024-07-16,en
+S030,,react,2024-05-09,en
+S031,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-06-28,si
+S031,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-03-07,si
+S031,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-06-07,si
+S031,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-11-25,si
+S031,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-12-09,si
+S031,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,caption,2024-02-17,si
+S031,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-09-17,si
+S031,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-07-04,si
+S031,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-04-19,si
+S031,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,comment,2024-04-08,si
+S031,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-03-20,si
+S031,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-02-21,si
+S031,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-09-26,si
+S031,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-11-12,si
+S031,,view,2024-11-01,si
+S031,,like,2024-03-19,si
+S032,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-12-12,si
+S032,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",caption,2024-08-15,si
+S032,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,comment,2024-08-17,si
+S032,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-05-02,si
+S032,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,message,2024-04-09,si
+S032,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-08-13,si
+S032,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-07-14,si
+S032,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,comment,2024-08-02,si
+S032,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",comment,2024-11-05,si
+S032,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,caption,2024-01-27,si
+S032,සතියේ දවස් කීපයක් ව්‍යායාම කළා. ශරීරය හොඳ හැඟීමක් ගත්තා. ඒ නිසා ඉදිරියටත් කරන්න හිතාගෙන ඉන්නවා.,caption,2024-07-09,si
+S032,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,caption,2024-12-30,si
+S032,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,comment,2024-05-25,si
+S032,"අද රෑ නව චිත්‍රපටයක් බැලුවා. කතාව ගොඩාක් හොඳයි, නළු නිළියන්ගේ රංගනය ඇත්තෙන්ම දිනාගත්තා. කවුරුත් බලන්න ඕනෙ.",message,2024-05-19,si
+S032,මිතුරන් සමඟ ගමනක් ගිහින් ගොඩාක් ආස හිතුණා. රාත්‍රී ආහාරය ගෙන කතාබහ කළා. ඇත්තෙන්ම ආනන්දමත් දවසක් ගෙවුණා.,message,2024-03-16,si
+S032,අද දවස ගොඩාක් සතුටින් ගෙවුණා. පවුලේ සියල්ලෝ එකතු වෙලා හොඳ ආහාරයක් කෑවා. ළමයින්ත් ගොඩාක් සතුටු වුණා.,message,2024-04-23,si
+S032,ගෙදර පොතක් කියෙව්වා. ගොඩාක් ඉගෙනගන්න දේවල් තිබුණා. නොදන්නා දේවල් ඕනෑ තරම් ඉගෙනගත්තා.,message,2024-01-14,si
+S032,,view,2024-01-28,si
+S032,,view,2024-09-14,si
+S032,,view,2024-04-30,si
+S033,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,comment,2024-03-11,en
+S033,Caught up with old friends over coffee this afternoon. It is always so good to reconnect and hear what everyone has been up to.,caption,2024-08-29,en
+S033,Cooking a new recipe tonight — spicy prawn curry with coconut milk. The whole house smells amazing already and everyone is excited.,message,2024-12-27,en
+S033,Attended a really interesting public lecture on climate change and sustainable living this evening. Lots of practical ideas to think about.,comment,2024-11-11,en
+S033,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,message,2024-01-10,en
+S033,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,caption,2024-03-17,en
+S033,Visited the art exhibition at the city gallery with my sister. There were some remarkable pieces and we spent a good two hours there.,caption,2024-11-07,en
+S033,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,message,2024-02-26,en
+S033,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,comment,2024-06-03,en
+S033,Had a wonderful time at the beach with family today. The sunset was absolutely breathtaking and the kids loved playing in the waves.,message,2024-05-02,en
+S033,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,message,2024-11-14,en
+S033,Finished reading a fascinating book on ancient history last night. I would highly recommend it to anyone who enjoys learning about the past.,message,2024-02-26,en
+S033,Spent the afternoon volunteering at the local community centre helping with the after-school programme. It felt very fulfilling.,comment,2024-10-01,en
+S033,Made a big pot of soup from scratch today using vegetables from the garden. It turned out really well and we have enough for the week.,caption,2024-09-20,en
+S033,Went for a long walk this morning along the river path and felt incredibly refreshed afterwards. The weather was perfect.,message,2024-03-14,en
+S033,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,caption,2024-01-01,en
+S033,Started learning a new language this week using an app on my phone. It is challenging but very rewarding to make progress each day.,caption,2024-05-03,en
+S033,The garden is looking beautiful after all the rain we had last weekend. The roses are blooming and the vegetables are growing well.,caption,2024-04-05,en
+S033,,like,2024-12-08,en
+S033,,view,2024-09-25,en
+S033,,react,2024-02-04,en
+S033,,react,2024-10-05,en
+S034,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-07-10,romanized_sinhala
+S034,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,comment,2024-07-01,romanized_sinhala
+S034,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,caption,2024-05-03,romanized_sinhala
+S034,"ada rathriyy film ekak baluwa. kathawa hari hondai, actorsla ge acting eka hariyatama liked karaa.",caption,2024-10-24,romanized_sinhala
+S034,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,comment,2024-03-09,romanized_sinhala
+S034,gedara vibhagaya potha ekka kalaa. dhan therenne godak. anith dawase wenath deyak karannnam.,message,2024-10-06,romanized_sinhala
+S034,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",message,2024-12-16,romanized_sinhala
+S034,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,comment,2024-11-19,romanized_sinhala
+S034,"gedara idan pothak kiyewwa. godak dewal igena ganna thibba, ada mama godak dewal danagatta.",caption,2024-02-02,romanized_sinhala
+S034,office eken issellai naya recipe ekak try kalaa. gedara mutta thamai issarahata.,message,2024-01-19,romanized_sinhala
+S034,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",comment,2024-01-23,romanized_sinhala
+S034,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,message,2024-06-10,romanized_sinhala
+S034,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,message,2024-10-05,romanized_sinhala
+S034,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,caption,2024-01-19,romanized_sinhala
+S034,"sathiyata eka dawasak wiyayama kala, agata hri shakthiyan danenawa, wayayama karana eka agata hodai",message,2024-05-26,romanized_sinhala
+S034,ada family eka ekka beach giya. hari sathutu dawasak. lamainuth hodata sellam kalaa.,message,2024-12-01,romanized_sinhala
+S034,yaluwo ekka trip ekak giya godak asa unaa. rathri kama kaala katha karaa. harima santhosa dawasak.,message,2024-03-04,romanized_sinhala
+S034,wathura para langa aluth walking ekak giya. godak refresh unaa. weather eka hondhata thibuna.,caption,2024-07-23,romanized_sinhala
+S034,,view,2024-08-13,romanized_sinhala
+S034,,like,2024-06-22,romanized_sinhala
+S034,,react,2024-09-11,romanized_sinhala
+S035,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-04-02,ta
+S035,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-06-13,ta
+S035,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-06-16,ta
+S035,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,message,2024-06-05,ta
+S035,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,comment,2024-08-06,ta
+S035,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-06-28,ta
+S035,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-06-29,ta
+S035,,view,2024-08-10,ta
+S035,,like,2024-11-23,ta
+S035,,react,2024-02-08,ta
+S035,,view,2024-11-22,ta
+S035,,react,2024-07-05,ta
+S035,,like,2024-12-13,ta
+S036,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-01-17,si
+S036,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-12-13,si
+S036,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-07-09,si
+S036,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-10-20,si
+S036,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-07-06,si
+S036,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-11-28,si
+S036,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-02-28,si
+S036,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-09-12,si
+S036,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-10-14,si
+S036,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-05-13,si
+S036,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-04-19,si
+S036,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-12-21,si
+S036,,like,2024-04-12,si
+S036,,like,2024-03-10,si
+S036,,like,2024-08-19,si
+S036,,view,2024-12-31,si
+S036,,react,2024-02-14,si
+S037,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-07-04,ta
+S037,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-03-03,ta
+S037,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-05-01,ta
+S037,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-07-03,ta
+S037,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-07-07,ta
+S037,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-03-07,ta
+S037,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,message,2024-02-03,ta
+S037,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-09-02,ta
+S037,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-07-28,ta
+S037,,like,2024-02-07,ta
+S037,,react,2024-06-11,ta
+S037,,view,2024-02-07,ta
+S037,,react,2024-08-26,ta
+S038,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-03-04,si
+S038,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-06-04,si
+S038,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-06-14,si
+S038,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-06-26,si
+S038,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-02-10,si
+S038,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-11-21,si
+S038,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-03-05,si
+S038,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-11-10,si
+S038,,react,2024-02-17,si
+S038,,like,2024-11-24,si
+S038,,react,2024-10-30,si
+S038,,like,2024-03-19,si
+S038,,react,2024-12-03,si
+S038,,view,2024-11-05,si
+S039,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-11-12,ta
+S039,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-09-11,ta
+S039,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-05-28,ta
+S039,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-09-04,ta
+S039,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-06-01,ta
+S039,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,comment,2024-12-18,ta
+S039,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-08-13,ta
+S039,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-08-25,ta
+S039,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-11-06,ta
+S039,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-06-12,ta
+S039,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-07-23,ta
+S039,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-09-20,ta
+S039,,view,2024-02-24,ta
+S039,,view,2024-05-03,ta
+S039,,view,2024-03-03,ta
+S039,,like,2024-08-18,ta
+S040,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,comment,2024-04-07,si
+S040,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-09-20,si
+S040,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-06-06,si
+S040,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,message,2024-02-16,si
+S040,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,comment,2024-08-22,si
+S040,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-10-25,si
+S040,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,message,2024-01-26,si
+S040,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-11-01,si
+S040,,view,2024-12-10,si
+S040,,react,2024-05-26,si
+S040,,like,2024-01-05,si
+S040,,like,2024-08-08,si
+S040,,react,2024-05-15,si
+S041,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-08-18,si
+S041,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-11-15,si
+S041,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,comment,2024-03-01,si
+S041,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,message,2024-07-20,si
+S041,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-10-12,si
+S041,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-04-11,si
+S041,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-07-24,si
+S041,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-01-24,si
+S041,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-12-31,si
+S041,,react,2024-08-30,si
+S041,,like,2024-08-21,si
+S041,,react,2024-11-06,si
+S041,,view,2024-03-12,si
+S041,,view,2024-11-09,si
+S042,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-08-31,ta
+S042,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-06-18,ta
+S042,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-08-01,ta
+S042,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-12-18,ta
+S042,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,message,2024-11-01,ta
+S042,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-12-01,ta
+S042,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-04-26,ta
+S042,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,message,2024-10-25,ta
+S042,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-09-25,ta
+S042,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,comment,2024-07-13,ta
+S042,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-01-17,ta
+S042,,like,2024-12-24,ta
+S042,,like,2024-04-07,ta
+S042,,view,2024-08-13,ta
+S042,,like,2024-08-02,ta
+S042,,react,2024-07-30,ta
+S042,,view,2024-04-14,ta
+S043,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-09-26,si
+S043,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-03-29,si
+S043,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-06-24,si
+S043,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-12-12,si
+S043,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-11-08,si
+S043,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-05-06,si
+S043,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,comment,2024-06-01,si
+S043,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-05-27,si
+S043,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-12-19,si
+S043,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-06-11,si
+S043,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-10-13,si
+S043,,view,2024-05-20,si
+S043,,react,2024-03-03,si
+S043,,react,2024-12-12,si
+S043,,view,2024-07-13,si
+S044,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-04-19,en
+S044,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,caption,2024-05-18,en
+S044,Tried to read my book this evening but found it difficult to focus for very long. I had to reread the same paragraph a few times.,comment,2024-03-11,en
+S044,Wrote a message to my sister today. I had to rewrite it a couple of times because I kept losing my train of thought halfway through.,comment,2024-10-27,en
+S044,Went outside for a walk in the morning. Came back after a while feeling a little tired. I am not sure how long I was out for.,caption,2024-01-26,en
+S044,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,caption,2024-04-25,en
+S044,Went outside for a walk in the morning. Came back after a while feeling a little tired. I am not sure how long I was out for.,comment,2024-01-27,en
+S044,Did some work around the house today. I am not sure if I finished everything I meant to do. I will have to check again tomorrow.,caption,2024-06-18,en
+S044,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,caption,2024-02-21,en
+S044,,like,2024-03-11,en
+S044,,like,2024-10-08,en
+S044,,react,2024-07-27,en
+S044,,view,2024-08-31,en
+S044,,like,2024-11-29,en
+S044,,view,2024-05-27,en
+S045,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-08-01,si
+S045,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,message,2024-07-22,si
+S045,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-05-28,si
+S045,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-06-01,si
+S045,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-02-24,si
+S045,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-08-20,si
+S045,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-09-25,si
+S045,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-09-15,si
+S045,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,comment,2024-04-08,si
+S045,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-03-24,si
+S045,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-11-27,si
+S045,,like,2024-04-05,si
+S045,,view,2024-06-21,si
+S045,,react,2024-10-17,si
+S046,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-03-12,ta
+S046,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-05-07,ta
+S046,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-07-15,ta
+S046,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-05-16,ta
+S046,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-10-25,ta
+S046,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-01-06,ta
+S046,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-12-20,ta
+S046,,react,2024-02-01,ta
+S046,,view,2024-03-01,ta
+S046,,like,2024-06-06,ta
+S046,,react,2024-07-26,ta
+S046,,react,2024-09-14,ta
+S046,,react,2024-06-08,ta
+S047,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-11-06,si
+S047,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-12-25,si
+S047,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-10-02,si
+S047,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-05-06,si
+S047,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-02-11,si
+S047,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-09-27,si
+S047,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-02-09,si
+S047,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-02-01,si
+S047,,like,2024-09-15,si
+S047,,react,2024-10-20,si
+S047,,like,2024-03-17,si
+S047,,react,2024-06-16,si
+S048,geval wada kalaa ada. okkoma karala ivara kalada kiyala mathaka naa. heta ithurath check karanna one.,caption,2024-08-21,romanized_sinhala
+S048,ada kade giya monawa hari genna. monada gaththe kiyala therenne naa. bag eka dedena patta check kalaa.,message,2024-10-13,romanized_sinhala
+S048,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,message,2024-01-12,romanized_sinhala
+S048,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,caption,2024-01-02,romanized_sinhala
+S048,eliyata giya walk ekakata. tikak mahansiyen aawa. kohomada innne kiyala therenne naa.,comment,2024-10-23,romanized_sinhala
+S048,ada kade giya monawa hari genna. monada gaththe kiyala therenne naa. bag eka dedena patta check kalaa.,message,2024-08-04,romanized_sinhala
+S048,yaluwata call kalaa. monava katha kalada dhan mathaka naa. weekend ekaka wagayi kiyala hithanawa.,comment,2024-10-04,romanized_sinhala
+S048,,view,2024-02-05,romanized_sinhala
+S048,,view,2024-01-17,romanized_sinhala
+S048,,like,2024-07-28,romanized_sinhala
+S048,,react,2024-03-10,romanized_sinhala
+S048,,view,2024-11-26,romanized_sinhala
+S048,,view,2024-07-10,romanized_sinhala
+S049,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-07-20,si
+S049,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-04-24,si
+S049,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,message,2024-06-01,si
+S049,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-08-05,si
+S049,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-04-27,si
+S049,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-06-26,si
+S049,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-04-06,si
+S049,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-01-17,si
+S049,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-11-10,si
+S049,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-04-15,si
+S049,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-10-31,si
+S049,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-11-02,si
+S049,,like,2024-12-26,si
+S049,,react,2024-05-05,si
+S049,,view,2024-01-23,si
+S049,,like,2024-08-12,si
+S049,,like,2024-10-03,si
+S050,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-12-04,ta
+S050,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-07-30,ta
+S050,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-02-01,ta
+S050,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-03-30,ta
+S050,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-10-11,ta
+S050,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-06-25,ta
+S050,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-09-25,ta
+S050,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-07-28,ta
+S050,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-07-11,ta
+S050,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,comment,2024-08-30,ta
+S050,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-06-02,ta
+S050,,view,2024-03-14,ta
+S050,,react,2024-01-30,ta
+S050,,view,2024-07-30,ta
+S050,,react,2024-10-12,ta
+S050,,view,2024-03-09,ta
+S051,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-12-10,ta
+S051,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,comment,2024-01-21,ta
+S051,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-10-27,ta
+S051,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-04-21,ta
+S051,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-06-19,ta
+S051,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,comment,2024-04-18,ta
+S051,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,comment,2024-09-02,ta
+S051,,react,2024-12-22,ta
+S051,,like,2024-12-26,ta
+S051,,like,2024-07-22,ta
+S051,,view,2024-10-09,ta
+S052,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-06-12,ta
+S052,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,message,2024-06-09,ta
+S052,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,comment,2024-10-15,ta
+S052,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,message,2024-01-09,ta
+S052,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-10-26,ta
+S052,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-05-31,ta
+S052,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-06-17,ta
+S052,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-10-18,ta
+S052,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-10-08,ta
+S052,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,message,2024-05-11,ta
+S052,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-08-23,ta
+S052,,like,2024-06-29,ta
+S052,,react,2024-03-12,ta
+S052,,view,2024-10-06,ta
+S052,,react,2024-04-04,ta
+S052,,like,2024-11-24,ta
+S052,,like,2024-09-25,ta
+S053,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-01-05,si
+S053,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-08-21,si
+S053,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-11-12,si
+S053,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-09-04,si
+S053,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-01-09,si
+S053,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-10-09,si
+S053,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-01-09,si
+S053,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-10-01,si
+S053,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-09-14,si
+S053,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-04-01,si
+S053,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-09-25,si
+S053,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-04-08,si
+S053,,view,2024-09-26,si
+S053,,view,2024-06-30,si
+S053,,like,2024-07-22,si
+S053,,view,2024-07-10,si
+S054,Did some work around the house today. I am not sure if I finished everything I meant to do. I will have to check again tomorrow.,caption,2024-07-12,en
+S054,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,caption,2024-01-29,en
+S054,Went to the shop today to get some things. I got a few items but I cannot quite remember what else I was supposed to get. Had to check my bag twice.,comment,2024-12-25,en
+S054,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,message,2024-09-12,en
+S054,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,comment,2024-10-16,en
+S054,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,comment,2024-01-22,en
+S054,Went outside for a walk in the morning. Came back after a while feeling a little tired. I am not sure how long I was out for.,caption,2024-12-20,en
+S054,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-05-18,en
+S054,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,message,2024-12-16,en
+S054,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,caption,2024-10-15,en
+S054,Went to the shop today to get some things. I got a few items but I cannot quite remember what else I was supposed to get. Had to check my bag twice.,message,2024-04-01,en
+S054,Went to the shop today to get some things. I got a few items but I cannot quite remember what else I was supposed to get. Had to check my bag twice.,caption,2024-04-16,en
+S054,,react,2024-03-14,en
+S054,,like,2024-07-22,en
+S054,,like,2024-06-02,en
+S055,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-09-13,ta
+S055,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,comment,2024-01-28,ta
+S055,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-04-28,ta
+S055,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,caption,2024-11-05,ta
+S055,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-07-22,ta
+S055,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,message,2024-11-20,ta
+S055,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,comment,2024-09-08,ta
+S055,சாப்பிட்டேன். சரியாக இருந்ததா என்று தெரியவில்லை. என்ன சமைத்தோம் என்றும் மறந்துவிட்டது.,message,2024-10-10,ta
+S055,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,caption,2024-04-05,ta
+S055,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-12-04,ta
+S055,,react,2024-02-13,ta
+S055,,like,2024-05-31,ta
+S055,,like,2024-12-31,ta
+S055,,view,2024-02-12,ta
+S056,ada kade giya monawa hari genna. monada gaththe kiyala therenne naa. bag eka dedena patta check kalaa.,message,2024-06-06,romanized_sinhala
+S056,kadey ekkenek dhaka giya. muna therunaa namuth nama mathaka una naa. eyaa kiwwama therunaa.,comment,2024-05-18,romanized_sinhala
+S056,kamak hadhdha gedara. hondada kiyala therenne naa. mona wageda karanna one kiyalath mathaka naa.,comment,2024-02-14,romanized_sinhala
+S056,geval wada kalaa ada. okkoma karala ivara kalada kiyala mathaka naa. heta ithurath check karanna one.,caption,2024-08-17,romanized_sinhala
+S056,geval wada kalaa ada. okkoma karala ivara kalada kiyala mathaka naa. heta ithurath check karanna one.,comment,2024-02-22,romanized_sinhala
+S056,yaluwata call kalaa. monava katha kalada dhan mathaka naa. weekend ekaka wagayi kiyala hithanawa.,caption,2024-06-30,romanized_sinhala
+S056,yaluwata call kalaa. monava katha kalada dhan mathaka naa. weekend ekaka wagayi kiyala hithanawa.,caption,2024-11-01,romanized_sinhala
+S056,kadey ekkenek dhaka giya. muna therunaa namuth nama mathaka una naa. eyaa kiwwama therunaa.,comment,2024-07-16,romanized_sinhala
+S056,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,message,2024-07-30,romanized_sinhala
+S056,,react,2024-02-13,romanized_sinhala
+S056,,like,2024-10-13,romanized_sinhala
+S056,,react,2024-10-19,romanized_sinhala
+S056,,react,2024-03-27,romanized_sinhala
+S056,,like,2024-07-13,romanized_sinhala
+S057,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-02-09,si
+S057,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-05-06,si
+S057,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-10-31,si
+S057,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-08-22,si
+S057,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-06-04,si
+S057,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-06-19,si
+S057,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-06-17,si
+S057,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-08-08,si
+S057,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-03-10,si
+S057,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-11-04,si
+S057,,view,2024-04-12,si
+S057,,like,2024-06-09,si
+S057,,view,2024-07-22,si
+S057,,react,2024-05-29,si
+S057,,react,2024-12-21,si
+S058,eliyata giya walk ekakata. tikak mahansiyen aawa. kohomada innne kiyala therenne naa.,caption,2024-10-30,romanized_sinhala
+S058,kamak hadhdha gedara. hondada kiyala therenne naa. mona wageda karanna one kiyalath mathaka naa.,caption,2024-12-15,romanized_sinhala
+S058,ada kade giya monawa hari genna. monada gaththe kiyala therenne naa. bag eka dedena patta check kalaa.,caption,2024-08-24,romanized_sinhala
+S058,eliyata giya walk ekakata. tikak mahansiyen aawa. kohomada innne kiyala therenne naa.,message,2024-08-12,romanized_sinhala
+S058,yaluwata call kalaa. monava katha kalada dhan mathaka naa. weekend ekaka wagayi kiyala hithanawa.,caption,2024-07-28,romanized_sinhala
+S058,TV ekak baluwa kama passe. kiyana eka mathaka naa dhan monavada kiyala.,caption,2024-03-12,romanized_sinhala
+S058,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,message,2024-05-03,romanized_sinhala
+S058,kamak hadhdha gedara. hondada kiyala therenne naa. mona wageda karanna one kiyalath mathaka naa.,message,2024-08-04,romanized_sinhala
+S058,yaluwata call kalaa. monava katha kalada dhan mathaka naa. weekend ekaka wagayi kiyala hithanawa.,caption,2024-08-17,romanized_sinhala
+S058,,react,2024-09-02,romanized_sinhala
+S058,,react,2024-07-24,romanized_sinhala
+S058,,react,2024-09-16,romanized_sinhala
+S059,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,caption,2024-03-26,en
+S059,Wrote a message to my sister today. I had to rewrite it a couple of times because I kept losing my train of thought halfway through.,caption,2024-01-23,en
+S059,Did some work around the house today. I am not sure if I finished everything I meant to do. I will have to check again tomorrow.,message,2024-06-18,en
+S059,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,comment,2024-01-06,en
+S059,Tried to read my book this evening but found it difficult to focus for very long. I had to reread the same paragraph a few times.,caption,2024-04-23,en
+S059,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,caption,2024-10-12,en
+S059,Wrote a message to my sister today. I had to rewrite it a couple of times because I kept losing my train of thought halfway through.,message,2024-04-23,en
+S059,,view,2024-07-10,en
+S059,,react,2024-08-25,en
+S059,,react,2024-10-28,en
+S059,,like,2024-09-13,en
+S060,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,comment,2024-08-21,en
+S060,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,message,2024-09-04,en
+S060,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,message,2024-02-19,en
+S060,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-06-12,en
+S060,Tried to read my book this evening but found it difficult to focus for very long. I had to reread the same paragraph a few times.,caption,2024-01-23,en
+S060,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,message,2024-01-12,en
+S060,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,comment,2024-12-12,en
+S060,,react,2024-05-04,en
+S060,,react,2024-03-30,en
+S060,,view,2024-03-22,en
+S060,,view,2024-10-13,en
+S061,Did some work around the house today. I am not sure if I finished everything I meant to do. I will have to check again tomorrow.,comment,2024-07-18,en
+S061,Went outside for a walk in the morning. Came back after a while feeling a little tired. I am not sure how long I was out for.,message,2024-04-15,en
+S061,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,comment,2024-10-22,en
+S061,Had my morning tea and sat for a while thinking. The day passed quite slowly. I did not manage to do as much as I had planned.,message,2024-04-05,en
+S061,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,message,2024-04-10,en
+S061,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,caption,2024-05-14,en
+S061,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,caption,2024-09-27,en
+S061,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,message,2024-11-01,en
+S061,Wrote a message to my sister today. I had to rewrite it a couple of times because I kept losing my train of thought halfway through.,caption,2024-07-19,en
+S061,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,message,2024-06-27,en
+S061,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-11-12,en
+S061,Tried to read my book this evening but found it difficult to focus for very long. I had to reread the same paragraph a few times.,caption,2024-11-10,en
+S061,,react,2024-02-13,en
+S061,,view,2024-03-09,en
+S061,,like,2024-03-01,en
+S061,,like,2024-06-05,en
+S062,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-11-21,si
+S062,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",comment,2024-10-11,si
+S062,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-05-27,si
+S062,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",message,2024-06-10,si
+S062,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-01-28,si
+S062,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-09-05,si
+S062,"යන්න හිතුණා, ගියා, ආවා. හරියටම මොකද ගොස් කළේ කියලා දැන් හොඳට මතක නෑ. ටිකක් අමාරුයි.",caption,2024-07-15,si
+S062,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-11-30,si
+S062,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-12-16,si
+S062,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-12-29,si
+S062,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-03-26,si
+S062,,like,2024-10-16,si
+S062,,view,2024-04-22,si
+S062,,view,2024-01-17,si
+S062,,react,2024-04-25,si
+S062,,like,2024-05-27,si
+S062,,react,2024-08-22,si
+S063,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,caption,2024-08-13,ta
+S063,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-08-05,ta
+S063,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-06-01,ta
+S063,வெளியே சென்றேன். திரும்பி வந்தேன். ஏன் சென்றேன் என்ற காரணம் மறந்துவிட்டது.,message,2024-05-14,ta
+S063,இன்று வீட்டில் இருந்தேன். என்ன செய்தேன் என்று சரியாக நினைவில்லை. நேரம் மெதுவாக கடந்தது.,comment,2024-08-12,ta
+S063,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,caption,2024-04-17,ta
+S063,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-12-18,ta
+S063,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,message,2024-11-19,ta
+S063,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-11-11,ta
+S063,யாரோ வந்தார்கள். பேசினோம். என்ன பேசினோம் என்று இப்போது மறந்துவிட்டேன். முக்கியமான விஷயமா என்று தெரியவில்லை.,comment,2024-04-15,ta
+S063,தொலைக்காட்சி பார்த்தேன். என்ன நிகழ்ச்சி என்று நினைவில்லை. சிறிது நேரம் பார்த்துவிட்டு நிறுத்தினேன்.,caption,2024-06-28,ta
+S063,,react,2024-05-23,ta
+S063,,like,2024-10-02,ta
+S063,,react,2024-06-14,ta
+S063,,view,2024-05-29,ta
+S063,,view,2024-10-20,ta
+S064,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-05-06,si
+S064,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,comment,2024-09-07,si
+S064,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,message,2024-11-19,si
+S064,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-07-11,si
+S064,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,comment,2024-11-20,si
+S064,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,caption,2024-09-20,si
+S064,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,message,2024-12-21,si
+S064,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-09-06,si
+S064,රූපවාහිනී බැලුවා. මොකක්ද කියලා දැන් හරිහැටි මතක නෑ. ටික වෙලාවක් බලලා නැවතුණා.,caption,2024-01-02,si
+S064,අද ගෙදර ඉඳගෙන ටිකක් කාලය ගෙවුණා. හිතට ටිකක් අමාරුයි. මොකද කරන්නේ කියලා හිතාගන්නම අමාරුයි.,caption,2024-08-22,si
+S064,කෑම හැදුවා. කෑවා. හොඳද නැද්ද හරියට මතක නෑ. ඊළඟ පාර මොකද හදන්නේ කියලත් සිහි නෑ.,caption,2024-02-02,si
+S064,ගෙදරින් එළියට ගිහින් ටිකක් ඉඳලා ආවා. ඇයි ගිහින් ආවේ හරිහැටි දන්නෑ. ගිය කාරණාව අමතකයි.,message,2024-04-21,si
+S064,,view,2024-04-18,si
+S064,,view,2024-05-17,si
+S064,,view,2024-05-25,si
+S064,,react,2024-10-07,si
+S065,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-01-09,en
+S065,Made food today at home. It was okay I think. I believe I have made this dish before but I am not entirely sure when that was.,message,2024-08-13,en
+S065,Went to the shop today to get some things. I got a few items but I cannot quite remember what else I was supposed to get. Had to check my bag twice.,comment,2024-08-07,en
+S065,Made food today at home. It was okay I think. I believe I have made this dish before but I am not entirely sure when that was.,message,2024-11-28,en
+S065,Made food today at home. It was okay I think. I believe I have made this dish before but I am not entirely sure when that was.,comment,2024-05-20,en
+S065,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,comment,2024-05-08,en
+S065,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,caption,2024-12-06,en
+S065,,like,2024-03-25,en
+S065,,react,2024-07-21,en
+S065,,react,2024-06-05,en
+S066,Wrote a message to my sister today. I had to rewrite it a couple of times because I kept losing my train of thought halfway through.,caption,2024-04-25,en
+S066,Watched something on television after dinner. I cannot remember now what the programme was called or what it was about.,comment,2024-01-05,en
+S066,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,message,2024-03-02,en
+S066,Made food today at home. It was okay I think. I believe I have made this dish before but I am not entirely sure when that was.,comment,2024-09-01,en
+S066,Went outside for a walk in the morning. Came back after a while feeling a little tired. I am not sure how long I was out for.,comment,2024-07-15,en
+S066,Called my friend this afternoon. We talked for a while but I have already forgotten most of what we said. I think it was something about the weekend.,message,2024-02-22,en
+S066,Saw someone I know at the market today. I recognised their face but could not remember their name until they introduced themselves.,comment,2024-06-02,en
+S066,Did some work around the house today. I am not sure if I finished everything I meant to do. I will have to check again tomorrow.,caption,2024-03-09,en
+S066,,like,2024-12-12,en
+S066,,react,2024-02-05,en
+S066,,like,2024-10-15,en
+S066,,react,2024-11-08,en
+S066,,view,2024-03-25,en
+S066,,react,2024-06-28,en
+S067,kamak hadhdha gedara. hondada kiyala therenne naa. mona wageda karanna one kiyalath mathaka naa.,caption,2024-03-04,romanized_sinhala
+S067,geval wada kalaa ada. okkoma karala ivara kalada kiyala mathaka naa. heta ithurath check karanna one.,message,2024-06-28,romanized_sinhala
+S067,kadey ekkenek dhaka giya. muna therunaa namuth nama mathaka una naa. eyaa kiwwama therunaa.,comment,2024-03-12,romanized_sinhala
+S067,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,comment,2024-11-26,romanized_sinhala
+S067,eliyata giya walk ekakata. tikak mahansiyen aawa. kohomada innne kiyala therenne naa.,caption,2024-10-10,romanized_sinhala
+S067,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,comment,2024-12-19,romanized_sinhala
+S067,potha kiyawanna try kalaa magema hithe hitiye naa. paragraph eka nawatha nawatha kiyawanna una.,caption,2024-04-15,romanized_sinhala
+S067,eliyata giya walk ekakata. tikak mahansiyen aawa. kohomada innne kiyala therenne naa.,message,2024-07-19,romanized_sinhala
+S067,,like,2024-11-26,romanized_sinhala
+S067,,view,2024-05-02,romanized_sinhala
+S067,,like,2024-07-16,romanized_sinhala
+S068,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,message,2024-08-03,ta
+S068,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-12-15,ta
+S068,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,comment,2024-02-07,ta
+S068,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-02-04,ta
+S068,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-04-20,ta
+S068,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,caption,2024-07-22,ta
+S068,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,caption,2024-11-17,ta
+S068,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,message,2024-07-31,ta
+S068,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,caption,2024-02-12,ta
+S068,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,caption,2024-10-02,ta
+S068,,view,2024-03-19,ta
+S069,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-06-07,romanized_sinhala
+S069,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-05-02,romanized_sinhala
+S069,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,message,2024-02-14,romanized_sinhala
+S069,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-08-20,romanized_sinhala
+S069,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-01-29,romanized_sinhala
+S069,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-03-02,romanized_sinhala
+S069,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-12-25,romanized_sinhala
+S069,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,message,2024-09-11,romanized_sinhala
+S069,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-09-21,romanized_sinhala
+S069,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-03-26,romanized_sinhala
+S069,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-05-17,romanized_sinhala
+S069,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-01-16,romanized_sinhala
+S069,,view,2024-08-07,romanized_sinhala
+S069,,like,2024-09-25,romanized_sinhala
+S069,,react,2024-05-14,romanized_sinhala
+S070,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,caption,2024-04-26,ta
+S070,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-01-02,ta
+S070,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-05-05,ta
+S070,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-07-05,ta
+S070,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-04-01,ta
+S070,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,caption,2024-12-31,ta
+S070,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-04-24,ta
+S070,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,caption,2024-08-01,ta
+S070,,view,2024-06-12,ta
+S070,,react,2024-02-09,ta
+S070,,like,2024-07-09,ta
+S071,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-08-21,romanized_sinhala
+S071,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-04-12,romanized_sinhala
+S071,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-06-04,romanized_sinhala
+S071,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-05-04,romanized_sinhala
+S071,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-10-29,romanized_sinhala
+S071,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-10-06,romanized_sinhala
+S071,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,message,2024-01-04,romanized_sinhala
+S071,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-04-29,romanized_sinhala
+S071,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-11-21,romanized_sinhala
+S071,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,comment,2024-06-20,romanized_sinhala
+S071,,view,2024-12-02,romanized_sinhala
+S071,,like,2024-06-06,romanized_sinhala
+S072,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,caption,2024-07-30,en
+S072,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,caption,2024-08-22,en
+S072,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,comment,2024-10-24,en
+S072,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,caption,2024-03-09,en
+S072,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,caption,2024-02-08,en
+S072,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,message,2024-02-01,en
+S072,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,comment,2024-03-07,en
+S072,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,message,2024-05-13,en
+S072,,react,2024-07-20,en
+S073,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-07-27,si
+S073,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-07-02,si
+S073,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,message,2024-06-06,si
+S073,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-03-02,si
+S073,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,message,2024-12-17,si
+S073,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-01-21,si
+S073,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-03-16,si
+S073,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,message,2024-07-01,si
+S073,,like,2024-09-19,si
+S074,The thing. I need the thing. The thing is somewhere. Cannot find the thing. The thing the thing. Where is the thing I need the thing.,comment,2024-03-03,en
+S074,Went to the place. The place I went. I went to the place again. The place the place. Cannot find the place now. Went and came. Went and came from the place.,comment,2024-04-23,en
+S074,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,message,2024-07-24,en
+S074,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,caption,2024-11-18,en
+S074,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,caption,2024-10-25,en
+S074,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,comment,2024-02-08,en
+S074,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,caption,2024-04-11,en
+S074,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,comment,2024-03-06,en
+S074,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,comment,2024-03-03,en
+S074,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,comment,2024-01-26,en
+S074,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,caption,2024-08-09,en
+S074,,view,2024-07-21,en
+S075,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-11-11,ta
+S075,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-09-12,ta
+S075,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-09-02,ta
+S075,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,message,2024-05-23,ta
+S075,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-08-02,ta
+S075,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,caption,2024-05-07,ta
+S075,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,message,2024-01-10,ta
+S075,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,caption,2024-09-02,ta
+S075,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,caption,2024-06-25,ta
+S075,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,message,2024-06-13,ta
+S075,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-04-02,ta
+S075,,react,2024-06-12,ta
+S076,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,caption,2024-05-06,ta
+S076,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,caption,2024-05-16,ta
+S076,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,caption,2024-04-22,ta
+S076,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,comment,2024-06-30,ta
+S076,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,caption,2024-05-01,ta
+S076,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-12-23,ta
+S076,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,caption,2024-01-15,ta
+S076,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,caption,2024-10-17,ta
+S076,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-10-15,ta
+S076,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-10-04,ta
+S076,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-09-08,ta
+S076,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-01-29,ta
+S076,,like,2024-11-04,ta
+S077,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-12-26,si
+S077,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,message,2024-09-26,si
+S077,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-07-10,si
+S077,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,comment,2024-10-27,si
+S077,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,message,2024-06-03,si
+S077,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,caption,2024-03-21,si
+S077,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,message,2024-11-23,si
+S077,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,caption,2024-03-30,si
+S077,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,caption,2024-12-21,si
+S077,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,caption,2024-04-24,si
+S077,,like,2024-10-28,si
+S078,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,caption,2024-04-23,en
+S078,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,message,2024-02-23,en
+S078,The thing. I need the thing. The thing is somewhere. Cannot find the thing. The thing the thing. Where is the thing I need the thing.,caption,2024-06-18,en
+S078,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,message,2024-05-01,en
+S078,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,caption,2024-03-26,en
+S078,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,caption,2024-12-28,en
+S078,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,message,2024-06-20,en
+S078,Went to the place. The place I went. I went to the place again. The place the place. Cannot find the place now. Went and came. Went and came from the place.,comment,2024-05-15,en
+S078,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,comment,2024-12-20,en
+S078,,view,2024-06-28,en
+S078,,react,2024-02-25,en
+S078,,like,2024-01-01,en
+S079,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-11-29,romanized_sinhala
+S079,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,message,2024-03-24,romanized_sinhala
+S079,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-01-18,romanized_sinhala
+S079,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-06-12,romanized_sinhala
+S079,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-02-07,romanized_sinhala
+S079,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-07-11,romanized_sinhala
+S079,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,comment,2024-10-07,romanized_sinhala
+S079,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-10-31,romanized_sinhala
+S079,,react,2024-09-04,romanized_sinhala
+S079,,view,2024-01-16,romanized_sinhala
+S080,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,caption,2024-07-20,ta
+S080,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-09-08,ta
+S080,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-07-03,ta
+S080,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-02-14,ta
+S080,வீடு. வீடு வீடு. வீட்டிற்கு போகணும். வீடு எங்கே. வீடு வீடு. வீட்டிற்கு திரும்பணும்.,comment,2024-09-02,ta
+S080,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-01-14,ta
+S080,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,message,2024-11-22,ta
+S080,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-08-30,ta
+S080,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-07-22,ta
+S080,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-12-04,ta
+S080,,react,2024-02-16,ta
+S080,,view,2024-10-05,ta
+S081,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-10-15,romanized_sinhala
+S081,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-12-22,romanized_sinhala
+S081,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-02-13,romanized_sinhala
+S081,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-10-04,romanized_sinhala
+S081,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-04-26,romanized_sinhala
+S081,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-07-17,romanized_sinhala
+S081,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,caption,2024-10-01,romanized_sinhala
+S081,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-10-20,romanized_sinhala
+S081,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-06-02,romanized_sinhala
+S081,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-12-31,romanized_sinhala
+S081,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-10-19,romanized_sinhala
+S081,,react,2024-10-19,romanized_sinhala
+S081,,like,2024-11-13,romanized_sinhala
+S082,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,caption,2024-04-13,en
+S082,The thing. I need the thing. The thing is somewhere. Cannot find the thing. The thing the thing. Where is the thing I need the thing.,message,2024-10-31,en
+S082,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,comment,2024-02-04,en
+S082,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,message,2024-10-11,en
+S082,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,message,2024-06-15,en
+S082,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,comment,2024-08-22,en
+S082,Morning came. Morning morning. Is it morning now. Morning or evening. The time. What is the time now. Morning time.,caption,2024-11-15,en
+S082,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,comment,2024-08-02,en
+S082,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,comment,2024-03-17,en
+S082,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,caption,2024-10-28,en
+S082,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,caption,2024-02-24,en
+S082,,view,2024-02-21,en
+S083,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,message,2024-01-20,ta
+S083,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-12-19,ta
+S083,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,message,2024-08-31,ta
+S083,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-01-11,ta
+S083,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-06-08,ta
+S083,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,caption,2024-12-22,ta
+S083,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,comment,2024-04-26,ta
+S083,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-08-14,ta
+S083,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,caption,2024-08-01,ta
+S083,போனேன். வந்தேன். போனேன் வந்தேன். போகணும். போனேன் போனேன். எங்கே போனேன். போனேன் திரும்பி வந்தேன்.,message,2024-04-06,ta
+S083,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,caption,2024-07-27,ta
+S083,,react,2024-09-05,ta
+S084,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,comment,2024-01-30,en
+S084,Went to the place. The place I went. I went to the place again. The place the place. Cannot find the place now. Went and came. Went and came from the place.,comment,2024-08-21,en
+S084,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,comment,2024-12-26,en
+S084,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,message,2024-07-07,en
+S084,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,caption,2024-07-22,en
+S084,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,comment,2024-12-14,en
+S084,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,message,2024-07-09,en
+S084,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,comment,2024-08-16,en
+S084,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,caption,2024-10-27,en
+S084,,view,2024-06-28,en
+S085,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-04-23,romanized_sinhala
+S085,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-12-12,romanized_sinhala
+S085,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-11-29,romanized_sinhala
+S085,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-01-11,romanized_sinhala
+S085,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,comment,2024-08-30,romanized_sinhala
+S085,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,comment,2024-11-03,romanized_sinhala
+S085,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-05-09,romanized_sinhala
+S085,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-12-30,romanized_sinhala
+S085,,view,2024-11-25,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-10-14,romanized_sinhala
+S086,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-11-07,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-12-16,romanized_sinhala
+S086,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,message,2024-02-02,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-11-23,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-05-13,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-04-06,romanized_sinhala
+S086,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-05-03,romanized_sinhala
+S086,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-07-25,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-12-14,romanized_sinhala
+S086,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-12-01,romanized_sinhala
+S086,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-05-12,romanized_sinhala
+S086,,view,2024-07-26,romanized_sinhala
+S087,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-05-30,ta
+S087,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,caption,2024-03-06,ta
+S087,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-10-13,ta
+S087,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-12-01,ta
+S087,பொருள். அந்த பொருள். பொருள் வேணும். பொருள் பொருள். எங்கே பொருள். அந்த பொருள் வேணும் எனக்கு.,comment,2024-06-30,ta
+S087,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,message,2024-08-03,ta
+S087,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,caption,2024-05-13,ta
+S087,மறந்தேன். மறந்தேன் மறந்தேன். மறக்கிறேன். மீண்டும் மறந்தேன். மறந்துவிட்டேன் மறந்துவிட்டேன்.,comment,2024-08-25,ta
+S087,சாப்பிட்டேனா. சாப்பாடு. சாப்பிட்டேனா இல்லையா. சாப்பாடு சாப்பாடு. சாப்பிட வேணும்.,caption,2024-01-28,ta
+S087,,react,2024-10-25,ta
+S087,,like,2024-11-13,ta
+S087,,like,2024-08-29,ta
+S088,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-08-22,si
+S088,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-04-02,si
+S088,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,caption,2024-06-19,si
+S088,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,caption,2024-06-09,si
+S088,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,message,2024-01-03,si
+S088,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-04-17,si
+S088,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,message,2024-03-22,si
+S088,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-03-07,si
+S088,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,message,2024-11-20,si
+S088,,view,2024-07-25,si
+S088,,view,2024-09-01,si
+S089,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,caption,2024-04-25,si
+S089,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-06-08,si
+S089,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-07-15,si
+S089,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-06-05,si
+S089,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,message,2024-01-24,si
+S089,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,caption,2024-08-21,si
+S089,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,caption,2024-11-01,si
+S089,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,caption,2024-08-10,si
+S089,,view,2024-03-09,si
+S089,,view,2024-09-07,si
+S089,,like,2024-04-06,si
+S090,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-07-11,si
+S090,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,caption,2024-09-30,si
+S090,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,comment,2024-10-31,si
+S090,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,comment,2024-11-30,si
+S090,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,comment,2024-12-19,si
+S090,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,message,2024-08-15,si
+S090,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,message,2024-10-07,si
+S090,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,comment,2024-12-25,si
+S090,,react,2024-04-15,si
+S090,,react,2024-12-17,si
+S091,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,message,2024-03-01,si
+S091,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,message,2024-02-24,si
+S091,ඒ දේ. දේ ඕනෙ. දේ කොහෙද. ඒ දේ ඒ දේ. දේ හොයනවා. දේ දේ. ඒ දේ නෑ. ඒ දේ හොයන්න ඕනෙ.,comment,2024-11-07,si
+S091,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-09-24,si
+S091,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,message,2024-12-26,si
+S091,මතක නෑ. නෑ. මතක නෑ නෑ. නෑ නෑ. මතකනෑ අද. ආයෙත් මතක නෑ. මතක නෑ නෑ.,comment,2024-03-23,si
+S091,ගෙදර. ගෙදර ගෙදර. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදරට යන්නෙ. ගෙදර ගෙදර.,comment,2024-09-11,si
+S091,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,comment,2024-06-18,si
+S091,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-01-07,si
+S091,ගියා. ආවා. ගෙදර. ගෙදර ගෙදර. ගෙදරට ගියා. ගෙදරට ගෙදරට. ගෙදර කොහෙද. ගෙදර ගෙදර ගෙදර.,caption,2024-02-26,si
+S091,කෑවා. කෑම. කෑවාද. කෑම කෑම. කෑවාද නැද්ද. කෑම කෑම කෑම. කෑවා අද.,comment,2024-03-17,si
+S091,,like,2024-09-18,si
+S092,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,caption,2024-07-03,en
+S092,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,caption,2024-08-06,en
+S092,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,comment,2024-02-18,en
+S092,Went to the place. The place I went. I went to the place again. The place the place. Cannot find the place now. Went and came. Went and came from the place.,caption,2024-03-11,en
+S092,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,message,2024-03-28,en
+S092,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,caption,2024-08-12,en
+S092,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,message,2024-02-17,en
+S092,Went out. Out out. I went out today. Out I went. Then came back. Back home. Went out came back. Out and back. Out out.,comment,2024-04-03,en
+S092,,view,2024-07-24,en
+S093,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,caption,2024-09-04,en
+S093,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,comment,2024-08-12,en
+S093,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,message,2024-07-13,en
+S093,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,caption,2024-01-15,en
+S093,Morning came. Morning morning. Is it morning now. Morning or evening. The time. What is the time now. Morning time.,message,2024-03-07,en
+S093,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,message,2024-02-27,en
+S093,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,comment,2024-01-24,en
+S093,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,message,2024-12-01,en
+S093,Went to the place. The place I went. I went to the place again. The place the place. Cannot find the place now. Went and came. Went and came from the place.,caption,2024-12-26,en
+S093,,react,2024-09-25,en
+S094,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,caption,2024-03-17,romanized_sinhala
+S094,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-01-28,romanized_sinhala
+S094,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,message,2024-09-15,romanized_sinhala
+S094,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-03-25,romanized_sinhala
+S094,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-06-13,romanized_sinhala
+S094,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-05-22,romanized_sinhala
+S094,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-04-24,romanized_sinhala
+S094,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-07-25,romanized_sinhala
+S094,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-08-23,romanized_sinhala
+S094,,view,2024-10-20,romanized_sinhala
+S094,,view,2024-02-15,romanized_sinhala
+S095,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-11-05,romanized_sinhala
+S095,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-09-17,romanized_sinhala
+S095,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-12-01,romanized_sinhala
+S095,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,message,2024-06-23,romanized_sinhala
+S095,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-04-24,romanized_sinhala
+S095,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-10-13,romanized_sinhala
+S095,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-08-30,romanized_sinhala
+S095,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-08-19,romanized_sinhala
+S095,,react,2024-02-19,romanized_sinhala
+S095,,like,2024-04-23,romanized_sinhala
+S095,,view,2024-06-23,romanized_sinhala
+S096,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,message,2024-02-24,romanized_sinhala
+S096,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-04-10,romanized_sinhala
+S096,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,comment,2024-07-20,romanized_sinhala
+S096,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,caption,2024-04-07,romanized_sinhala
+S096,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-02-25,romanized_sinhala
+S096,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-11-20,romanized_sinhala
+S096,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-03-04,romanized_sinhala
+S096,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,caption,2024-12-03,romanized_sinhala
+S096,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-03-09,romanized_sinhala
+S096,,react,2024-01-03,romanized_sinhala
+S096,,react,2024-01-25,romanized_sinhala
+S096,,react,2024-08-09,romanized_sinhala
+S097,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,message,2024-07-15,romanized_sinhala
+S097,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-12-20,romanized_sinhala
+S097,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-07-22,romanized_sinhala
+S097,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-08-19,romanized_sinhala
+S097,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-07-30,romanized_sinhala
+S097,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-06-02,romanized_sinhala
+S097,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-06-09,romanized_sinhala
+S097,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,comment,2024-11-19,romanized_sinhala
+S097,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-04-17,romanized_sinhala
+S097,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,message,2024-12-17,romanized_sinhala
+S097,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-12-29,romanized_sinhala
+S097,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-09-14,romanized_sinhala
+S097,,react,2024-12-21,romanized_sinhala
+S097,,react,2024-06-14,romanized_sinhala
+S097,,view,2024-02-29,romanized_sinhala
+S098,kaeva. kama. kaevada. kama kama. kaevada naddha. kama kama kama. kaeva ada.,comment,2024-03-15,romanized_sinhala
+S098,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-04-12,romanized_sinhala
+S098,eka deyak. deyak one. deyak kohomada. eka deyak eka deyak. deyak hoyanawaa. deyak deyak naa.,caption,2024-05-26,romanized_sinhala
+S098,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,comment,2024-03-15,romanized_sinhala
+S098,mathaka naa. naa. mathaka naa naa. naa naa. mathaka naa ada. ayeth mathaka naa.,caption,2024-04-14,romanized_sinhala
+S098,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,message,2024-07-02,romanized_sinhala
+S098,giya. gedara giya. gedara gedara. gedara kohomada. giya aawa gedara. gedara gedara giya.,caption,2024-11-11,romanized_sinhala
+S098,gedara. gedara gedara. gedara giya. gedara kohomada. gedaratama yanna. gedara gedara.,caption,2024-04-24,romanized_sinhala
+S098,,react,2024-11-27,romanized_sinhala
+S098,,like,2024-07-18,romanized_sinhala
+S098,,react,2024-09-18,romanized_sinhala
+S099,My name. What is my name. I know my name. The name. My name my name. What is the name. I know I know my name.,comment,2024-08-14,en
+S099,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,caption,2024-12-26,en
+S099,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,caption,2024-07-07,en
+S099,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,comment,2024-11-04,en
+S099,Morning came. Morning morning. Is it morning now. Morning or evening. The time. What is the time now. Morning time.,message,2024-04-09,en
+S099,I forget again. Forgot again. Forget forget. I forget everything I forget. Again I forgot. Forget I forget again today.,caption,2024-03-31,en
+S099,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,comment,2024-04-05,en
+S099,Morning came. Morning morning. Is it morning now. Morning or evening. The time. What is the time now. Morning time.,comment,2024-09-20,en
+S099,,like,2024-07-12,en
+S099,,view,2024-08-07,en
+S099,,view,2024-10-11,en
+S100,The door. I locked the door. Did I lock the door. The door the door. Need to check the door. Locked or not the door.,caption,2024-11-11,en
+S100,People came today. People people came. I do not know the people. The people came to the house. Who are the people. People came people came.,caption,2024-09-08,en
+S100,What day today. The day. Today what day. Day day. I do not know what day it is today. Day today what day.,comment,2024-07-02,en
+S100,Morning came. Morning morning. Is it morning now. Morning or evening. The time. What is the time now. Morning time.,caption,2024-06-11,en
+S100,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,caption,2024-04-04,en
+S100,I went I went I went. Home. I went home. Home home. Need to go home. Home is the place. I am going home now. Home home home.,comment,2024-09-15,en
+S100,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,caption,2024-10-05,en
+S100,Eat. Need to eat. I eat today. Eat eat. The food. Eat the food. Food food food. Need to eat the food now.,message,2024-02-17,en
+S100,Cannot. I cannot do this. Cannot find it. Cannot remember. Cannot cannot. I cannot do the thing I cannot find it I cannot.,caption,2024-04-19,en
+S100,,view,2024-06-18,en
+S100,,view,2024-07-03,en
