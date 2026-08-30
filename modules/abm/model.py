@@ -29,7 +29,25 @@ class LuminaABM(mesa.Model):
 
         self.n_people = n_people
         self.grid_size = grid_size
-        self.schedule = mesa.time.RandomActivation(self)
+        
+        if hasattr(mesa, "time") and hasattr(mesa.time, "RandomActivation"):
+            self.schedule = mesa.time.RandomActivation(self)
+        else:
+            # Fallback scheduler for Mesa 3.0+
+            class _SimpleSchedule:
+                def __init__(self, model):
+                    self.model = model
+                    self.agents = []
+                def add(self, agent):
+                    if agent not in self.agents:
+                        self.agents.append(agent)
+                def step(self):
+                    random.shuffle(self.agents)
+                    for agent in list(self.agents):
+                        if hasattr(agent, "step"):
+                            agent.step()
+            self.schedule = _SimpleSchedule(self)
+
         self.grid = mesa.space.MultiGrid(grid_size, grid_size, torus=True)
 
         self.awareness_spread_count = 0
