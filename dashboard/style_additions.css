@@ -50,6 +50,27 @@
     display: flex !important;
 }
 
+/* Fix Streamlit Material Symbols icons rendering as raw text */
+.material-symbols-rounded,
+span.material-symbols-rounded,
+[data-testid="stExpander"] summary span[class*="material"],
+[data-testid="stFileUploadDropzone"] span[class*="material"],
+button span[class*="material"] {
+    font-family: 'Material Symbols Rounded' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: inherit !important;
+    line-height: 1 !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+    direction: ltr !important;
+    -webkit-font-feature-settings: 'liga' !important;
+    font-feature-settings: 'liga' !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
 /* Shared */
 .progress-note {
     font-size: 0.72rem;
