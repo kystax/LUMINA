@@ -32,7 +32,6 @@ def render_main_page() -> None:
     - Recent Analysis Table
     - Reports & AI Insights
     """
-    render_topbar("Dashboard", "Cognitive pattern monitoring", page="main")
     render_profile_header_strip()
 
     # If Upload Data button clicked in header, show Upload section expander open
@@ -82,7 +81,6 @@ def render_settings_page() -> None:
     render_topbar(
         "Settings",
         "Manage dashboard, analysis, account, and privacy preferences",
-        page="settings",
     )
 
     with st.container(border=True):
