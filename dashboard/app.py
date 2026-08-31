@@ -72,13 +72,6 @@ load_css("assets/style.css")
 load_css("assets/upload_section.css")
 load_css("style_additions.css")
 
-# Warm up mBERT model once at server startup
-try:
-    from modules.nlp.classifier import get_mbert
-    get_mbert()
-except Exception as e:
-    print(f"[LUMINA] Warmup notice: {e}")
-
 require_login()  # blocks everything below until authenticated
 
 user = st.session_state.user
