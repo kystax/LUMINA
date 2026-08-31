@@ -361,87 +361,67 @@ def make_outcome_trajectory(without_support: list, with_support: list) -> go.Fig
     return figure
 
 
-def make_gauge(score: int = 67, incomplete: bool = False) -> go.Figure:
+def make_gauge(score: int = 0, incomplete: bool = False) -> go.Figure:
     """
-    LUMINA CALM — Cognitive Pattern Index Visualization
-    A quiet, elegant purple radial indicator without alarming traffic-light steps.
+    LUMINA — Cognitive Pattern Index Visualization
+    A clean teal radial arc gauge matching the reference image.
     """
-    if score >= 65:
-        variation_label = "Elevated pattern variation"
-    elif score >= 35:
-        variation_label = "Moderate pattern variation"
-    elif score > 0:
-        variation_label = "Lower pattern variation"
-    else:
-        variation_label = "Awaiting analysis data"
-
-    annotation_text = (
-        "Linguistic sub-score only (partial analysis)"
-        if incomplete
-        else variation_label
-    )
+    num_display = f"{score}" if score > 0 else "—"
 
     figure = go.Figure(
         go.Indicator(
             mode="gauge+number",
-            value=score,
+            value=score if score > 0 else 0,
             number={
-                "suffix": " / 100",
+                "suffix": " / 100" if score > 0 else "",
                 "font": {
-                    "size": 28,
+                    "size": 26,
                     "color": COLORS["text"],
                     "family": "Inter, -apple-system, sans-serif",
                 },
             },
-            domain={"x": [0, 1], "y": [0.06, 0.94]},
+            domain={"x": [0, 1], "y": [0.08, 0.95]},
             gauge={
                 "shape": "angular",
                 "axis": {
                     "range": [0, 100],
-                    "tickvals": [0, 50, 100],
-                    "ticktext": ["0", "50", "100"],
-                    "tickfont": {
-                        "size": 10,
-                        "color": COLORS["text_secondary"],
-                    },
+                    "showticklabels": False,
                     "tickwidth": 0,
                 },
                 "bar": {
-                    "color": COLORS["purple"],
+                    "color": COLORS["teal"] if score > 0 else "rgba(0,0,0,0)",
                     "thickness": 0.28,
                 },
                 "bgcolor": "rgba(0,0,0,0)",
                 "borderwidth": 0,
                 "steps": [
-                    {"range": [0, 100], "color": COLORS["lavender"]},
+                    {"range": [0, 100], "color": "#E8F6F4"},
                 ],
             },
         )
     )
 
+    # When score is 0, add centered "— / 100" annotation
+    if score == 0:
+        figure.add_annotation(
+            x=0.5,
+            y=0.25,
+            xref="paper",
+            yref="paper",
+            text="<b style='font-size:24px; color:#152422;'>—</b><span style='font-size:14px; color:#78918D;'> / 100</span>",
+            showarrow=False,
+            font={"family": "Inter, sans-serif"},
+        )
+
     figure.update_layout(
-        height=210,
-        margin={"l": 20, "r": 20, "t": 10, "b": 15},
+        height=180,
+        margin={"l": 15, "r": 15, "t": 5, "b": 10},
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        annotations=[
-            {
-                "x": 0.5,
-                "y": 0.02,
-                "xref": "paper",
-                "yref": "paper",
-                "text": annotation_text,
-                "showarrow": False,
-                "font": {
-                    "size": 11,
-                    "color": COLORS["purple_dark"] if score > 0 else COLORS["text_secondary"],
-                    "family": "Inter, sans-serif",
-                },
-            }
-        ],
     )
 
     return figure
+
 
 
 

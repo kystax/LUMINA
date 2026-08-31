@@ -2,61 +2,55 @@
 
 """
 LUMINA – Color tokens for charts, indicators, and UI components.
-Palette: Deep purple sidebar + Soft lavender card surfaces.
+Palette: Deep Teal sidebar + Clean Mint/Teal card surfaces matching reference UI.
 """
 
 COLORS = {
-    # ── LUMINA PURPLE PALETTE ──────────────────────────────────────
-    "purple":            "#6F5A8E",   # Primary brand accent
-    "purple_dark":       "#4A3567",   # Deep Purple
-    "purple_deep":       "#2E1F50",   # Sidebar deep
-    "purple_mid":        "#8B72AC",   # Mid purple for chart fills
-    "purple_soft":       "#BBA8D4",   # Soft/muted purple
+    # ── LUMINA TEAL PALETTE (matches reference image) ────────────────
+    "teal":              "#166E67",   # Primary brand accent
+    "teal_dark":         "#0E4D48",   # Deep teal
+    "teal_deep":         "#062826",   # Sidebar deep background
+    "teal_mid":          "#208B82",   # Mid teal for chart fills
+    "teal_soft":         "#C2EAE5",   # Soft/muted teal
+    "teal_light":        "#E8F6F4",   # Soft badge tint
 
-    "lavender":          "#DDD3EE",   # Lavender card border
-    "lavender_soft":     "#EDE6F7",   # Card surface tint
-    "lavender_100":      "#F5F1FB",   # Page background
-    "lavender_gray":     "#C9BDDF",   # Border / divider
-
-    "background":        "#F5F1FB",   # Warm lavender canvas
-    "paper":             "#F5F1FB",   # Alias
+    "background":        "#F4F8F7",   # Clean light canvas
+    "paper":             "#F4F8F7",   # Alias
     "surface":           "#FFFFFF",   # White card surfaces
-    "card":              "#EDE6F7",   # Tinted card bg
+    "card":              "#FFFFFF",   # Card bg
 
-    "text":              "#1A1626",   # Deep primary text
-    "ink":               "#1A1626",
-    "text_secondary":    "#5A5472",   # Secondary text
-    "muted":             "#5A5472",
-    "text_muted":        "#9490A8",   # Footnote text
+    "text":              "#152422",   # Deep primary text
+    "ink":               "#152422",
+    "text_secondary":    "#556B68",   # Secondary text
+    "muted":             "#556B68",
+    "text_muted":        "#889E9B",   # Footnote text
 
-    "line":              "#D8D0E9",   # Divider / border
-    "border":            "#D8D0E9",
+    "line":              "#E0ECE9",   # Divider / border
+    "border":            "#E0ECE9",
 
-    # ── Non-alarming Status Signals ─────────────────────────────────
-    "lower_var":         "#6B9E78",   # Sage / lower variation
-    "green":             "#6B9E78",
-    "green_soft":        "#EAF2EC",
+    # ── Status Signals ──────────────────────────────────────────────
+    "lower_var":         "#166E67",   # Lower variation / Stable
+    "green":             "#166E67",
+    "green_soft":        "#E8F6F4",
 
-    "moderate_var":      "#B49860",   # Warm amber / moderate
-    "orange":            "#B49860",
-    "amber":             "#B49860",
-    "amber_soft":        "#F7F2E8",
+    "moderate_var":      "#D97706",   # Warm amber / moderate
+    "orange":            "#D97706",
+    "amber":             "#D97706",
+    "amber_soft":        "#FEF3C7",
 
-    "elevated_var":      "#A96A64",   # Clay-rust / elevated
-    "red":               "#A96A64",
-    "rust":              "#A96A64",
-    "rust_soft":         "#F7EDED",
+    "elevated_var":      "#DC2626",   # Rust / elevated
+    "red":               "#DC2626",
+    "rust":              "#DC2626",
+    "rust_soft":         "#FEE2E2",
 
-    # ── Legacy & Chart Compatibility Aliases ────────────────────────
-    "teal":              "#6F5A8E",   # maps to primary purple
-    "teal_soft":         "#EDE6F7",
-    "sage":              "#6B9E78",
-    "blue":              "#6F5A8E",
-    "cyan":              "#BBA8D4",
-    "navy":              "#1A1626",
-    "navy_2":            "#4A3567",
+    # ── Aliases ─────────────────────────────────────────────────────
+    "purple":            "#166E67",
+    "purple_dark":       "#0E4D48",
+    "purple_mid":        "#208B82",
+    "lavender":          "#C2EAE5",
+    "lavender_soft":     "#E8F6F4",
+    "lavender_100":      "#F4F8F7",
     "white":             "#FFFFFF",
-    "page":              "#F5F1FB",
-    "soft_neutral":      "#E8E4F0",
-    "sidebar":           "#3D2870",   # Deep purple sidebar
+    "page":              "#F4F8F7",
+    "soft_neutral":      "#E8F6F4",
 }

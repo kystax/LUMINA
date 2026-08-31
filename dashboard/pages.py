@@ -2,7 +2,6 @@ import streamlit as st
 
 from components import (
     render_section_heading,
-    render_topbar,
     render_profile_header_strip,
 )
 from sections import (
@@ -24,61 +23,26 @@ def _anchor(section_id: str) -> None:
 
 def render_main_page() -> None:
     """
-    Render main dashboard matching the React LuminaDashboard layout:
+    Render main dashboard matching the reference image layout:
     - Active Profile Header Card (with Upload Data and Export Report buttons)
-    - Upload Data Section (expands/toggles when requested or directly visible)
+    - Upload & Clinical Intake Top Split Card
     - Tabbed User Analysis ([Overview], [Language], [Social behavior], [Simulation])
-    - Follower Timeline
-    - Recent Analysis Table
-    - Reports & AI Insights
     """
     render_profile_header_strip()
 
-    # If Upload Data button clicked in header, show Upload section expander open
-    show_upload = st.session_state.get("show_upload_modal", False)
-    
+    st.markdown("<div style='height:4px;'></div>", unsafe_allow_html=True)
     _anchor("dashboard-section")
-    with st.expander("Upload & Analyze Export Data", expanded=show_upload or False):
-        render_zip_upload_section()
+    render_zip_upload_section()
 
-
-    st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='height:16px;'></div>", unsafe_allow_html=True)
 
     _anchor("user-analysis-section")
     render_user_analysis_tabs()
 
-    st.markdown("<div style='height:18px;'></div>", unsafe_allow_html=True)
-
-    _anchor("recent-analysis-section")
-    render_section_heading(
-        "Recent Analysis",
-        "Review recently completed records",
-    )
-    render_recent_analyses()
-
-    st.markdown("<div style='height:18px;'></div>", unsafe_allow_html=True)
-
-    _anchor("reports-section")
-    render_section_heading(
-        "Reports & AI Insights",
-        "Download summary reports and review AI insights",
-    )
-
-    report_column, insight_column = st.columns(
-        [1, 2],
-        gap="medium",
-    )
-
-    with report_column:
-        render_reports()
-
-    with insight_column:
-        render_ai_insights()
-
 
 def render_settings_page() -> None:
     """Render Settings as a separate view."""
-    render_topbar(
+    render_section_heading(
         "Settings",
         "Manage dashboard, analysis, account, and privacy preferences",
     )

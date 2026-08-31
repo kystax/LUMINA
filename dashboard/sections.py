@@ -180,15 +180,14 @@ def render_user_analysis_tabs() -> None:
 
     # ── TAB 1: OVERVIEW ──────────────────────────────────────────────
     with tab_overview:
-        c1, c2 = st.columns([1, 2], gap="medium")
+        c_gauge, c_ind, c_trend = st.columns([1.15, 1.35, 1.8], gap="medium")
 
-        with c1:
+        # 1. Cognitive Pattern Index (Gauge)
+        with c_gauge:
             with st.container(border=True):
                 card_heading(
-                    card_title,
-                    card_subtitle,
-                    score_tag,
-                    score_tag_class,
+                    "Cognitive Pattern Index",
+                    "Integrated multi-module score",
                 )
 
                 st.plotly_chart(
@@ -199,94 +198,238 @@ def render_user_analysis_tabs() -> None:
                 )
 
                 render_html(
-                    """
-                    <div style="font-size: 11.5px; color: #6F7470; text-align: center; margin-top: 4px; line-height: 1.5;">
-                        Reflects behavioral change over time, not a clinical diagnosis.
+                    f"""
+                    <div style="text-align: center; margin-top: 4px;">
+                        <span class="status-pill-badge {score_tag_class}">{score_tag}</span>
                     </div>
                     """
                 )
-                if analysis:
-                    render_html(
-                        """
-                        <div class="info-alert-box" style="margin-top: 12px; padding: 10px 12px;">
-                            <b>Sinhala content detected:</b> complexity score reliability calibrated against reference data.
-                        </div>
-                        """
-                    )
 
-        with c2:
+        # 2. Key Indicators (2x2 Grid)
+        with c_ind:
+            with st.container(border=True):
+                card_heading(
+                    "Key Indicators",
+                    "Core risk & engagement metrics",
+                )
+
+                if analysis and nlp_result:
+                    lang_val = f"{nlp_result.get('risk_score', 0.0)*100:.0f}%"
+                    lang_sub = "Active score"
+                else:
+                    lang_val = "—"
+                    lang_sub = "Awaiting analysis"
+
+                if analysis and sna_result:
+                    soc_val = f"{sna_result.get('withdrawal_score', 0.0)*100:.0f}%"
+                    soc_sub = "Active score"
+                else:
+                    soc_val = "—"
+                    soc_sub = "Awaiting analysis"
+
+                if analysis:
+                    over_val = f"{risk_score_pct}%"
+                    over_sub = "Composite variation"
+                    risk_val = score_tag
+                    risk_sub = "Calculated risk"
+                else:
+                    over_val = "—"
+                    over_sub = "Awaiting analysis"
+                    risk_val = "—"
+                    risk_sub = "Awaiting analysis"
+
+                render_html(
+                    f"""
+                    <div class="key-indicators-grid">
+                        <div class="key-indicator-tile">
+                            <div class="indicator-header">
+                                <span class="indicator-icon">💬</span>
+                                <span class="indicator-title">Language variation</span>
+                            </div>
+                            <div class="indicator-value">{lang_val}</div>
+                            <div class="indicator-sub">{lang_sub}</div>
+                        </div>
+
+                        <div class="key-indicator-tile">
+                            <div class="indicator-header">
+                                <span class="indicator-icon">👥</span>
+                                <span class="indicator-title">Social engagement</span>
+                            </div>
+                            <div class="indicator-value">{soc_val}</div>
+                            <div class="indicator-sub">{soc_sub}</div>
+                        </div>
+
+                        <div class="key-indicator-tile">
+                            <div class="indicator-header">
+                                <span class="indicator-icon">📉</span>
+                                <span class="indicator-title">Overall variation</span>
+                            </div>
+                            <div class="indicator-value">{over_val}</div>
+                            <div class="indicator-sub">{over_sub}</div>
+                        </div>
+
+                        <div class="key-indicator-tile">
+                            <div class="indicator-header">
+                                <span class="indicator-icon">🛡️</span>
+                                <span class="indicator-title">Risk level</span>
+                            </div>
+                            <div class="indicator-value">{risk_val}</div>
+                            <div class="indicator-sub">{risk_sub}</div>
+                        </div>
+                    </div>
+                    """
+                )
+
+        # 3. Pattern Changes Over Time
+        with c_trend:
             with st.container(border=True):
                 card_heading(
                     "Pattern changes over time",
                     "NLP linguistic and SNA social sub-scores across windows",
                 )
 
-                st.plotly_chart(
-                    make_composite_trend_chart(trend_data),
-                    width="stretch",
-                    theme=None,
-                    config={"displayModeBar": False, "responsive": True},
+                if trend_data:
+                    st.plotly_chart(
+                        make_composite_trend_chart(trend_data),
+                        width="stretch",
+                        theme=None,
+                        config={"displayModeBar": False, "responsive": True},
+                    )
+                else:
+                    render_html(
+                        """
+                        <div class="empty-state-chart-box">
+                            <div class="empty-state-icon-circle">📈</div>
+                            <div class="empty-state-title">No data yet</div>
+                            <div class="empty-state-sub">Upload data to see patterns over time.</div>
+                            <div class="empty-state-x-axis">
+                                <span>Now</span>
+                                <span>3 months</span>
+                                <span>6 months</span>
+                                <span>12 months</span>
+                            </div>
+                        </div>
+                        """
+                    )
+
+        st.markdown("<div style='height:16px;'></div>", unsafe_allow_html=True)
+
+        # Bottom Row: Recent Analyses | AI Insights | Quick Actions
+        r_col1, r_col2, r_col3 = st.columns([1.4, 1.4, 1.2], gap="medium")
+
+        with r_col1:
+            with st.container(border=True):
+                card_heading(
+                    "Recent Analyses",
+                    "Review your latest analysis records",
+                )
+                user_id = _current_user_id()
+                recent_results = get_recent_risk_results(limit=5, user_id=user_id) if user_id else []
+
+                if recent_results:
+                    for res in recent_results[:3]:
+                        date_str = str(res.get("created_at", ""))[:10]
+                        score_v = f"{float(res.get('final_score', 0))*100:.0f}/100"
+                        r_cls = res.get("final_risk_class", "HC")
+                        render_html(
+                            f"""
+                            <div class="recent-mini-row">
+                                <div>
+                                    <div style="font-weight:600; font-size:13px; color:var(--c-n900);">{html.escape(display_name)}</div>
+                                    <div style="font-size:11px; color:var(--c-n400);">{date_str}</div>
+                                </div>
+                                <div style="text-align:right;">
+                                    <div style="font-family:var(--font-mono); font-weight:700; font-size:13px;">{score_v}</div>
+                                    <span class="status-pill-badge tag-teal">{r_cls}</span>
+                                </div>
+                            </div>
+                            """
+                        )
+                else:
+                    render_html(
+                        """
+                        <div class="empty-state-box">
+                            <div class="empty-state-icon-circle">📄</div>
+                            <div class="empty-state-title">No analyses yet</div>
+                            <div class="empty-state-sub">Upload data and run your first analysis.</div>
+                        </div>
+                        """
+                    )
+
+        with r_col2:
+            with st.container(border=True):
+                card_heading(
+                    "AI Insights (Top Observations)",
+                    "Insights generated from latest pattern data",
+                )
+                if analysis:
+                    ai_insights = build_ai_insights_from_result(
+                        analysis.get("nlp"), analysis.get("sna")
+                    )
+                else:
+                    ai_insights = []
+
+                if ai_insights:
+                    for insight in ai_insights[:2]:
+                        render_html(
+                            f"""
+                            <div class="ai-card status-{insight.get('status', 'ok')}">
+                                <div style="font-size:12.5px; color:var(--c-n900); line-height:1.45;">
+                                    {html.escape(insight["text"])}
+                                </div>
+                            </div>
+                            """
+                        )
+                else:
+                    render_html(
+                        """
+                        <div class="empty-state-box">
+                            <div class="empty-state-icon-circle">✨</div>
+                            <div class="empty-state-title">No insights yet</div>
+                            <div class="empty-state-sub">Insights will appear after analysis.</div>
+                        </div>
+                        """
+                    )
+
+        with r_col3:
+            with st.container(border=True):
+                card_heading(
+                    "Quick Actions",
+                    "Frequent workflows",
+                )
+                render_html(
+                    """
+                    <div class="quick-actions-list">
+                        <a class="quick-action-item" href="#dashboard-section" target="_self">
+                            <span class="quick-action-icon">☁️</span>
+                            <div class="quick-action-text">
+                                <div class="quick-action-title">Upload new data</div>
+                                <div class="quick-action-sub">Add a new export file to analyze</div>
+                            </div>
+                            <span class="quick-action-arrow">›</span>
+                        </a>
+
+                        <a class="quick-action-item" href="#reports-section" target="_self">
+                            <span class="quick-action-icon">📄</span>
+                            <div class="quick-action-text">
+                                <div class="quick-action-title">View reports</div>
+                                <div class="quick-action-sub">Download reports and insights</div>
+                            </div>
+                            <span class="quick-action-arrow">›</span>
+                        </a>
+
+                        <a class="quick-action-item" href="?page=settings" target="_self">
+                            <span class="quick-action-icon">📖</span>
+                            <div class="quick-action-text">
+                                <div class="quick-action-title">Learn more</div>
+                                <div class="quick-action-sub">About LUMINA methodology</div>
+                            </div>
+                            <span class="quick-action-arrow">›</span>
+                        </a>
+                    </div>
+                    """
                 )
 
-        st.markdown("<div style='height:14px;'></div>", unsafe_allow_html=True)
-
-        # 4 Metric Cards Grid with real or zero values
-        m_col1, m_col2, m_col3, m_col4 = st.columns(4, gap="medium")
-
-        if analysis and sna_result:
-            pf_val = f"{sna_result.get('posting_frequency', 0):.1f}/mo"
-            contacts_val = str(sna_result.get("dm_contact_count", 0))
-            eng_val = f"{sna_result.get('interaction_diversity', 0):.2f}"
-        else:
-            pf_val = "—"
-            contacts_val = "0"
-            eng_val = "—"
-
-        if analysis and nlp_result:
-            ttr_val = f"{nlp_result.get('ttr', 0.0):.2f}"
-        else:
-            ttr_val = "—"
-
-        with m_col1:
-            render_html(
-                f"""
-                <div class="overview-stat-card">
-                    <div class="overview-icon-badge">∿</div>
-                    <div class="overview-stat-val">{pf_val}</div>
-                    <div class="overview-stat-sub">Posting frequency</div>
-                </div>
-                """
-            )
-        with m_col2:
-            render_html(
-                f"""
-                <div class="overview-stat-card">
-                    <div class="overview-icon-badge">👥</div>
-                    <div class="overview-stat-val">{contacts_val}</div>
-                    <div class="overview-stat-sub">Unique contacts messaged</div>
-                </div>
-                """
-            )
-        with m_col3:
-            render_html(
-                f"""
-                <div class="overview-stat-card">
-                    <div class="overview-icon-badge">◈</div>
-                    <div class="overview-stat-val">{eng_val}</div>
-                    <div class="overview-stat-sub">Interaction diversity</div>
-                </div>
-                """
-            )
-        with m_col4:
-            render_html(
-                f"""
-                <div class="overview-stat-card">
-                    <div class="overview-icon-badge">Aa</div>
-                    <div class="overview-stat-val">{ttr_val}</div>
-                    <div class="overview-stat-sub">Lexical diversity (TTR)</div>
-                </div>
-                """
-            )
 
 
     # ── TAB 2: LANGUAGE (NLP) ─────────────────────────────────────────
