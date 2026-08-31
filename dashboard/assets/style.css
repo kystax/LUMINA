@@ -6,43 +6,57 @@
 
 /* ── DESIGN TOKENS ───────────────────────────────────────────── */
 :root {
-    /* Teal brand scale matching reference image */
-    --c-p900: #041B1A;   /* deep background */
-    --c-p800: #082D2B;   /* sidebar base */
-    --c-p700: #0D3B39;   /* sidebar gradient top */
-    --c-p600: #104C48;   /* dark teal */
-    --c-p500: #166E67;   /* primary brand teal */
-    --c-p400: #208B82;   /* mid teal */
-    --c-p300: #42ABA1;   /* soft teal */
-    --c-p200: #82CCC4;   /* light teal */
-    --c-p100: #C2EAE5;   /* card tint */
-    --c-p050: #EBF7F5;   /* soft canvas tint */
+    /* Exact Palette from Specification */
+    --c-teal-dark:    #073B3A;   /* Primary dark teal (sidebar) */
+    --c-teal-primary: #087F78;   /* Primary teal */
+    --c-teal-accent:  #14A89A;   /* Accent teal */
+    --c-teal-light:   #EAF7F5;   /* Light teal */
 
-    /* Neutrals */
-    --c-n900: #152422;
-    --c-n700: #334D4A;
-    --c-n500: #556B68;
-    --c-n400: #78918D;
-    --c-n300: #9EB5B1;
-    --c-n200: #CFE0DC;
-    --c-n100: #E6F0EE;
+    --c-bg-main:      #F7FAFA;   /* Main background */
+    --c-card-bg:      #FFFFFF;   /* Card background */
+    --c-text-primary: #152238;   /* Primary text */
+    --c-text-sec:     #667085;   /* Secondary text */
+    --c-border:       #E3E9EC;   /* Border */
+
+    --c-accent-purple:#7256C7;   /* Purple accent for linguistic/NLP */
+    --c-accent-blue:  #3976D9;   /* Blue accent for social behaviour */
+    --c-amber:        #D99A28;   /* Amber for moderate/attention */
+    --c-muted-red:    #C85C5C;   /* Muted red for elevated */
+    --c-green:        #4F9D76;   /* Green for stable/positive */
+
+    /* Token aliases for existing UI components */
+    --c-p900: #073B3A;
+    --c-p800: #073B3A;
+    --c-p700: #073B3A;
+    --c-p600: #087F78;
+    --c-p500: #087F78;
+    --c-p400: #14A89A;
+    --c-p300: #14A89A;
+    --c-p200: #E3E9EC;
+    --c-p100: #EAF7F5;
+    --c-p050: #F7FAFA;
+
+    --c-n900: #152238;
+    --c-n700: #334155;
+    --c-n500: #667085;
+    --c-n400: #8896A6;
+    --c-n300: #94A3B8;
+    --c-n200: #E3E9EC;
+    --c-n100: #F1F5F7;
     --c-n000: #FFFFFF;
 
-    /* Status */
-    --c-success: #166E67;
-    --c-success-bg: #E8F6F4;
-    --c-warning: #D97706;
-    --c-warning-bg: #FEF3C7;
-    --c-danger:  #DC2626;
-    --c-danger-bg:  #FEE2E2;
+    --c-success: #4F9D76;
+    --c-success-bg: #EDF7F2;
+    --c-warning: #D99A28;
+    --c-warning-bg: #FEF9EE;
+    --c-danger:  #C85C5C;
+    --c-danger-bg:  #FDF2F2;
 
-    /* Spacing & shape */
     --radius-sm:  8px;
     --radius-md:  12px;
     --radius-lg:  16px;
-    --radius-xl:  22px;
+    --radius-xl:  24px;
 
-    /* Fonts */
     --font-ui:     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-serif:  'Inter', sans-serif;
     --font-mono:   'IBM Plex Mono', 'Courier New', monospace;
@@ -57,13 +71,13 @@ html, body,
 [data-testid="stMain"],
 .stApp {
     font-family: var(--font-ui) !important;
-    color: var(--c-n900) !important;
+    color: var(--c-text-primary) !important;
 }
 
 
 /* ── APP SHELL ───────────────────────────────────────────────── */
 .stApp {
-    background: var(--c-p050) !important;
+    background: var(--c-bg-main) !important;
     min-height: 100vh;
 }
 
@@ -80,12 +94,13 @@ html, body,
 }
 
 
-/* ── SIDEBAR: Dark purple gradient ───────────────────────────── */
+/* ── SIDEBAR: Dark teal #073B3A ──────────────────────────────── */
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, var(--c-p700) 0%, var(--c-p900) 100%) !important;
-    border-right: none !important;
-    box-shadow: 4px 0 30px rgba(30, 16, 64, 0.25) !important;
+    background: #073B3A !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 2px 0 20px rgba(7, 59, 58, 0.15) !important;
     min-width: 230px !important;
+    max-width: 240px !important;
 }
 
 section[data-testid="stSidebar"] > div:first-child {

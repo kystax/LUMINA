@@ -92,20 +92,30 @@
 }
 
 .ai-card {
-    border-left: 3px solid var(--c-p500);
+    border-left: 3px solid var(--c-teal-primary);
     border-radius: 12px;
     padding: 13px 14px;
     margin-bottom: 10px;
-    background: var(--c-n000);
-    border-top: 1px solid var(--c-n100);
-    border-right: 1px solid var(--c-n100);
-    border-bottom: 1px solid var(--c-n100);
+    background: var(--c-card-bg);
+    border-top: 1px solid var(--c-border);
+    border-right: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
     font-family: var(--font-ui) !important;
 }
 
-.ai-card.status-ok    { border-left-color: var(--c-success); }
-.ai-card.status-watch { border-left-color: var(--c-warning); }
-.ai-card.status-flag  { border-left-color: var(--c-danger); }
+.ai-card.status-ok, .ai-card.status-stable          { border-left-color: var(--c-green); }
+.ai-card.status-watch, .ai-card.status-attention    { border-left-color: var(--c-amber); }
+.ai-card.status-flag, .ai-card.status-elevated      { border-left-color: var(--c-muted-red); }
+.ai-card.status-limitation                          { border-left-color: var(--c-accent-purple); }
+
+.metric-sub-bar {
+    width: 90px;
+    background: var(--c-border);
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 4px;
+    overflow: hidden;
+}
 
 /* ────────────────────────────────────────────────────────────────
    LUMINA – Reference UI Design System (Teal Edition)
