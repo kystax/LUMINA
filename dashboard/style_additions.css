@@ -40,6 +40,12 @@
     --lm-danger-bg:          var(--c-danger-bg, #F8EDED);
 }
 
+/* Hide the Streamlit sidebar collapse/expand toggle button */
+[data-testid="stSidebarCollapseButton"],
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
+
 /* Shared */
 .progress-note {
     font-size: 0.72rem;

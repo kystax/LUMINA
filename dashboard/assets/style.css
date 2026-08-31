@@ -105,18 +105,10 @@ section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
     font-family: var(--font-ui) !important;
 }
 
-/* Sidebar toggle button */
-[data-testid="stSidebarCollapseButton"] {
-    background: rgba(255,255,255,0.12) !important;
-    border: 1px solid rgba(255,255,255,0.16) !important;
-    border-radius: var(--radius-sm) !important;
-    color: rgba(255,255,255,0.8) !important;
-    z-index: 100001 !important;
-    margin: 8px 6px !important;
-}
-
-[data-testid="stSidebarCollapseButton"]:hover {
-    background: rgba(255,255,255,0.22) !important;
+/* Sidebar toggle button — hidden */
+[data-testid="stSidebarCollapseButton"],
+[data-testid="collapsedControl"] {
+    display: none !important;
 }
 
 /* Sign-out button inside dark sidebar */
