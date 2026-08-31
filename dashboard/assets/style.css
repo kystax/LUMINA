@@ -105,10 +105,12 @@ section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
     font-family: var(--font-ui) !important;
 }
 
-/* Sidebar toggle button — hidden */
-[data-testid="stSidebarCollapseButton"],
-[data-testid="collapsedControl"] {
+/* Sidebar toggle button — hide collapse button only */
+[data-testid="stSidebarCollapseButton"] {
     display: none !important;
+}
+[data-testid="collapsedControl"] {
+    display: flex !important;
 }
 
 /* Sign-out button inside dark sidebar */

@@ -40,10 +40,14 @@
     --lm-danger-bg:          var(--c-danger-bg, #F8EDED);
 }
 
-/* Hide the Streamlit sidebar collapse/expand toggle button */
-[data-testid="stSidebarCollapseButton"],
-[data-testid="collapsedControl"] {
+/* Hide the Streamlit sidebar collapse button (inside sidebar) */
+[data-testid="stSidebarCollapseButton"] {
     display: none !important;
+}
+
+/* Keep the expand button visible when sidebar is collapsed */
+[data-testid="collapsedControl"] {
+    display: flex !important;
 }
 
 /* Shared */
