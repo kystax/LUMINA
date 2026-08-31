@@ -527,14 +527,18 @@ def generate_analysis_pdf(
     return buffer.getvalue()
 
 
-def create_pdf_report(summary: list[tuple[str, str]] | None = None) -> bytes:
+def create_pdf_report(
+    summary: list[tuple[str, str]] | None = None,
+    subject_name: str = "User",
+    username: str = "User",
+) -> bytes:
     """
     Backwards-compatible wrapper that generates the full rich LUMINA report.
     """
     return generate_analysis_pdf(
         result={},
-        subject_name="Avery",
-        username="Avery",
+        subject_name=subject_name,
+        username=username,
     )
 
 

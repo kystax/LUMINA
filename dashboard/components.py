@@ -154,9 +154,25 @@ def render_profile_header_strip() -> None:
                 st.rerun()
         with btn_c3:
             from services.report_service import generate_analysis_pdf, create_pdf_report
+            from services.risk_service import get_recent_risk_results, get_sessions_for_run, get_analysis_by_session_id
             user = st.session_state.get("user") or {}
-            subj_name = display_name or user.get("display_name") or user.get("username") or "Avery"
+            subj_name = display_name or user.get("display_name") or user.get("username") or "user2"
             analysis = st.session_state.get("lumina_session_analysis") or {}
+
+            # If not in live session state, fetch user's latest analysis from database
+            if not analysis:
+                user_id = user.get("user_id") or user.get("id")
+                recent_results = get_recent_risk_results(limit=1, user_id=user_id) if user_id else []
+                if recent_results:
+                    latest = recent_results[0]
+                    if isinstance(latest, (list, tuple)) and len(latest) > 4:
+                        run_id = latest[4]
+                        sess_ids = get_sessions_for_run(run_id)
+                        if sess_ids:
+                            latest_session = get_analysis_by_session_id(sess_ids[0])
+                            if latest_session:
+                                analysis = latest_session
+
             if analysis:
                 pdf_data_bytes = generate_analysis_pdf(
                     result=analysis,
@@ -164,7 +180,10 @@ def render_profile_header_strip() -> None:
                     username=subj_name,
                 )
             else:
-                pdf_data_bytes = create_pdf_report()
+                pdf_data_bytes = create_pdf_report(
+                    subject_name=subj_name,
+                    username=subj_name,
+                )
 
             st.download_button(
                 "⬇️ Export report",

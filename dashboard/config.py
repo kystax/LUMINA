@@ -31,12 +31,16 @@ COLORS = {
 
     # ── DOMAIN ACCENTS ──────────────────────────────────────────────
     "purple":            "#7256C7",   # Linguistic / NLP indicator accent
+    "purple_dark":       "#4A3567",
+    "purple_mid":        "#7256C7",
     "blue":              "#3976D9",   # Social behaviour indicator accent
     "amber":             "#D99A28",   # Moderate / Attention indicator
     "orange":            "#D99A28",
     "red":               "#C85C5C",   # Muted red for elevated variation
     "rust":              "#C85C5C",
     "green":             "#4F9D76",   # Stable / Positive indicator
+    "sage":              "#4F9D76",   # Sage green for positive support trajectory
+    "sage_soft":         "#EAF7F5",
     "lower_var":         "#4F9D76",
     "moderate_var":      "#D99A28",
     "elevated_var":      "#C85C5C",
