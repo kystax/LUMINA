@@ -53,7 +53,6 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body,
-[class*="css"],
 [data-testid="stAppViewContainer"],
 [data-testid="stMain"],
 .stApp {
@@ -105,12 +104,35 @@ section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
     font-family: var(--font-ui) !important;
 }
 
-/* Sidebar toggle button — hide collapse button only */
+/* Sidebar toggle buttons (collapse & expand) */
 [data-testid="stSidebarCollapseButton"] {
-    display: none !important;
+    display: flex !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-radius: var(--radius-sm) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+    margin: 8px !important;
+    z-index: 100001 !important;
 }
+
+[data-testid="stSidebarCollapseButton"]:hover {
+    background: rgba(255, 255, 255, 0.24) !important;
+}
+
 [data-testid="collapsedControl"] {
     display: flex !important;
+    background: var(--c-p500) !important;
+    color: #FFFFFF !important;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+    box-shadow: 2px 0 12px rgba(74, 53, 103, 0.30) !important;
+    z-index: 100000 !important;
+}
+
+[data-testid="collapsedControl"] svg,
+[data-testid="collapsedControl"] span,
+[data-testid="collapsedControl"] * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
 }
 
 /* Sign-out button inside dark sidebar */
@@ -252,7 +274,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Body text */
-p, li, span, label,
+p, li, label,
 [data-testid="stMarkdownContainer"] p,
 [data-testid="stMarkdownContainer"] li {
     font-family: var(--font-ui) !important;

@@ -40,34 +40,32 @@
     --lm-danger-bg:          var(--c-danger-bg, #F8EDED);
 }
 
-/* Hide the Streamlit sidebar collapse button (inside sidebar) */
-[data-testid="stSidebarCollapseButton"] {
-    display: none !important;
-}
-
-/* Keep the expand button visible when sidebar is collapsed */
-[data-testid="collapsedControl"] {
-    display: flex !important;
-}
-
 /* Fix Streamlit Material Symbols icons rendering as raw text */
+[data-testid="stIconMaterial"],
+[data-testid="stExpanderToggleIcon"],
+[data-testid="stExpanderToggleIcon"] *,
 .material-symbols-rounded,
-span.material-symbols-rounded,
-[data-testid="stExpander"] summary span[class*="material"],
-[data-testid="stFileUploadDropzone"] span[class*="material"],
-button span[class*="material"] {
-    font-family: 'Material Symbols Rounded' !important;
+.material-symbols-outlined,
+.material-icons,
+[class*="material-symbols"],
+[class*="MaterialSymbols"],
+[class*="material-icons"],
+[class*="stIconMaterial"],
+[data-testid="stExpander"] summary span:first-child,
+[data-testid="stFileUploadDropzone"] span:first-child {
+    font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons' !important;
     font-style: normal !important;
     font-weight: normal !important;
-    font-size: inherit !important;
+    font-size: 1.25rem !important;
     line-height: 1 !important;
     letter-spacing: normal !important;
     text-transform: none !important;
+    display: inline-block !important;
     white-space: nowrap !important;
     word-wrap: normal !important;
     direction: ltr !important;
-    -webkit-font-feature-settings: 'liga' !important;
-    font-feature-settings: 'liga' !important;
+    -webkit-font-feature-settings: 'liga' 1 !important;
+    font-feature-settings: 'liga' 1 !important;
     -webkit-font-smoothing: antialiased !important;
 }
 
