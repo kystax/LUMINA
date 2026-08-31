@@ -113,18 +113,20 @@ section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
 
 /* Sign-out button inside dark sidebar */
 section[data-testid="stSidebar"] button[kind="secondary"] {
-    background: rgba(255,255,255,0.08) !important;
-    border: 1px solid rgba(255,255,255,0.18) !important;
-    color: rgba(255,255,255,0.75) !important;
+    background: rgba(255,255,255,0.14) !important;
+    border: 1.5px solid rgba(255,255,255,0.55) !important;
+    color: #FFFFFF !important;
     border-radius: var(--radius-sm) !important;
     font-family: var(--font-ui) !important;
     font-size: 13px !important;
-    font-weight: 500 !important;
-    transition: background 0.15s ease !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em !important;
+    transition: background 0.15s ease, border-color 0.15s ease !important;
 }
 
 section[data-testid="stSidebar"] button[kind="secondary"]:hover {
-    background: rgba(255,255,255,0.16) !important;
+    background: rgba(220, 60, 60, 0.30) !important;
+    border-color: rgba(255, 120, 120, 0.70) !important;
     color: #FFFFFF !important;
 }
 
