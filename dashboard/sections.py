@@ -327,20 +327,31 @@ def render_user_analysis_tabs() -> None:
                 recent_results = get_recent_risk_results(limit=5, user_id=user_id) if user_id else []
 
                 if recent_results:
-                    for res in recent_results[:3]:
-                        date_str = str(res.get("created_at", ""))[:10]
-                        score_v = f"{float(res.get('final_score', 0))*100:.0f}/100"
-                        r_cls = res.get("final_risk_class", "HC")
+                    for row in recent_results[:3]:
+                        if isinstance(row, dict):
+                            name_str = row.get("display_name") or row.get("username") or "Profile"
+                            date_str = str(row.get("created_at", ""))[:10]
+                            score_num = float(row.get("combined_score") or row.get("final_score") or 0)
+                            r_cls = str(row.get("combined_class") or row.get("final_risk_class") or "HC")
+                        elif isinstance(row, (list, tuple)):
+                            name_str = str(row[0]) if len(row) > 0 and row[0] else "Profile"
+                            date_str = str(row[1])[:10] if len(row) > 1 and row[1] else "—"
+                            r_cls = str(row[2]) if len(row) > 2 and row[2] else "HC"
+                            score_num = float(row[3]) if len(row) > 3 and row[3] is not None else 0.0
+                        else:
+                            continue
+
+                        score_v = f"{score_num * 100:.0f}/100" if score_num <= 1.0 else f"{score_num:.0f}/100"
                         render_html(
                             f"""
                             <div class="recent-mini-row">
                                 <div>
-                                    <div style="font-weight:600; font-size:13px; color:var(--c-n900);">{html.escape(display_name)}</div>
+                                    <div style="font-weight:600; font-size:13px; color:var(--c-n900);">{html.escape(name_str)}</div>
                                     <div style="font-size:11px; color:var(--c-n400);">{date_str}</div>
                                 </div>
                                 <div style="text-align:right;">
                                     <div style="font-family:var(--font-mono); font-weight:700; font-size:13px;">{score_v}</div>
-                                    <span class="status-pill-badge tag-teal">{r_cls}</span>
+                                    <span class="status-pill-badge tag-teal">{html.escape(r_cls)}</span>
                                 </div>
                             </div>
                             """
