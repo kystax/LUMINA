@@ -961,24 +961,32 @@ div[data-testid="stSelectbox"] [data-baseweb="select"] > div:hover {
 }
 
 
-/* ── RESPONSIVE ──────────────────────────────────────────────── */
+/* ── RESPONSIVE DESIGN SYSTEM ────────────────────────────────── */
 
+/* Tablet Landscape / Small Desktop (993px - 1200px) */
 @media (max-width: 1200px) {
-    div[data-testid="stHorizontalBlock"] {
-        flex-wrap: wrap !important;
-        gap: 12px !important;
+    .block-container {
+        padding: 1.25rem 1.5rem 2.5rem !important;
     }
-    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
-        flex: 1 1 calc(50% - 12px) !important;
-        min-width: 140px !important;
+    .key-indicators-grid {
+        gap: 8px;
+    }
+    .key-indicator-tile {
+        padding: 10px 12px;
+        min-height: 85px;
+    }
+    .header-profile-card {
+        padding: 14px 18px;
     }
 }
 
+/* Tablet Portrait (769px - 992px) */
 @media (max-width: 992px) {
     .block-container {
-        padding: 1rem 1.2rem 2rem !important;
+        padding: 1rem 1.25rem 2rem !important;
+        max-width: 100% !important;
     }
-    .topbar {
+    .header-profile-card {
         padding: 14px 16px;
     }
     .topbar-grid {
@@ -986,24 +994,117 @@ div[data-testid="stSelectbox"] [data-baseweb="select"] > div:hover {
         align-items: flex-start;
         gap: 12px;
     }
-    .top-actions { width: 100%; }
-    .search-pill { flex: 1; }
+    .top-actions {
+        width: 100%;
+    }
+    /* Allow multi-column cards to wrap naturally on medium screens */
+    div[data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+    }
+    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
+        flex: 1 1 calc(50% - 14px) !important;
+        min-width: 260px !important;
+    }
+    /* Let full-width buttons stretch cleanly */
+    .stButton > button {
+        width: 100% !important;
+    }
 }
 
+/* Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
-    .block-container { padding: 0.8rem 0.8rem 1.8rem !important; }
+    .block-container {
+        padding: 0.75rem 0.85rem 2rem !important;
+    }
+    /* Stack all columns into single column */
+    div[data-testid="stHorizontalBlock"] {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
     div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {
         flex: 1 1 100% !important;
+        width: 100% !important;
         min-width: 100% !important;
     }
-    .overview-stat-card { padding: 14px 16px; }
-    .page-title { font-size: 18px; }
-    .card-heading { flex-direction: column; gap: 6px; }
-    div[data-testid="stTabs"] [data-baseweb="tab"] { padding: 8px 12px 10px !important; font-size: 13px !important; }
+    /* Header profile card mobile stacking */
+    .header-profile-card {
+        padding: 12px 14px;
+    }
+    .profile-name-title {
+        font-size: 20px !important;
+    }
+    /* Tabs: horizontal smooth scrolling without multiline wrapping */
+    div[data-testid="stTabs"] [data-baseweb="tab-list"] {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        padding-bottom: 4px !important;
+        scrollbar-width: none !important;
+    }
+    div[data-testid="stTabs"] [data-baseweb="tab-list"]::-webkit-scrollbar {
+        display: none !important;
+    }
+    div[data-testid="stTabs"] [data-baseweb="tab"] {
+        padding: 8px 12px 10px !important;
+        font-size: 13px !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+    }
+    /* 2x2 grid on mobile */
+    .key-indicators-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .key-indicator-tile {
+        padding: 8px 10px;
+        min-height: 80px;
+    }
+    .indicator-val {
+        font-size: 17px !important;
+    }
+    .indicator-label {
+        font-size: 11px !important;
+    }
+    .indicator-sub {
+        font-size: 10px !important;
+    }
+    /* Responsive tables */
+    .responsive-table-wrapper {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        margin: 0 -4px;
+    }
+    /* Dropzone touch targets */
+    [data-testid="stFileUploadDropzone"] {
+        padding: 16px 12px !important;
+    }
 }
 
+/* Small Mobile Phones (<= 480px) */
 @media (max-width: 480px) {
-    .block-container { padding: 0.6rem 0.6rem 1.5rem !important; }
-    .overview-stat-val { font-size: 20px; }
-    .topbar { border-radius: var(--radius-md); padding: 12px 14px; }
+    .block-container {
+        padding: 0.5rem 0.6rem 1.75rem !important;
+    }
+    .section-title {
+        font-size: 16px !important;
+    }
+    .sidebar-brand-title {
+        font-size: 17px !important;
+    }
+    .key-indicators-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    .key-indicator-tile {
+        padding: 8px 8px;
+    }
+    .intake-side-title {
+        font-size: 13.5px !important;
+    }
+    .quick-action-item {
+        padding: 9px 11px;
+    }
 }
+
