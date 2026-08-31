@@ -115,12 +115,6 @@ def render_sidebar(settings_active: bool = False) -> None:
                    target="_self">
                     Reports
                 </a>
-
-                <a class="{settings_class}"
-                   href="?page=settings"
-                   target="_self">
-                    Settings
-                </a>
             </nav>
             """
         )
