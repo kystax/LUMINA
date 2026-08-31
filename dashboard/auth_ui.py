@@ -359,13 +359,9 @@ def render_auth_page():
                 confirm  = st.text_input(
                     "Confirm password", type="password", key="signup_confirm", placeholder="repeat password"
                 )
-                user_type = st.selectbox(
-                    "Account type",
-                    options=["individual", "researcher"],
-                    format_func=lambda x: "Individual / self-monitoring" if x == "individual" else "Researcher / caregiver",
-                    key="signup_user_type",
-                )
                 submitted = st.form_submit_button("Create account", width="stretch", type="primary")
+
+            user_type = "individual"
 
             if submitted:
                 if not username or not password:

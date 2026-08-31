@@ -1,52 +1,62 @@
 # dashboard/config.py
 
 """
-LUMINA CALM – PURPLE EDITION
-Color tokens for charts, indicators, and UI components.
+LUMINA – Color tokens for charts, indicators, and UI components.
+Palette: Deep purple sidebar + Soft lavender card surfaces.
 """
 
 COLORS = {
-    # ── LUMINA CALM PURPLE EDITION PALETTE ──────────────────────
+    # ── LUMINA PURPLE PALETTE ──────────────────────────────────────
     "purple":            "#6F5A8E",   # Primary brand accent
-    "purple_dark":       "#55446F",   # Deep Purple / hover state
-    "lavender":          "#E8E1EE",   # Soft Lavender surface & accents
-    "lavender_soft":     "#F3EFF6",   # Very Soft Lavender section bg
-    "lavender_gray":     "#C9C0D2",   # Lavender Gray borders & lines
-    "background":        "#F7F7F4",   # Warm canvas background
-    "paper":             "#F7F7F4",   # Page background alias
+    "purple_dark":       "#4A3567",   # Deep Purple
+    "purple_deep":       "#2E1F50",   # Sidebar deep
+    "purple_mid":        "#8B72AC",   # Mid purple for chart fills
+    "purple_soft":       "#BBA8D4",   # Soft/muted purple
+
+    "lavender":          "#DDD3EE",   # Lavender card border
+    "lavender_soft":     "#EDE6F7",   # Card surface tint
+    "lavender_100":      "#F5F1FB",   # Page background
+    "lavender_gray":     "#C9BDDF",   # Border / divider
+
+    "background":        "#F5F1FB",   # Warm lavender canvas
+    "paper":             "#F5F1FB",   # Alias
     "surface":           "#FFFFFF",   # White card surfaces
-    "card":              "#FFFFFF",   # Card bg alias
-    "sidebar":           "#F3F1F4",   # Light lavender-gray sidebar
-    "text":              "#292D2B",   # Deep Charcoal primary text
-    "ink":               "#292D2B",   # Primary heading/text alias
-    "text_secondary":    "#6F7470",   # Secondary text
-    "muted":             "#6F7470",   # Muted text alias
-    "text_muted":        "#969A96",   # Tertiary/footnote text
-    "line":              "#DDD9DF",   # Subtle card/divider borders
-    "border":            "#DDD9DF",   # Border alias
-    "soft_neutral":      "#EEF0ED",   # Subtle neutral pills/boxes
+    "card":              "#EDE6F7",   # Tinted card bg
 
-    # ── Non-alarming Status Signals ─────────────────────────────
-    "lower_var":         "#78917C",   # Sage / lower variation
-    "green":             "#78917C",   # Lower variation alias
-    "green_soft":        "#EBF2EC",
-    "moderate_var":      "#B49A68",   # Warm sand-amber / moderate variation
-    "orange":            "#B49A68",   # Moderate variation alias
-    "amber":             "#B49A68",
-    "amber_soft":        "#F8F4EC",
-    "elevated_var":      "#A96D67",   # Soft clay-rust / elevated variation
-    "red":               "#A96D67",   # Elevated variation alias
-    "rust":              "#A96D67",
-    "rust_soft":         "#F8EDEB",
+    "text":              "#1A1626",   # Deep primary text
+    "ink":               "#1A1626",
+    "text_secondary":    "#5A5472",   # Secondary text
+    "muted":             "#5A5472",
+    "text_muted":        "#9490A8",   # Footnote text
 
-    # ── Legacy & Chart Compatibility Aliases ───────────────────
+    "line":              "#D8D0E9",   # Divider / border
+    "border":            "#D8D0E9",
+
+    # ── Non-alarming Status Signals ─────────────────────────────────
+    "lower_var":         "#6B9E78",   # Sage / lower variation
+    "green":             "#6B9E78",
+    "green_soft":        "#EAF2EC",
+
+    "moderate_var":      "#B49860",   # Warm amber / moderate
+    "orange":            "#B49860",
+    "amber":             "#B49860",
+    "amber_soft":        "#F7F2E8",
+
+    "elevated_var":      "#A96A64",   # Clay-rust / elevated
+    "red":               "#A96A64",
+    "rust":              "#A96A64",
+    "rust_soft":         "#F7EDED",
+
+    # ── Legacy & Chart Compatibility Aliases ────────────────────────
     "teal":              "#6F5A8E",   # maps to primary purple
-    "teal_soft":         "#F3EFF6",
-    "sage":              "#78917C",
+    "teal_soft":         "#EDE6F7",
+    "sage":              "#6B9E78",
     "blue":              "#6F5A8E",
-    "cyan":              "#B9ADC4",
-    "navy":              "#292D2B",
-    "navy_2":            "#55446F",
+    "cyan":              "#BBA8D4",
+    "navy":              "#1A1626",
+    "navy_2":            "#4A3567",
     "white":             "#FFFFFF",
-    "page":              "#F7F7F4",
+    "page":              "#F5F1FB",
+    "soft_neutral":      "#E8E4F0",
+    "sidebar":           "#3D2870",   # Deep purple sidebar
 }

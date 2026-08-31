@@ -59,8 +59,17 @@ st.set_page_config(
 )
 
 
+# Inject Google Fonts via link tag (CSS @import is stripped by Streamlit markdown injection)
+st.markdown(
+    '<link rel="preconnect" href="https://fonts.googleapis.com">'
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">',
+    unsafe_allow_html=True,
+)
+
 load_css("assets/style.css")
 load_css("assets/upload_section.css")
+load_css("style_additions.css")
 
 # Warm up mBERT model once at server startup
 try:

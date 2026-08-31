@@ -9,9 +9,38 @@ Supports standalone DATABASE_URL (Neon, Supabase, Render, Railway, etc.).
 import os
 import psycopg2
 from psycopg2 import pool
-from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+
+def _load_env_file() -> None:
+    """Load .env from the repo root into os.environ (works without python-dotenv)."""
+    env_path = Path(__file__).resolve().parent.parent / ".env"
+    if not env_path.is_file():
+        return
+    try:
+        # Try python-dotenv first (cleaner, handles quotes / escaping)
+        from dotenv import load_dotenv
+        load_dotenv(dotenv_path=env_path, override=False)
+        return
+    except ImportError:
+        pass
+    # Manual fallback: parse key=value lines
+    try:
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            key = key.strip()
+            val = val.strip().strip('"').strip("'")
+            if key and key not in os.environ:
+                os.environ[key] = val
+    except Exception:
+        pass
+
+
+_load_env_file()
+
 
 # Global connection pool (singleton)
 _DB_POOL: pool.ThreadedConnectionPool | None = None

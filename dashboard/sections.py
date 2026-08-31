@@ -590,16 +590,36 @@ def render_recent_analyses() -> None:
         recent_results = get_recent_risk_results(user_id=_current_user_id())
 
         if not recent_results:
-            render_html("""
-                <div style="text-align:center; padding: 36px 20px; color: #6F7470; font-size: 13px; line-height: 1.6;">
-                    <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; color: #292D2B; margin-bottom: 6px;">
-                        Nothing analyzed yet
+            # Check if DB is actually connected - if not, show a diagnostic instead of misleading "nothing yet"
+            from database.connection import is_db_connected, get_last_error
+            db_ok = is_db_connected()
+            if not db_ok:
+                last_err = get_last_error() or "Database not configured"
+                render_html(f"""
+                    <div style="text-align:center; padding: 30px 20px; border-radius: 12px; background: #FBF4E2; border: 1.5px solid #E6D5A8; margin: 8px 0;">
+                        <div style="font-size: 22px; margin-bottom: 8px;">⚠️</div>
+                        <div style="font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #7A5C10; margin-bottom: 6px;">
+                            Database not connected
+                        </div>
+                        <div style="font-family: 'Inter', sans-serif; color: #8B6A1A; font-size: 12.5px; max-width: 440px; margin: 0 auto; line-height: 1.6;">
+                            LUMINA cannot reach the database, so your previous analysis records cannot be loaded.<br><br>
+                            <b>If running on Streamlit Cloud:</b> go to <b>App Settings → Secrets</b> and add your <code>DATABASE_URL</code>.<br>
+                            <b>If running locally:</b> ensure PostgreSQL is running and your <code>.env</code> credentials are correct.<br><br>
+                            <span style="font-size: 11px; opacity: 0.75;">Error: {last_err}</span>
+                        </div>
                     </div>
-                    <div style="color: #6F7470; max-width: 420px; margin: 0 auto 16px;">
-                        Upload your exported data archive above to begin exploring your cognitive and communication patterns.
+                """)
+            else:
+                render_html("""
+                    <div style="text-align:center; padding: 36px 20px; color: #6F7470; font-size: 13px; line-height: 1.6;">
+                        <div style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: #1A1626; margin-bottom: 6px;">
+                            Nothing analyzed yet
+                        </div>
+                        <div style="color: #5A5472; max-width: 420px; margin: 0 auto 16px; font-family: 'Inter', sans-serif;">
+                            Upload your exported data archive above to begin exploring your cognitive and communication patterns.
+                        </div>
                     </div>
-                </div>
-            """)
+                """)
             return
 
         h1, h2, h3, h4, h5, h6 = st.columns([1.5, 1.2, 1.2, 1.2, 1.2, 1.2])

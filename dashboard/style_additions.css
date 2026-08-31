@@ -1,41 +1,271 @@
 /* ────────────────────────────────────────────────────────────────
-   LUMINA CALM – PURPLE EDITION
-   Additional UI Utilities & Insight Card Styles
+   LUMINA – Style Additions  (uses --c-* token system)
    ──────────────────────────────────────────────────────────────── */
 
-/* Small italic note under a progress bar */
+/* Backward compat aliases for any old --lumina-* refs */
+:root {
+    --lumina-purple:         var(--c-p500, #6F5A8E);
+    --lumina-purple-dark:    var(--c-p600, #4A3567);
+    --lumina-text:           var(--c-n900, #1A1626);
+    --lumina-text-secondary: var(--c-n500, #5A5472);
+    --lumina-text-muted:     var(--c-n300, #9490A8);
+    --lumina-lavender-soft:  var(--c-p100, #EDE6F7);
+    --lumina-lavender:       var(--c-p200, #DDD3EE);
+    --lumina-lavender-gray:  var(--c-p300, #BBA8D4);
+    --lumina-border:         var(--c-n200, #D8D0E9);
+    --lumina-border-light:   var(--c-n100, #EDE8F4);
+    --lumina-success:        var(--c-success, #5A9068);
+    --lumina-warning:        var(--c-warning, #A8821A);
+    --lumina-danger:         var(--c-danger,  #9B4F4A);
+    /* old lm- names */
+    --lm-purple:             var(--c-p500, #6F5A8E);
+    --lm-purple-dark:        var(--c-p600, #4A3567);
+    --lm-purple-mid:         var(--c-p400, #8B72AC);
+    --lm-purple-soft:        var(--c-p300, #BBA8D4);
+    --lm-lavender-100:       var(--c-p050, #F5F1FB);
+    --lm-lavender-200:       var(--c-p100, #EDE6F7);
+    --lm-lavender-300:       var(--c-p200, #DDD3EE);
+    --lm-lavender-400:       var(--c-p300, #BBA8D4);
+    --lm-text:               var(--c-n900, #1A1626);
+    --lm-text-sub:           var(--c-n500, #5A5472);
+    --lm-text-muted:         var(--c-n300, #9490A8);
+    --lm-border:             var(--c-n200, #D8D0E9);
+    --lm-border-light:       var(--c-n100, #EDE8F4);
+    --lm-surface:            var(--c-n000, #FFFFFF);
+    --lm-success:            var(--c-success, #5A9068);
+    --lm-success-bg:         var(--c-success-bg, #E8F2EC);
+    --lm-warning:            var(--c-warning, #A8821A);
+    --lm-warning-bg:         var(--c-warning-bg, #FBF4E2);
+    --lm-danger:             var(--c-danger,  #9B4F4A);
+    --lm-danger-bg:          var(--c-danger-bg, #F8EDED);
+}
+
+/* Shared */
 .progress-note {
     font-size: 0.72rem;
-    color: var(--lumina-text-secondary, #6F7470);
+    color: var(--c-n400);
     margin-top: 2px;
     margin-bottom: 4px;
     font-style: italic;
+    font-family: var(--font-ui) !important;
 }
 
-/* Footer line at the bottom of insight cards */
 .card-footnote {
     font-size: 0.75rem;
-    color: var(--lumina-text-secondary, #6F7470);
+    color: var(--c-n400);
     margin-top: 10px;
     padding: 8px 10px;
-    background: var(--lumina-lavender-soft, #F3EFF6);
-    border: 1px solid var(--lumina-border, #DDD9DF);
+    background: var(--c-p050);
+    border: 1px solid var(--c-n100);
     border-radius: 8px;
     line-height: 1.5;
+    font-family: var(--font-ui) !important;
 }
 
-/* AI insight card status borders */
 .ai-card {
-    border-left: 3px solid var(--lumina-purple, #6F5A8E);
+    border-left: 3px solid var(--c-p500);
     border-radius: 12px;
     padding: 13px 14px;
     margin-bottom: 10px;
-    background: #FFFFFF;
-    border: 1px solid var(--lumina-border, #DDD9DF);
-    border-left-width: 3px;
-    box-shadow: 0 1px 3px rgba(111, 90, 142, 0.03);
+    background: var(--c-n000);
+    border-top: 1px solid var(--c-n100);
+    border-right: 1px solid var(--c-n100);
+    border-bottom: 1px solid var(--c-n100);
+    font-family: var(--font-ui) !important;
 }
 
-.ai-card.status-ok    { border-left-color: var(--lumina-success, #78917C); }  /* SAGE */
-.ai-card.status-watch { border-left-color: var(--lumina-warning, #B49A68); }  /* AMBER */
-.ai-card.status-flag  { border-left-color: var(--lumina-danger, #A96D67); }   /* CLAY/RUST */
+.ai-card.status-ok    { border-left-color: var(--c-success); }
+.ai-card.status-watch { border-left-color: var(--c-warning); }
+.ai-card.status-flag  { border-left-color: var(--c-danger); }
+
+/* ────────────────────────────────────────────────────────────────
+   LUMINA – Top Navigation Bar  (MediCore-style, purple edition)
+   ──────────────────────────────────────────────────────────────── */
+
+.lumina-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--c-n100);
+    border-radius: 18px;
+    padding: 14px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(74, 53, 103, 0.07);
+    flex-wrap: nowrap;
+}
+
+/* ── Left block: title + subtitle ── */
+.topbar-left {
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.topbar-page-title {
+    font-family: var(--font-ui) !important;
+    font-size: clamp(17px, 1.6vw, 22px);
+    font-weight: 700;
+    color: var(--c-n900);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.topbar-page-sub {
+    font-family: var(--font-ui) !important;
+    font-size: 12px;
+    color: var(--c-n400);
+    margin-top: 2px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* ── Center: nav links ── */
+.topbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.topnav-link {
+    font-family: var(--font-ui) !important;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--c-n400) !important;
+    text-decoration: none !important;
+    padding: 7px 14px;
+    border-radius: 9px;
+    transition: background 0.15s ease, color 0.15s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border: 1.5px solid transparent;
+}
+
+.topnav-link:hover {
+    color: var(--c-p600) !important;
+    background: var(--c-p050) !important;
+    text-decoration: none !important;
+    border-color: var(--c-p200);
+}
+
+.topnav-link.active {
+    color: var(--c-p600) !important;
+    background: var(--c-p100) !important;
+    border-color: var(--c-p200);
+    font-weight: 600 !important;
+}
+
+/* ── Right block: search + bell + avatar ── */
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.topbar-search {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--c-p050);
+    border: 1.5px solid var(--c-n200);
+    border-radius: 999px;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    white-space: nowrap;
+    min-width: 0;
+    max-width: 220px;
+}
+
+.topbar-search:hover {
+    border-color: var(--c-p400);
+    background: var(--c-p100);
+}
+
+.topbar-search-icon {
+    font-size: 13px;
+    flex-shrink: 0;
+    opacity: 0.5;
+}
+
+.topbar-search-text {
+    font-family: var(--font-ui) !important;
+    font-size: 12.5px;
+    color: var(--c-n300);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topbar-bell {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--c-p050);
+    border: 1.5px solid var(--c-n200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-n400);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    flex-shrink: 0;
+}
+
+.topbar-bell:hover {
+    background: var(--c-p100);
+    border-color: var(--c-p400);
+    color: var(--c-p600);
+}
+
+.topbar-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--c-p500) 0%, var(--c-p700) 100%);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-ui) !important;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(111, 90, 142, 0.30);
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+}
+
+.topbar-avatar:hover {
+    box-shadow: 0 4px 14px rgba(74, 53, 103, 0.38);
+}
+
+/* ── Responsive collapse ── */
+@media (max-width: 900px) {
+    .lumina-topbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+    .topbar-nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid var(--c-n100);
+        padding-top: 8px;
+    }
+    .topbar-search { max-width: 160px; }
+}
+
+@media (max-width: 600px) {
+    .topbar-search-text { display: none; }
+    .topbar-search { padding: 7px 10px; }
+    .topnav-link { font-size: 12px; padding: 6px 10px; }
+}
+

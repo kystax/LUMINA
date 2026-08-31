@@ -134,24 +134,54 @@ def render_sidebar(settings_active: bool = False) -> None:
 # TOPBAR
 # ─────────────────────────────────────────────
 
-def render_topbar(title: str, subtitle: str) -> None:
+def render_topbar(title: str, subtitle: str, page: str = "main") -> None:
+    """
+    Full navigation bar matching the MediCore dashboard reference:
+    - Left: page title + subtitle
+    - Center: nav links (Dashboard, Analysis, Recent, Reports, Settings)
+    - Right: search pill, notification bell, avatar
+    """
     user         = st.session_state.get("user") or {}
     avatar_letter= html.escape((user.get("username") or "?")[:1].upper())
+    display_name = html.escape((user.get("username") or "Guest"))
+
+    # Determine active page for nav highlighting
+    active_page = page.lower()
+
+    def _nav_cls(name: str) -> str:
+        return "topnav-link active" if active_page == name else "topnav-link"
 
     render_html(
         f"""
-        <div class="topbar">
-            <div class="topbar-grid">
-                <div>
-                    <div class="page-title">{html.escape(title)}</div>
-                    <div class="page-subtitle">{html.escape(subtitle)}</div>
+        <div class="lumina-topbar">
+            <!-- Left: brand title + subtitle -->
+            <div class="topbar-left">
+                <div class="topbar-page-title">{html.escape(title)}</div>
+                <div class="topbar-page-sub">Welcome, {display_name}</div>
+            </div>
+
+            <!-- Center: nav links -->
+            <nav class="topbar-nav">
+                <a class="{_nav_cls('main')}" href="?page=main#dashboard-section" target="_self">Dashboard</a>
+                <a class="{_nav_cls('analysis')}" href="?page=main#user-analysis-section" target="_self">Analysis</a>
+                <a class="{_nav_cls('recent')}" href="?page=main#recent-analysis-section" target="_self">Recent</a>
+                <a class="{_nav_cls('reports')}" href="?page=main#reports-section" target="_self">Reports</a>
+                <a class="{_nav_cls('settings')}" href="?page=settings" target="_self">Settings</a>
+            </nav>
+
+            <!-- Right: search + bell + avatar -->
+            <div class="topbar-right">
+                <div class="topbar-search">
+                    <span class="topbar-search-icon">&#128269;</span>
+                    <span class="topbar-search-text">Search patterns or records...</span>
                 </div>
-                <div class="top-actions">
-                    <div class="search-pill">
-                        Search patterns or records
-                    </div>
-                    <div class="avatar">{avatar_letter}</div>
+                <div class="topbar-bell" title="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
                 </div>
+                <div class="topbar-avatar">{avatar_letter}</div>
             </div>
         </div>
         """
