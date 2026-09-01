@@ -1,59 +1,32 @@
-# dashboard/config.py
-
-"""
-LUMINA – Color tokens for charts, indicators, and UI components.
-Specification-accurate research/health analytics palette.
-"""
-
 COLORS = {
-    # ── PRIMARY PALETTE ─────────────────────────────────────────────
-    "teal_dark_primary": "#073B3A",   # Primary dark teal (sidebar background)
-    "teal":              "#087F78",   # Primary teal (active items, buttons)
-    "teal_accent":       "#14A89A",   # Accent teal (highlights, borders)
-    "teal_light":        "#EAF7F5",   # Light teal (pill backgrounds, card tints)
+    # ── JSX design-system palette ──────────────────────────────
+    "ink":         "#1B2430",   # sidebar bg / main headings
+    "paper":       "#F5F6F3",   # page background
+    "card":        "#FFFFFF",   # card bg
+    "line":        "#DEE1DB",   # borders
+    "teal":        "#3F6B62",   # primary accent
+    "teal_soft":   "#E4EDE9",   # accent bg / positive pills
+    "sage":        "#6B8F71",   # stable / healthy
+    "amber":       "#C08A2E",   # moderate / warning
+    "amber_soft":  "#FBF4E7",   # amber bg
+    "rust":        "#B4573E",   # elevated / flag
+    "rust_soft":   "#FBEAE5",   # rust bg
+    "muted":       "#6B7280",   # secondary text
 
-    # ── CANVAS & SURFACES ───────────────────────────────────────────
-    "background":        "#F7FAFA",   # Main light workspace background
-    "paper":             "#F7FAFA",
-    "surface":           "#FFFFFF",   # Card background
-    "card":              "#FFFFFF",
-
-    # ── TYPOGRAPHY ──────────────────────────────────────────────────
-    "text":              "#152238",   # Primary text (deep slate)
-    "ink":               "#152238",
-    "text_secondary":    "#667085",   # Secondary text (slate gray)
-    "muted":             "#667085",
-    "text_muted":        "#8896A6",   # Footnote/caption text
-
-    # ── BORDERS & DIVIDERS ──────────────────────────────────────────
-    "border":            "#E3E9EC",   # Border color
-    "line":              "#E3E9EC",
-
-    # ── DOMAIN ACCENTS ──────────────────────────────────────────────
-    "purple":            "#7256C7",   # Linguistic / NLP indicator accent
-    "purple_dark":       "#4A3567",
-    "purple_mid":        "#7256C7",
-    "blue":              "#3976D9",   # Social behaviour indicator accent
-    "amber":             "#D99A28",   # Moderate / Attention indicator
-    "orange":            "#D99A28",
-    "red":               "#C85C5C",   # Muted red for elevated variation
-    "rust":              "#C85C5C",
-    "green":             "#4F9D76",   # Stable / Positive indicator
-    "sage":              "#4F9D76",   # Sage green for positive support trajectory
-    "sage_soft":         "#EAF7F5",
-    "lower_var":         "#4F9D76",
-    "moderate_var":      "#D99A28",
-    "elevated_var":      "#C85C5C",
-
-    # ── COMPATIBILITY ALIASES ───────────────────────────────────────
-    "teal_dark":         "#073B3A",
-    "teal_deep":         "#073B3A",
-    "teal_mid":          "#087F78",
-    "teal_soft":         "#EAF7F5",
-    "white":             "#FFFFFF",
-    "page":              "#F7FAFA",
-    "soft_neutral":      "#EAF7F5",
-    "lavender":          "#7256C7",
-    "lavender_soft":     "#F1EDFA",
+    # ── Legacy aliases (keep for backward compat) ──────────────
+    "navy":        "#1B2430",
+    "navy_2":      "#1B2430",
+    "purple":      "#3F6B62",   # was accent, now maps to teal
+    "purple_soft": "#E4EDE9",
+    "blue":        "#3F6B62",
+    "cyan":        "#6B8F71",
+    "green":       "#6B8F71",
+    "green_soft":  "#E4EDE9",
+    "orange":      "#C08A2E",
+    "orange_soft": "#FBF4E7",
+    "red":         "#B4573E",
+    "red_soft":    "#FBEAE5",
+    "white":       "#FFFFFF",
+    "border":      "#DEE1DB",
+    "page":        "#F5F6F3",
 }
-

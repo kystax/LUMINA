@@ -60,101 +60,89 @@ def render_zip_upload_section() -> None:
     subj_name = active_subject.get("name", "active subject")
 
     with st.container(border=True):
-        col_up, col_intake = st.columns([1.8, 1.2], gap="large")
-
-        with col_up:
-            render_html(
-                f"""
-                <div class="upload-header">
-                    <div>
-                        <div class="upload-title">
-                            Upload Export Data
-                        </div>
-                        <div class="upload-subtitle">
-                            For <b>{html.escape(subj_name)}</b> — Instagram, Facebook, Threads, TikTok, or YouTube exports.
-                        </div>
+        render_html(
+            f"""
+            <div class="upload-header">
+                <div>
+                    <div class="upload-title">
+                        Upload Export Data
                     </div>
-                    <div class="upload-badge">ZIP ARCHIVE</div>
-                </div>
-                """
-            )
-
-            uploaded_files = st.file_uploader(
-                "Upload ZIP files",
-                type=["zip"],
-                accept_multiple_files=True,
-                label_visibility="collapsed",
-                help="Drag and drop a ZIP file here or click to browse (Max file size: 3GB • ZIP)",
-            )
-
-        with col_intake:
-            render_html(
-                """
-                <div class="intake-side-card">
-                    <div class="intake-side-title">📋 Clinical & Environmental Intake</div>
-                    <div class="intake-side-sub">
-                        Record subject clinical background and modifiable dementia risk factors (Lancet Risk Factors).
+                    <div class="upload-subtitle">
+                        For <b>{html.escape(subj_name)}</b> — Instagram, Facebook, Threads, TikTok, or YouTube exports.
                     </div>
                 </div>
-                """
+                <div class="upload-badge">ZIP ARCHIVE</div>
+            </div>
+            """
+        )
+
+        with st.expander("📋 Clinical & Environmental Intake (Lancet Risk Factors)", expanded=False):
+            st.caption(
+                "Optionally record subject clinical background and modifiable dementia risk factors (Lancet Commission) "
+                "to incorporate into the 40% environmental risk score."
+            )
+            c1, c2, c3 = st.columns(3)
+
+            with c1:
+                st.markdown("**Cardiovascular & Metabolic**")
+                hypertension = st.checkbox("Hypertension (High BP)")
+                diabetes = st.checkbox("Diabetes Mellitus")
+                obesity = st.checkbox("Obesity")
+                high_ldl = st.checkbox("High LDL Cholesterol")
+                smoking = st.checkbox("Active / History of Smoking")
+
+            with c2:
+                st.markdown("**Sensory & Neurological**")
+                hearing_loss = st.checkbox("Hearing Loss / Impairment")
+                vision_loss = st.checkbox("Uncorrected Vision Loss")
+                tbi = st.checkbox("Traumatic Brain Injury (TBI)")
+                depression = st.checkbox("History of Depression")
+                ed_low = st.checkbox("Education < Secondary Level")
+
+            with c3:
+                st.markdown("**Lifestyle & Environment**")
+                physical_inactivity = st.checkbox("Physical Inactivity")
+                low_social_contact = st.checkbox("Low Social Contact / Isolation")
+                excessive_alcohol = st.checkbox("Excessive Alcohol Consumption")
+                air_pollution = st.checkbox("High Air Pollution Exposure")
+
+            st.markdown("---")
+            symptom_severity = st.slider(
+                "Self-Reported Symptom Severity Index",
+                min_value=0.0,
+                max_value=1.0,
+                value=0.0,
+                step=0.05,
+                help="Clinical rating of self-reported cognitive/memory impairment (0.0 = None, 1.0 = Severe).",
             )
 
-            with st.expander("Open intake form →", expanded=False):
-                st.caption(
-                    "Record subject clinical background and modifiable dementia risk factors (Lancet Commission) "
-                    "to incorporate into the 40% environmental risk score."
-                )
-                c1, c2 = st.columns(2)
+            environmental_intake = {
+                "factors": {
+                    "education_less_than_secondary": ed_low,
+                    "hearing_loss": hearing_loss,
+                    "hypertension": hypertension,
+                    "smoking": smoking,
+                    "obesity": obesity,
+                    "depression": depression,
+                    "physical_inactivity": physical_inactivity,
+                    "diabetes": diabetes,
+                    "low_social_contact": low_social_contact,
+                    "excessive_alcohol": excessive_alcohol,
+                    "traumatic_brain_injury": tbi,
+                    "air_pollution": air_pollution,
+                    "vision_loss": vision_loss,
+                    "high_ldl_cholesterol": high_ldl,
+                },
+                "symptom_severity": symptom_severity,
+            }
 
-                with c1:
-                    st.markdown("**Cardiovascular & Metabolic**")
-                    hypertension = st.checkbox("Hypertension (High BP)")
-                    diabetes = st.checkbox("Diabetes Mellitus")
-                    obesity = st.checkbox("Obesity")
-                    high_ldl = st.checkbox("High LDL Cholesterol")
-                    smoking = st.checkbox("Active / Smoking")
-
-                with c2:
-                    st.markdown("**Sensory & Lifestyle**")
-                    hearing_loss = st.checkbox("Hearing Loss")
-                    vision_loss = st.checkbox("Vision Loss")
-                    tbi = st.checkbox("Traumatic Brain Injury")
-                    depression = st.checkbox("Depression")
-                    ed_low = st.checkbox("Education < Secondary")
-                    physical_inactivity = st.checkbox("Physical Inactivity")
-                    low_social_contact = st.checkbox("Social Isolation")
-                    excessive_alcohol = st.checkbox("Excessive Alcohol")
-                    air_pollution = st.checkbox("Air Pollution")
-
-                symptom_severity = st.slider(
-                    "Self-Reported Symptom Severity",
-                    min_value=0.0,
-                    max_value=1.0,
-                    value=0.0,
-                    step=0.05,
-                    help="0.0 = None, 1.0 = Severe",
-                )
-
-                environmental_intake = {
-                    "factors": {
-                        "education_less_than_secondary": ed_low,
-                        "hearing_loss": hearing_loss,
-                        "hypertension": hypertension,
-                        "smoking": smoking,
-                        "obesity": obesity,
-                        "depression": depression,
-                        "physical_inactivity": physical_inactivity,
-                        "diabetes": diabetes,
-                        "low_social_contact": low_social_contact,
-                        "excessive_alcohol": excessive_alcohol,
-                        "traumatic_brain_injury": tbi,
-                        "air_pollution": air_pollution,
-                        "vision_loss": vision_loss,
-                        "high_ldl_cholesterol": high_ldl,
-                    },
-                    "symptom_severity": symptom_severity,
-                }
-
+        uploaded_files = st.file_uploader(
+            "Upload ZIP files",
+            type=["zip"],
+            accept_multiple_files=True,
+            label_visibility="collapsed",
+            help="You can upload multiple ZIP files at the same time.",
+        )
 
         if not uploaded_files:
             # When file is removed or cleared, reset session analysis to None (Zero state)

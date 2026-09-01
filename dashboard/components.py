@@ -18,161 +18,195 @@ def color(value: str) -> str:
 
 def render_sidebar(settings_active: bool = False) -> None:
     """
-    Dark Teal sidebar matching reference image:
-    - Brain icon logo + LUMINA Cognitive Pattern Risk Analyzer
-    - Navigation items with icons (Dashboard, Upload Data, My Analyses, Reports, Settings, Help & About)
-    - Bottom disclaimer card: LUMINA is for research and risk screening purposes only. Version 1.0.0
-    - Sign out action
+    Dark INK sidebar with Fraunces wordmark, page-anchor nav links,
+    and a "Signed in — {name} · Sign out" strip at the bottom.
+    Sign out calls logout() from auth_ui, which clears session state.
     """
-    from auth_ui import logout
-    from services.profile_service import get_subjects
+    from auth_ui import logout   # lazy import to avoid circular refs
+    from services.profile_service import get_subjects, create_subject, update_subject, delete_subject
 
     user         = st.session_state.get("user") or {}
     user_id      = user.get("user_id", 0)
-    display_name = user.get("username") or "user2"
+    display_name = user.get("username") or "Guest"
+    user_type    = (user.get("user_type") or "individual").capitalize()
+    avatar_letter= display_name[:1].upper() if display_name else "?"
 
-    # Fetch current subjects list
+    # 1. Fetch current subjects list
     subjects = get_subjects(user_id) if user_id else []
+
+    # 2. Check session state active subject
     if "active_subject" not in st.session_state:
         st.session_state.active_subject = subjects[0] if subjects else None
+        # Don't auto-load old analysis — start clean
         st.session_state.lumina_session_analysis = None
 
-    dash_cls = "nav-item-link" if settings_active else "nav-item-link active"
-    sett_cls = "nav-item-link active" if settings_active else "nav-item-link"
+    if settings_active:
+        dashboard_href      = "?page=main#dashboard-section"
+        user_analysis_href  = "?page=main#user-analysis-section"
+        recent_analysis_href= "?page=main#recent-analysis-section"
+        reports_href        = "?page=main#reports-section"
+        settings_class      = "nav-anchor active"
+    else:
+        dashboard_href      = "#dashboard-section"
+        user_analysis_href  = "#user-analysis-section"
+        recent_analysis_href= "#recent-analysis-section"
+        reports_href        = "#reports-section"
+        settings_class      = "nav-anchor"
 
     with st.sidebar:
         render_html(
             f"""
             <!-- Brand block -->
-            <div class="sidebar-brand-block">
-                <div class="sidebar-brand-logo">
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#42ABA1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04"/>
-                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04"/>
-                    </svg>
-                </div>
+            <div class="brand">
                 <div>
-                    <div class="sidebar-brand-title">LUMINA</div>
-                    <div class="sidebar-brand-tagline">Cognitive Pattern<br>Risk Analyzer</div>
+                    <div class="brand-name">LUMINA</div>
+                    <div class="brand-sub">Cognitive pattern monitoring</div>
                 </div>
-            </div>
-
-            <!-- Navigation menu -->
-            <nav class="sidebar-nav-list">
-                <a class="{dash_cls}" href="?page=main#dashboard-section" target="_self">
-                    <span class="nav-item-icon">🏠</span>
-                    <span>Dashboard</span>
-                </a>
-                <a class="nav-item-link" href="?page=main#dashboard-section" target="_self">
-                    <span class="nav-item-icon">☁️</span>
-                    <span>Upload Data</span>
-                </a>
-                <a class="nav-item-link" href="?page=main#user-analysis-section" target="_self">
-                    <span class="nav-item-icon">📁</span>
-                    <span>My Analyses</span>
-                </a>
-                <a class="nav-item-link" href="?page=main#reports-section" target="_self">
-                    <span class="nav-item-icon">📄</span>
-                    <span>Reports</span>
-                </a>
-                <a class="{sett_cls}" href="?page=settings" target="_self">
-                    <span class="nav-item-icon">⚙️</span>
-                    <span>Settings</span>
-                </a>
-                <a class="nav-item-link" href="?page=main#reports-section" target="_self">
-                    <span class="nav-item-icon">❓</span>
-                    <span>Help & About</span>
-                </a>
-            </nav>
-
-            <!-- Bottom disclaimer card -->
-            <div class="sidebar-footer-card">
-                <div class="sidebar-disclaimer">
-                    <span style="font-size:13px; opacity:0.85;">ℹ️</span>
-                    <span>LUMINA is for research and risk screening purposes only. Not a clinical diagnosis.</span>
-                </div>
-                <div class="sidebar-version">Version 1.0.0</div>
             </div>
             """
         )
 
-        st.markdown("<div style='height:12px'></div>", unsafe_allow_html=True)
-        if st.button("Sign out", key="sidebar_signout", width="stretch", type="secondary"):
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        st.subheader("👤 User Profile")
+
+        has_analysis = st.session_state.get("lumina_session_analysis") is not None
+        status_dot = "🟢" if has_analysis else "🔘"
+        status_text = "Analysis Active" if has_analysis else "No Active Analysis"
+
+        render_html(f"""
+            <div style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                padding: 12px;
+                margin: 6px 0 14px 0;
+                font-size: 12px;
+                line-height: 1.6;
+            ">
+                <div style="font-weight: 600; color: #ffffff; margin-bottom: 2px;">
+                    {html.escape(display_name)}
+                </div>
+                <div style="color: rgba(255,255,255,0.6);">
+                    {html.escape(user_type)} account
+                </div>
+                <div style="color: rgba(255,255,255,0.8); margin-top: 6px;">
+                    {status_dot} {status_text}
+                </div>
+            </div>
+        """)
+
+        render_html(
+            f"""
+            <div class="menu-label">Main Menu</div>
+
+            <nav class="sidebar-nav">
+                <a class="nav-anchor"
+                   href="{dashboard_href}"
+                   target="_self">
+                    Dashboard
+                </a>
+
+                <a class="nav-anchor"
+                   href="{user_analysis_href}"
+                   target="_self">
+                    User Analysis
+                </a>
+
+                <a class="nav-anchor"
+                   href="{recent_analysis_href}"
+                   target="_self">
+                    Recent Analysis
+                </a>
+
+                <a class="nav-anchor"
+                   href="{reports_href}"
+                   target="_self">
+                    Reports
+                </a>
+
+                <a class="{settings_class}"
+                   href="?page=settings"
+                   target="_self">
+                    Settings
+                </a>
+            </nav>
+            """
+        )
+
+        st.markdown("<div style='height:80px'></div>", unsafe_allow_html=True)
+        if st.button("↪  Sign out", key="sidebar_signout", width="stretch"):
             logout()
 
 
 # ─────────────────────────────────────────────
-# PROFILE HEADER STRIP
+# TOPBAR
 # ─────────────────────────────────────────────
+
+def render_topbar(title: str, subtitle: str) -> None:
+    user         = st.session_state.get("user") or {}
+    avatar_letter= html.escape((user.get("username") or "?")[:1].upper())
+
+    render_html(
+        f"""
+        <div class="topbar">
+            <div class="topbar-grid">
+                <div>
+                    <div class="page-title">{html.escape(title)}</div>
+                    <div class="page-subtitle">{html.escape(subtitle)}</div>
+                </div>
+                <div class="top-actions">
+                    <div class="search-pill">
+                        ⌕&nbsp;&nbsp; Search users or reports
+                        <span>⌘ K</span>
+                    </div>
+                    <div class="circle-action">♢</div>
+                    <div class="avatar">{avatar_letter}</div>
+                </div>
+            </div>
+        </div>
+        """
+    )
+
 
 def render_profile_header_strip() -> None:
     """
-    Renders the active profile header strip matching the reference image:
-    - Active profile label
-    - Name (e.g. user2) + Not analyzed yet / Analysis active badge
-    - Subtitle: Your cognitive pattern overview
-    - Right: Last analyzed + Upload data + Export report buttons
+    Renders the active profile header strip matching the React design:
+    Name, relation, platform, analysis status, and action buttons.
     """
     user = st.session_state.get("user") or {}
-    display_name = user.get("username") or "user2"
+    display_name = user.get("username") or "Researcher Account"
     has_analysis = st.session_state.get("lumina_session_analysis") is not None
-    last_status = "Today" if has_analysis else "—"
-    badge_label = "Analysis active" if has_analysis else "Not analyzed yet"
+    last_status = "Today" if has_analysis else "Not analyzed yet"
 
-    c1, c2 = st.columns([3, 2.2], gap="medium")
+    c1, c2 = st.columns([3, 1.2], gap="small")
     with c1:
         render_html(
             f"""
-            <div class="header-profile-wrap">
-                <div class="header-profile-label">Active profile</div>
-                <div class="header-profile-row">
-                    <span class="header-profile-name">{html.escape(display_name)}</span>
-                    <span class="header-profile-badge">{badge_label}</span>
+            <div style="margin-bottom: 8px;">
+                <div style="font-size: 12px; color: #6B7280; display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
+                    👤 Active Analysis Profile
                 </div>
-                <div class="header-profile-sub">Your cognitive pattern overview</div>
+                <div style="font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; color: #1B2430; line-height: 1.2;">
+                    {html.escape(display_name)}
+                </div>
+                <div style="font-size: 13px; color: #6B7280; margin-top: 4px;">
+                    Cognitive pattern monitoring · last analyzed {last_status}
+                </div>
             </div>
             """
         )
     with c2:
-        st.markdown("<div style='height:4px;'></div>", unsafe_allow_html=True)
-        btn_c1, btn_c2, btn_c3 = st.columns([1.1, 1.4, 1.4], gap="small")
-        with btn_c1:
-            render_html(
-                f"""
-                <div class="header-last-analyzed">
-                    <span class="last-analyzed-icon">🕒</span>
-                    <div>
-                        <div class="last-analyzed-label">Last analyzed</div>
-                        <div class="last-analyzed-val">{last_status}</div>
-                    </div>
-                </div>
-                """
-            )
-        with btn_c2:
-            if st.button("☁️ Upload data", key="header_upload_btn", type="primary", width="stretch"):
+        st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
+        btn_col1, btn_col2 = st.columns([1, 1], gap="small")
+        with btn_col1:
+            if st.button("⬆ Upload data", key="header_upload_btn", type="primary", width="stretch"):
                 st.session_state["show_upload_modal"] = True
                 st.rerun()
-        with btn_c3:
+        with btn_col2:
             from services.report_service import generate_analysis_pdf, create_pdf_report
-            from services.risk_service import get_recent_risk_results, get_sessions_for_run, get_analysis_by_session_id
             user = st.session_state.get("user") or {}
-            subj_name = display_name or user.get("display_name") or user.get("username") or "user2"
+            subj_name = display_name or user.get("display_name") or user.get("username") or "Avery"
             analysis = st.session_state.get("lumina_session_analysis") or {}
-
-            # If not in live session state, fetch user's latest analysis from database
-            if not analysis:
-                user_id = user.get("user_id") or user.get("id")
-                recent_results = get_recent_risk_results(limit=1, user_id=user_id) if user_id else []
-                if recent_results:
-                    latest = recent_results[0]
-                    if isinstance(latest, (list, tuple)) and len(latest) > 4:
-                        run_id = latest[4]
-                        sess_ids = get_sessions_for_run(run_id)
-                        if sess_ids:
-                            latest_session = get_analysis_by_session_id(sess_ids[0])
-                            if latest_session:
-                                analysis = latest_session
-
             if analysis:
                 pdf_data_bytes = generate_analysis_pdf(
                     result=analysis,
@@ -180,20 +214,16 @@ def render_profile_header_strip() -> None:
                     username=subj_name,
                 )
             else:
-                pdf_data_bytes = create_pdf_report(
-                    subject_name=subj_name,
-                    username=subj_name,
-                )
+                pdf_data_bytes = create_pdf_report()
 
             st.download_button(
-                "⬇️ Export report",
+                "📄 Export report",
                 data=pdf_data_bytes,
-                file_name=f"{subj_name.lower().replace(' ', '_')}_pattern_report.pdf",
+                file_name=f"{subj_name.lower().replace(' ', '_')}_risk_report.pdf",
                 mime="application/pdf",
                 width="stretch",
                 key="header_export_btn",
             )
-
 
 
 
@@ -248,22 +278,18 @@ def card_heading(
 # ─────────────────────────────────────────────
 
 def risk_badge(level: str) -> str:
-    """Return an HTML pattern variation pill using the LUMINA CALM palette."""
+    """Return an HTML risk pill using the new RUST/AMBER/TEAL palette."""
     risk_key = level.lower()
 
     dot_colors = {
-        "high":     "#A96D67",  # Soft Clay / Elevated
-        "elevated": "#A96D67",
-        "medium":   "#B49A68",  # Soft Amber / Moderate
-        "moderate": "#B49A68",
-        "low":      "#78917C",  # Soft Sage / Lower
-        "stable":   "#78917C",
+        "high":   "#B4573E",  # RUST
+        "medium": "#C08A2E",  # AMBER
+        "low":    "#3F6B62",  # TEAL
     }
-    dot_color = dot_colors.get(risk_key, "#6F5A8E")
+    dot_color = dot_colors.get(risk_key, "#6B7280")
 
     return (
         f'<span class="risk-pill risk-{risk_key}">'
-        f'<span class="dot risk-dot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:{dot_color};margin-right:5px;"></span>'
+        f'<span class="dot risk-dot" style="background:{dot_color};"></span>'
         f"{html.escape(level)}</span>"
     )
-

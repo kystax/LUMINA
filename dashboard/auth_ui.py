@@ -57,11 +57,11 @@ def require_login():
 
 _AUTH_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
 
 .lumina-auth-root {
     min-height: 100vh;
-    background: #F7F7F4;
+    background: #1B2430;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,21 +69,21 @@ _AUTH_CSS = """
 }
 
 /* Override Streamlit page bg on auth screen */
-.stApp { background: #F7F7F4 !important; }
+.stApp { background: #1B2430 !important; }
 [data-testid="stHeader"], [data-testid="stToolbar"] { display: none; }
-.block-container { padding: 3rem 1rem !important; max-width: 100% !important; }
+.block-container { padding: 0 !important; max-width: 100% !important; }
 
 /* Center column */
 .auth-wrap {
     width: 100%;
-    max-width: 440px;
+    max-width: 420px;
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 48px 24px;
 }
 
 @media (max-width: 768px) {
     .block-container {
-        padding: 1.5rem 0.75rem !important;
+        padding: 1rem 0.75rem !important;
     }
     .stApp [data-testid="column"] {
         width: 100% !important;
@@ -91,41 +91,65 @@ _AUTH_CSS = """
         min-width: 100% !important;
     }
     .auth-wrap {
-        padding: 16px 8px !important;
+        padding: 20px 10px !important;
     }
 }
 
 .auth-brand {
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .auth-brand-name {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 36px;
-    font-weight: 400;
-    color: #55446F;
-    letter-spacing: 0.02em;
-    line-height: 1.1;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    line-height: 1;
 }
 
 .auth-brand-sub {
-    color: #6F7470;
+    color: rgba(255,255,255,0.4);
     font-size: 13px;
     margin-top: 6px;
 }
 
 .auth-card {
-    background: #FFFFFF;
-    border: 1px solid #DDD9DF;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 16px;
     padding: 28px 24px;
-    box-shadow: 0 4px 20px rgba(111, 90, 142, 0.05);
+}
+
+/* Tab links */
+.auth-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.auth-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: rgba(255,255,255,0.4);
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.auth-tab.active {
+    color: #ffffff;
+    border-bottom-color: #3F6B62;
+    font-weight: 600;
 }
 
 /* Field labels */
 .auth-label {
-    color: #292D2B !important;
+    color: #E2E8F0 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
     margin-bottom: 6px;
@@ -137,12 +161,12 @@ _AUTH_CSS = """
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] > div {
     background-color: #FFFFFF !important;
     background: #FFFFFF !important;
-    border: 1px solid #DDD9DF !important;
-    border-radius: 10px !important;
+    border: 1px solid #DEE1DB !important;
+    border-radius: 8px !important;
     box-shadow: none !important;
 }
 
-/* Inner input element */
+/* Inner input element — bold dark ink text on white box */
 .stApp [data-testid="stTextInput"] div[data-baseweb="base-input"],
 .stApp [data-testid="stTextInput"] input,
 .stApp input[type="text"],
@@ -152,41 +176,41 @@ _AUTH_CSS = """
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
-    color: #292D2B !important;
-    -webkit-text-fill-color: #292D2B !important;
+    color: #1B2430 !important;
+    -webkit-text-fill-color: #1B2430 !important;
     font-size: 14px !important;
-    font-weight: 500 !important;
-    caret-color: #6F5A8E !important;
+    font-weight: 600 !important;
+    caret-color: #1B2430 !important;
 }
 
-/* WebKit autofill override */
+/* WebKit autofill override to ensure dark text on light background */
 .stApp input:-webkit-autofill,
 .stApp input:-webkit-autofill:hover, 
 .stApp input:-webkit-autofill:focus, 
 .stApp input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
-    -webkit-text-fill-color: #292D2B !important;
-    color: #292D2B !important;
-    caret-color: #6F5A8E !important;
+    -webkit-text-fill-color: #1B2430 !important;
+    color: #1B2430 !important;
+    caret-color: #1B2430 !important;
 }
 
 /* Focus state */
 .stApp [data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
-    border-color: #6F5A8E !important;
-    box-shadow: 0 0 0 2px rgba(111, 90, 142, 0.15) !important;
+    border-color: #3F6B62 !important;
+    box-shadow: 0 0 0 2px rgba(63, 107, 98, 0.25) !important;
 }
 
 .stApp [data-testid="stTextInput"] input::placeholder,
 .stApp input::placeholder {
-    color: #969A96 !important;
-    -webkit-text-fill-color: #969A96 !important;
+    color: #9CA3AF !important;
+    -webkit-text-fill-color: #9CA3AF !important;
 }
 
 /* Password eye button icon styling */
 .stApp [data-testid="stTextInput"] button,
 .stApp [data-testid="stTextInput"] svg {
-    color: #6F7470 !important;
-    fill: #6F7470 !important;
+    color: #1B2430 !important;
+    fill: #1B2430 !important;
     background: transparent !important;
 }
 
@@ -194,7 +218,7 @@ _AUTH_CSS = """
 .stApp [data-testid="stSelectbox"] label,
 .stApp label,
 .stApp p {
-    color: #292D2B !important;
+    color: #E2E8F0 !important;
     font-size: 13px !important;
     font-weight: 500 !important;
 }
@@ -202,50 +226,38 @@ _AUTH_CSS = """
 /* Tab & Submit buttons */
 .stApp div[data-testid="stButton"] > button[kind="primary"],
 .stApp div[data-testid="stFormSubmitButton"] > button {
-    background: #6F5A8E !important;
+    background: #3F6B62 !important;
     color: #FFFFFF !important;
-    border: none !important;
+    border: 1px solid #3F6B62 !important;
     border-radius: 10px !important;
     font-size: 14px !important;
-    font-weight: 500 !important;
-    padding: 0.65rem 1rem !important;
-    transition: background 0.15s ease !important;
-}
-
-.stApp div[data-testid="stButton"] > button[kind="primary"]:hover,
-.stApp div[data-testid="stFormSubmitButton"] > button:hover {
-    background: #55446F !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1rem !important;
 }
 
 .stApp div[data-testid="stButton"] > button[kind="secondary"] {
-    background: #FFFFFF !important;
-    color: #55446F !important;
-    border: 1px solid #DDD9DF !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 10px !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    padding: 0.65rem 1rem !important;
-}
-
-.stApp div[data-testid="stButton"] > button[kind="secondary"]:hover {
-    background: #F3EFF6 !important;
+    padding: 0.6rem 1rem !important;
 }
 
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
 .stApp [data-testid="stSelectbox"] div[data-baseweb="select"] * {
-    background-color: #FFFFFF !important;
-    background: #FFFFFF !important;
-    color: #292D2B !important;
-    -webkit-text-fill-color: #292D2B !important;
-    border-radius: 10px !important;
+    background-color: #242F3D !important;
+    background: #242F3D !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border-radius: 8px !important;
 }
 
 .stApp [data-testid="stForm"] {
-    background: #FFFFFF !important;
-    border: 1px solid #DDD9DF !important;
-    border-radius: 16px !important;
-    padding: 24px 20px !important;
-    box-shadow: 0 4px 16px rgba(111, 90, 142, 0.04) !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
 /* Alert overrides */
@@ -254,18 +266,29 @@ _AUTH_CSS = """
 .auth-footnote {
     text-align: center;
     margin-top: 20px;
-    font-size: 11.5px;
-    color: #969A96;
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
     line-height: 1.6;
 }
 
 .auth-link {
-    color: #6F5A8E;
+    color: #6B8F71;
+    cursor: pointer;
+}
+
+.auth-forgot {
+    text-align: right;
+    margin-top: -4px;
+    margin-bottom: 14px;
+}
+
+.auth-forgot span {
+    color: rgba(255,255,255,0.45);
+    font-size: 11px;
     cursor: pointer;
 }
 </style>
 """
-
 
 
 def render_auth_page():
@@ -359,9 +382,13 @@ def render_auth_page():
                 confirm  = st.text_input(
                     "Confirm password", type="password", key="signup_confirm", placeholder="repeat password"
                 )
+                user_type = st.selectbox(
+                    "Account type",
+                    options=["individual", "researcher"],
+                    format_func=lambda x: "Individual / self-monitoring" if x == "individual" else "Researcher / caregiver",
+                    key="signup_user_type",
+                )
                 submitted = st.form_submit_button("Create account", width="stretch", type="primary")
-
-            user_type = "individual"
 
             if submitted:
                 if not username or not password:
