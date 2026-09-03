@@ -220,26 +220,16 @@ def render_zip_upload_section() -> None:
             help="You can upload multiple ZIP files at the same time.",
         )
 
-        st.caption(
-            "⚡ **Embedded Ingestion Engine**: LUMINA automatically filters out non-linguistic media (videos, photos, audio) and bloated logs during ingestion."
-        )
-
         if not uploaded_files:
             # When file is removed or cleared, reset session analysis to None (Zero state)
             st.session_state["lumina_session_analysis"] = None
             return
 
         if uploaded_files:
-            oversized = [f for f in uploaded_files if f.size > 50 * 1024 * 1024]
-            if oversized:
-                st.info(
-                    "💡 **Tip for large archives (>50MB)**: If your browser upload is slow due to internet speed, "
-                    "you can pre-strip photos/videos locally using `python scripts/prepare_export.py <folder>` for instant upload."
-                )
-
             render_html(
                 '<div class="selected-files-title">Selected files</div>'
             )
+
 
 
             file_rows = ""
