@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import os
 import html
 import tempfile
+import zipfile
 from io import BytesIO
 from pathlib import Path
 from zipfile import BadZipFile, ZipFile
@@ -10,6 +12,80 @@ import streamlit as st
 
 from pipeline import run_full_analysis, create_analysis_run, finalize_analysis_run
 from utils import render_html
+
+MEDIA_EXTENSIONS = {
+    ".mp4", ".mov", ".avi", ".mkv", ".webm", ".3gp",
+    ".jpg", ".jpeg", ".png", ".webp", ".heic", ".gif",
+    ".mp3", ".m4a", ".wav", ".aac", ".ogg",
+    ".pdf", ".tar", ".gz"
+}
+
+IGNORED_PATHS = (
+    "/media/", "\\media\\",
+    "/photos/", "\\photos\\",
+    "/videos/", "\\videos\\",
+    "/audio/", "\\audio\\",
+    "/voice_notes/", "\\voice_notes\\",
+    "/stickers/", "\\stickers\\",
+    "likes/liked_posts",
+    "story_interactions/story_likes",
+    "story_interactions/stories_viewed",
+    "ads_information/",
+    "recently_viewed/",
+    "recently_searched/",
+    "login_and_account_creation/",
+    "device_information/",
+    "autofill_information/",
+)
+
+
+def _sanitize_and_save_zip(uploaded_file, progress_callback=None) -> tuple[str, int, int]:
+    """
+    Embedded Ingestion Optimizer:
+    Filters out heavy photos, videos, audio, and bloated logs from the uploaded ZIP
+    and creates an optimized lightweight temporary ZIP for the analysis pipeline.
+    """
+    uploaded_file.seek(0)
+    orig_bytes = uploaded_file.size if hasattr(uploaded_file, "size") else 0
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".zip") as tmp:
+        tmp_path = tmp.name
+
+    retained = 0
+    skipped = 0
+
+    try:
+        with ZipFile(uploaded_file) as zin, ZipFile(tmp_path, 'w', compression=zipfile.ZIP_DEFLATED) as zout:
+            for item in zin.infolist():
+                fn_lower = item.filename.lower()
+                ext = os.path.splitext(fn_lower)[1]
+
+                if item.is_dir():
+                    continue
+                if ext in MEDIA_EXTENSIONS:
+                    skipped += 1
+                    continue
+                if any(ign in fn_lower for ign in IGNORED_PATHS):
+                    skipped += 1
+                    continue
+                if "/videos/" in fn_lower or "/photos/" in fn_lower or "/audio/" in fn_lower:
+                    skipped += 1
+                    continue
+                if ext not in (".json", ".html", ".htm", ".txt", ".csv", ""):
+                    skipped += 1
+                    continue
+
+                zout.writestr(item, zin.read(item.filename))
+                retained += 1
+    except Exception as e:
+        print(f"[LUMINA Optimizer] Direct copy fallback: {e}")
+        uploaded_file.seek(0)
+        with open(tmp_path, "wb") as f:
+            import shutil
+            shutil.copyfileobj(uploaded_file, f)
+
+    new_bytes = Path(tmp_path).stat().st_size if Path(tmp_path).exists() else orig_bytes
+    return tmp_path, orig_bytes, new_bytes
 
 
 def _guess_platform(file_name: str) -> str:
@@ -144,15 +220,27 @@ def render_zip_upload_section() -> None:
             help="You can upload multiple ZIP files at the same time.",
         )
 
+        st.caption(
+            "⚡ **Embedded Ingestion Engine**: LUMINA automatically filters out non-linguistic media (videos, photos, audio) and bloated logs during ingestion."
+        )
+
         if not uploaded_files:
             # When file is removed or cleared, reset session analysis to None (Zero state)
             st.session_state["lumina_session_analysis"] = None
             return
 
         if uploaded_files:
+            oversized = [f for f in uploaded_files if f.size > 50 * 1024 * 1024]
+            if oversized:
+                st.info(
+                    "💡 **Tip for large archives (>50MB)**: If your browser upload is slow due to internet speed, "
+                    "you can pre-strip photos/videos locally using `python scripts/prepare_export.py <folder>` for instant upload."
+                )
+
             render_html(
                 '<div class="selected-files-title">Selected files</div>'
             )
+
 
             file_rows = ""
 
@@ -254,13 +342,13 @@ def render_zip_upload_section() -> None:
                 def _progress(msg, _status=status):
                     _status.write(msg)
 
-                uploaded_file.seek(0)
-                with tempfile.NamedTemporaryFile(
-                    delete=False, suffix=".zip"
-                ) as tmp:
-                    import shutil
-                    shutil.copyfileobj(uploaded_file, tmp)
-                    tmp_path = tmp.name
+                _progress("⚡ Running embedded ingestion optimizer (stripping media & bloat)...")
+                tmp_path, orig_b, new_b = _sanitize_and_save_zip(uploaded_file, progress_callback=_progress)
+                if orig_b > new_b and orig_b > 0:
+                    orig_mb = orig_b / (1024 * 1024)
+                    new_mb = new_b / (1024 * 1024)
+                    pct = 100 - (new_mb / orig_mb * 100)
+                    _progress(f"✨ Ingestion complete: reduced {orig_mb:.1f}MB ➔ {new_mb:.1f}MB ({pct:.1f}% reduction).")
 
                 try:
                     outcome = run_full_analysis(
@@ -275,6 +363,7 @@ def render_zip_upload_section() -> None:
                     )
                 finally:
                     Path(tmp_path).unlink(missing_ok=True)
+
 
                 if outcome.get("error"):
                     status.update(
