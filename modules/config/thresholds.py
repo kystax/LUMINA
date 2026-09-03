@@ -66,6 +66,19 @@ FEATURE_THRESHOLDS = {
 
 
 # ─────────────────────────────────────────────
+# NLP SAMPLING & THROUGHPUT OPTIMIZATION
+# ─────────────────────────────────────────────
+# Stratified temporal sampling ensures representative coverage across dates
+# while preventing large raw social media archives (thousands of posts/comments)
+# from causing CPU bottlenecks or multi-minute execution times.
+STRATIFIED_SAMPLING_ENABLED = True
+MIN_SAMPLES_FOR_STRATIFICATION = 150
+MAX_NLP_SAMPLES_TOTAL = 350
+MAX_NLP_SAMPLES_PER_PERIOD = 120
+
+
+
+# ─────────────────────────────────────────────
 # DASHBOARD GAUGE (dashboard/charts.py)
 # Percent scale (0-100) matching RISK_CLASS_THRESHOLDS above.
 # ─────────────────────────────────────────────

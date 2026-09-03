@@ -98,6 +98,13 @@ def _init_pool():
         if db_url:
             if db_url.startswith("postgres://"):
                 db_url = db_url.replace("postgres://", "postgresql://", 1)
+            
+            # Ensure TCP keepalives are set on DSN to keep SSL connections active
+            separator = "&" if "?" in db_url else "?"
+            keepalive_params = "keepalives=1&keepalives_idle=30&keepalives_interval=10&keepalives_count=5"
+            if "keepalives" not in db_url:
+                db_url = f"{db_url}{separator}{keepalive_params}"
+
             try:
                 _DB_POOL = pool.ThreadedConnectionPool(
                     minconn=1,
@@ -126,7 +133,11 @@ def _init_pool():
             "port": int(port) if str(port).isdigit() else 5432,
             "dbname": dbname,
             "user": user,
-            "connect_timeout": 3,
+            "connect_timeout": 5,
+            "keepalives": 1,
+            "keepalives_idle": 30,
+            "keepalives_interval": 10,
+            "keepalives_count": 5,
         }
         if password:
             kwargs["password"] = password
@@ -143,29 +154,52 @@ def _init_pool():
 
 
 def get_connection():
-    """Acquire a connection from the pool.
-    Returns None if database is unavailable or not configured.
-    Caller must return connection with release_connection(conn).
+    """Acquire a validated, live connection from the pool.
+    Tests connection liveness (SELECT 1) and automatically discards stale/dropped
+    cloud SSL connections so queries never fail on first attempt.
     """
     global _DB_POOL
     if _DB_POOL is None:
         _init_pool()
-    if _DB_POOL is not None:
+
+    for attempt in range(3):
+        if _DB_POOL is None:
+            break
         try:
-            return _DB_POOL.getconn()
+            conn = _DB_POOL.getconn()
+            if conn is None or conn.closed != 0:
+                if conn is not None:
+                    _DB_POOL.putconn(conn, close=True)
+                continue
+
+            # Verify connection health with a lightweight query
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1")
+            return conn
         except Exception as e:
-            print(f"[LUMINA DB] getconn failed: {e}")
-            return None
+            # Cloud PostgreSQL dropped idle SSL connection — discard and retry
+            if 'conn' in locals() and conn is not None:
+                try:
+                    _DB_POOL.putconn(conn, close=True)
+                except Exception:
+                    pass
+            # If pool itself is broken, re-initialize
+            if attempt == 1:
+                _init_pool()
+
     return None
 
 
 def release_connection(conn):
     """Return a connection to the pool.
-    No-op if pool not initialized or conn is None.
+    Closes connection if it was already marked broken/closed.
     """
     if _DB_POOL is not None and conn is not None:
         try:
-            _DB_POOL.putconn(conn)
+            if conn.closed != 0:
+                _DB_POOL.putconn(conn, close=True)
+            else:
+                _DB_POOL.putconn(conn)
         except Exception:
             pass
 

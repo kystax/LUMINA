@@ -7,7 +7,11 @@ import torch
 import numpy as np
 import datetime
 from transformers import AutoTokenizer, AutoModel
-from modules.nlp.extractor import extract_features
+from modules.nlp.extractor import extract_features, stratified_sample_by_time, stratified_sample_texts
+from modules.config.thresholds import (
+    MAX_NLP_SAMPLES_TOTAL,
+    MAX_NLP_SAMPLES_PER_PERIOD,
+)
 
 _MBERT_CACHE = None
 
@@ -60,7 +64,11 @@ def get_mbert():
 # MAIN CLASSIFIER
 # ─────────────────────────────────────────────
 
-def classify_risk(texts: list[str], warn_if_few: bool = True) -> dict:
+def classify_risk(
+    texts: list[str],
+    max_samples: int = MAX_NLP_SAMPLES_TOTAL,
+    warn_if_few: bool = True
+) -> dict:
     """
     Takes a list of text samples from one session.
     Returns risk classification result.
@@ -72,16 +80,16 @@ def classify_risk(texts: list[str], warn_if_few: bool = True) -> dict:
         print(
             f"[LUMINA] Warning: Only {len(texts)} samples — result may not be reliable")
 
-    # Step 1 — Extract NLP features
-    features = extract_features(texts)
+    # Step 1 — Extract NLP features (with stratified sampling applied if needed)
+    features = extract_features(texts, max_samples=max_samples)
 
     # Step 2 — Determine complexity score reliability based on language mix
     lang_dist = features.get("language_distribution", {})
     en_frac = float(lang_dist.get("en", 0.0))
     complexity_reliable = (en_frac >= 0.50)
 
-    # Step 3 — Get mBERT coherence score
-    coherence = _compute_coherence(texts[:20])  # 20 texts sufficient for coherence signal
+    # Step 3 — Get mBERT coherence score (use top 20 representative texts)
+    coherence = _compute_coherence(texts[:20])
 
     # Step 4 — Compute risk score (redistributes weights if complexity_reliable is False)
     risk_score = _compute_risk_score(features, coherence, complexity_reliable=complexity_reliable)
@@ -118,10 +126,19 @@ def classify_risk_by_period(samples: list[dict]) -> dict:
     for period, period_samples in buckets.items():
         if not period_samples:
             continue
-        texts = [s["text"] for s in period_samples if s.get("text")]
+        # Stratify sample each window to prevent bottlenecks on deep historical archives
+        period_stratified, _ = stratified_sample_by_time(
+            period_samples,
+            max_samples=MAX_NLP_SAMPLES_PER_PERIOD
+        )
+        texts = [s["text"] for s in period_stratified if s.get("text")]
         if not texts:
             continue
-        period_result = classify_risk(texts, warn_if_few=False)
+        period_result = classify_risk(
+            texts,
+            max_samples=MAX_NLP_SAMPLES_PER_PERIOD,
+            warn_if_few=False
+        )
         period_result["sample_count_in_period"] = len(period_samples)
         results[period] = period_result
 

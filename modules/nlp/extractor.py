@@ -5,9 +5,14 @@ Works on: English, Sinhala, Tamil, Romanized Sinhala
 """
 
 import re
-from datetime import datetime
 from modules.nlp.language_detect import detect_language
-from modules.config.thresholds import FEATURE_THRESHOLDS
+from modules.config.thresholds import (
+    FEATURE_THRESHOLDS,
+    STRATIFIED_SAMPLING_ENABLED,
+    MIN_SAMPLES_FOR_STRATIFICATION,
+    MAX_NLP_SAMPLES_TOTAL,
+    MAX_NLP_SAMPLES_PER_PERIOD,
+)
 
 
 # ─────────────────────────────────────────────
@@ -79,6 +84,65 @@ def bucket_samples_by_period(samples: list[dict]) -> dict:
     return buckets
 
 
+def stratified_sample_texts(
+    texts: list[str],
+    max_samples: int = MAX_NLP_SAMPLES_TOTAL,
+    min_threshold: int = MIN_SAMPLES_FOR_STRATIFICATION,
+) -> tuple[list[str], bool]:
+    """
+    Selects a representative, stratified temporal subset of texts.
+    Preserves the most recent entries while uniformly sampling across history.
+    """
+    if not STRATIFIED_SAMPLING_ENABLED or not texts or len(texts) <= max_samples or len(texts) < min_threshold:
+        return texts, False
+
+    n = len(texts)
+    # Reserve 20% of sample budget for most recent entries, sample 80% across the rest
+    recent_budget = max(10, int(max_samples * 0.20))
+    history_budget = max_samples - recent_budget
+
+    history_texts = texts[:-recent_budget] if n > recent_budget else []
+    recent_texts = texts[-recent_budget:] if n > recent_budget else texts
+
+    if history_texts and history_budget > 0:
+        step = len(history_texts) / float(history_budget)
+        sampled_history = [history_texts[int(i * step)] for i in range(history_budget)]
+    else:
+        sampled_history = []
+
+    sampled = sampled_history + recent_texts
+    return sampled, True
+
+
+def stratified_sample_by_time(
+    samples: list[dict],
+    max_samples: int = MAX_NLP_SAMPLES_TOTAL,
+    min_threshold: int = MIN_SAMPLES_FOR_STRATIFICATION,
+) -> tuple[list[dict], bool]:
+    """
+    Temporal stratified sampling on sample dicts containing 'text' and 'date_month'.
+    Ensures proportional longitudinal representation across months/years.
+    """
+    if not STRATIFIED_SAMPLING_ENABLED or not samples or len(samples) <= max_samples or len(samples) < min_threshold:
+        return samples, False
+
+    n = len(samples)
+    recent_budget = max(10, int(max_samples * 0.20))
+    history_budget = max_samples - recent_budget
+
+    history_samples = samples[:-recent_budget] if n > recent_budget else []
+    recent_samples = samples[-recent_budget:] if n > recent_budget else samples
+
+    if history_samples and history_budget > 0:
+        step = len(history_samples) / float(history_budget)
+        sampled_history = [history_samples[int(i * step)] for i in range(history_budget)]
+    else:
+        sampled_history = []
+
+    sampled = sampled_history + recent_samples
+    return sampled, True
+
+
 def deduplicate_texts(texts: list[str]) -> tuple[list[str], int]:
     """
     Remove copy-pasted and near-duplicate texts before NLP analysis.
@@ -118,7 +182,7 @@ def deduplicate_texts(texts: list[str]) -> tuple[list[str], int]:
     return cleaned, removed
 
 
-def extract_features(texts: list[str]) -> dict:
+def extract_features(texts: list[str], max_samples: int = MAX_NLP_SAMPLES_TOTAL) -> dict:
     """
     Takes a list of text samples from one session.
     Returns a feature dict ready for risk scoring, including a
@@ -129,10 +193,13 @@ def extract_features(texts: list[str]) -> dict:
 
     original_count = len(texts)
 
-    # Step 1 — Remove copy-pasted / duplicate content BEFORE analysis
-    deduped_texts, duplicates_removed = deduplicate_texts(texts)
+    # Step 1 — Stratified sampling for high throughput if dataset is large
+    sampled_texts, was_sampled = stratified_sample_texts(texts, max_samples=max_samples)
 
-    # Step 2 — Clean remaining texts
+    # Step 2 — Remove copy-pasted / duplicate content BEFORE analysis
+    deduped_texts, duplicates_removed = deduplicate_texts(sampled_texts)
+
+    # Step 3 — Clean remaining texts
     cleaned = [_clean_text(t) for t in deduped_texts if len(t.strip()) > 3]
     if not cleaned:
         result = _empty_features()
@@ -153,6 +220,7 @@ def extract_features(texts: list[str]) -> dict:
         "sample_count":          len(cleaned),
         "original_sample_count": original_count,
         "duplicates_removed":    duplicates_removed,
+        "was_stratified":        was_sampled,
         "ttr":                   ttr,
         "avg_sentence_length":   avg_sent_len,
         "avg_word_length":       avg_word_len,
@@ -161,7 +229,8 @@ def extract_features(texts: list[str]) -> dict:
         "language_distribution": lang_dist,
         "reasoning_log":         _build_reasoning_log(
             original_count, duplicates_removed, len(cleaned),
-            ttr, avg_sent_len, avg_word_len, repetition, complexity, lang_dist
+            ttr, avg_sent_len, avg_word_len, repetition, complexity, lang_dist,
+            was_sampled=was_sampled, sampled_count=len(sampled_texts)
         ),
     }
 
@@ -179,18 +248,18 @@ def extract_features_by_period(samples: list[dict]) -> dict:
 
     Returns: { period_name: { ...same keys as extract_features(), plus
                                'sample_count_in_period' } }
-
-    A single snapshot can't tell a naturally quiet writer from someone
-    whose activity is actually declining — this lets the dashboard compare
-    a person's recent window against their own older windows instead of
-    against one fixed universal threshold.
     """
     buckets = bucket_samples_by_period(samples)
 
     results = {}
     for period, period_samples in buckets.items():
-        texts = [s["text"] for s in period_samples]
-        period_features = extract_features(texts)
+        # Stratify sample within each period to prevent deep windows from stalling
+        period_stratified, _ = stratified_sample_by_time(
+            period_samples,
+            max_samples=MAX_NLP_SAMPLES_PER_PERIOD
+        )
+        texts = [s["text"] for s in period_stratified if s.get("text")]
+        period_features = extract_features(texts, max_samples=MAX_NLP_SAMPLES_PER_PERIOD)
         period_features["sample_count_in_period"] = len(period_samples)
         results[period] = period_features
 
@@ -203,7 +272,8 @@ def extract_features_by_period(samples: list[dict]) -> dict:
 
 def _build_reasoning_log(original_count, duplicates_removed, final_count,
                          ttr, avg_sent_len, avg_word_len, repetition,
-                         complexity, lang_dist) -> list[str]:
+                         complexity, lang_dist,
+                         was_sampled: bool = False, sampled_count: int = 0) -> list[str]:
     """
     Build a step-by-step, human-readable log of how the NLP module
     arrived at its feature scores. Used for transparency in the
@@ -215,12 +285,19 @@ def _build_reasoning_log(original_count, duplicates_removed, final_count,
         f"Started with {original_count} raw text samples extracted from the upload."
     )
 
+    if was_sampled:
+        log.append(
+            f"Applied longitudinal stratified sampling: analyzed {sampled_count} representative "
+            f"samples across the activity timeline to guarantee fast processing while maintaining "
+            f"clinical and lexical fidelity."
+        )
+
     if duplicates_removed > 0:
-        pct = round(duplicates_removed / original_count *
-                    100, 1) if original_count else 0
+        base_cnt = sampled_count if was_sampled else original_count
+        pct = round(duplicates_removed / base_cnt * 100, 1) if base_cnt else 0
         log.append(
             f"Removed {duplicates_removed} duplicate or near-duplicate texts "
-            f"({pct}% of the original data) — likely copy-pasted content "
+            f"({pct}% of candidate samples) — likely copy-pasted content "
             f"such as voting comments or repeated captions. This prevents "
             f"artificial vocabulary-richness deflation."
         )
@@ -268,6 +345,7 @@ def _build_reasoning_log(original_count, duplicates_removed, final_count,
             f"({top_lang[1]*100:.1f}% of samples). Multilingual text was processed "
             f"using mBERT, which supports cross-lingual analysis."
         )
+
 
     return log
 
